@@ -825,6 +825,630 @@
           "icon": "?"
         }
       ]
+    },
+    {
+      "id": "napoleonova-epoha",
+      "title": "Doba ratova i vremena Napoleonove epohe",
+      "description": "Napoleonov uspon, reforme, ratovi, pad i Bečki kongres.",
+      "icon": "⚔",
+      "items": [
+        {
+          "id": "napoleon-card-poreklo",
+          "question": "Sa kog ostrva je poticao Napoleon Bonaparta?",
+          "answer": "Korzika",
+          "description": "Napoleon je bio francuski vojskovođa i državnik poreklom sa Korzike."
+        },
+        {
+          "id": "napoleon-card-direktorijum",
+          "question": "Kakav je bio Napoleonov odnos prema Direktorijumu?",
+          "answer": "Bio je general, a zatim ga je zbacio pučem",
+          "description": "Direktorijum je upravljao Francuskom posle pada jakobinaca; Napoleon nije bio jedan od direktora."
+        },
+        {
+          "id": "napoleon-card-egipat",
+          "question": "Koje godine je Napoleon predvodio pohod na Egipat?",
+          "answer": "1798.",
+          "description": "Pohod na Egipat prethodio je državnom puču u Francuskoj."
+        },
+        {
+          "id": "napoleon-card-puc",
+          "question": "Koje godine je Napoleon izveo državni puč i zbacio Direktorijum?",
+          "answer": "1799.",
+          "description": "Posle puča uveden je Konzulat, a Napoleon je postao prvi konzul."
+        },
+        {
+          "id": "napoleon-card-konzulat",
+          "question": "Koji oblik vlasti je uveden posle puča 1799. godine?",
+          "answer": "Konzulat",
+          "description": "Napoleon je kao prvi konzul imao ključnu ulogu u novoj vlasti."
+        },
+        {
+          "id": "napoleon-card-dozivotni",
+          "question": "Koje godine je Napoleon postao doživotni prvi konzul?",
+          "answer": "1802.",
+          "description": "Prvi konzul postao je 1799, a doživotni prvi konzul 1802. godine."
+        },
+        {
+          "id": "napoleon-card-carstvo",
+          "question": "Koje godine je Napoleon proglašen za cara Francuza?",
+          "answer": "1804.",
+          "description": "Republiku je zamenilo Prvo francusko carstvo."
+        },
+        {
+          "id": "napoleon-card-zakonik",
+          "question": "Koje godine je usvojen Napoleonov Građanski zakonik?",
+          "answer": "1804.",
+          "description": "Zakonik je snažno uticao na građansko pravo drugih evropskih država."
+        },
+        {
+          "id": "napoleon-card-nacela",
+          "question": "Koje načelo povezujemo sa Građanskim zakonikom?",
+          "answer": "Jednakost pred zakonom",
+          "description": "Građanski zakonik učvrstio je jednakost pred zakonom i zaštitu privatne svojine."
+        },
+        {
+          "id": "napoleon-card-trafalgar-godina",
+          "question": "Koje godine se dogodila bitka kod Trafalgara?",
+          "answer": "1805.",
+          "description": "Pomorska bitka završila se britanskom pobedom."
+        },
+        {
+          "id": "napoleon-card-trafalgar-flota",
+          "question": "Koja flota je pobedila kod Trafalgara?",
+          "answer": "Britanska flota",
+          "description": "Britanci su porazili francusko-špansku flotu."
+        },
+        {
+          "id": "napoleon-card-blokada",
+          "question": "?ta je bila kontinentalna blokada?",
+          "answer": "Zabrana trgovine sa Britanijom",
+          "description": "Napoleon je nastojao da oslabi Britaniju zabranom uvoza njene robe i pristajanja njenih brodova."
+        },
+        {
+          "id": "napoleon-card-austerlic-godina",
+          "question": "Koje godine se dogodila bitka kod Austerlica?",
+          "answer": "1805.",
+          "description": "Napoleonova pobeda učvrstila je njegov položaj u srednjoj Evropi."
+        },
+        {
+          "id": "napoleon-card-austerlic-snage",
+          "question": "?ije snage je Napoleon porazio kod Austerlica?",
+          "answer": "Austrijske i ruske snage",
+          "description": "Austerlic je poznat i kao bitka tri cara."
+        },
+        {
+          "id": "napoleon-card-rusija",
+          "question": "Koje godine je Napoleon krenuo u pohod na Rusiju?",
+          "answer": "1812.",
+          "description": "Jedan od razloga sukoba bilo je rusko nepridržavanje kontinentalne blokade."
+        },
+        {
+          "id": "napoleon-card-borodino",
+          "question": "Koja bitka se dogodila tokom pohoda na Rusiju 1812. godine?",
+          "answer": "Borodinska bitka",
+          "description": "Ruska vojska se posle krvave bitke povukla; Napoleon nije ostvario odlučujuću pobedu."
+        },
+        {
+          "id": "napoleon-card-pohod-ishod",
+          "question": "Kako se završio Napoleonov pohod na Rusiju?",
+          "answer": "Povlačenjem uz ogromne gubitke",
+          "description": "Neuspeh celog pohoda ne treba poistovećivati sa ishodom same Borodinske bitke."
+        },
+        {
+          "id": "napoleon-card-lajpcig",
+          "question": "Koje godine je Napoleon poražen kod Lajpciga?",
+          "answer": "1813.",
+          "description": "Koaliciju su ?inile, između ostalih, Rusija, Pruska i Austrija."
+        },
+        {
+          "id": "napoleon-card-koalicija",
+          "question": "Koje države su bile među Napoleonovim protivnicima kod Lajpciga?",
+          "answer": "Pruska, Austrija i Rusija",
+          "description": "Savez više država protiv zajedničkog protivnika nazivamo koalicijom."
+        },
+        {
+          "id": "napoleon-card-elba",
+          "question": "Na koje ostrvo je Napoleon prognan 1814. godine?",
+          "answer": "Elba",
+          "description": "Napoleon je izgubio vlast 1814, posle poraza i savezničkog ulaska u Pariz."
+        },
+        {
+          "id": "napoleon-card-sto-dana",
+          "question": "Kako se naziva Napoleonov povratak na vlast 1815. godine?",
+          "answer": "Sto dana",
+          "description": "Kratka obnovljena vladavina završila se konačnim porazom."
+        },
+        {
+          "id": "napoleon-card-vaterlo",
+          "question": "Koje godine je Napoleon konačno poražen kod Vaterloa?",
+          "answer": "1815.",
+          "description": "Napoleona su porazile savezničke snage, uključujući britanske i pruske."
+        },
+        {
+          "id": "napoleon-card-sveta-jelena",
+          "question": "Gde je Napoleon proveo poslednje godine života?",
+          "answer": "Na Svetoj Jeleni",
+          "description": "Sveta Jelena je ostrvo u Atlantskom okeanu."
+        },
+        {
+          "id": "napoleon-card-kongres",
+          "question": "U kom gradu je održan kongres koji je uredio Evropu posle Napoleonovih ratova?",
+          "answer": "U Beču",
+          "description": "Bečki kongres trajao je od 1814. do 1815. godine."
+        },
+        {
+          "id": "napoleon-card-kongres-godina",
+          "question": "Koje godine je završen Bečki kongres?",
+          "answer": "1815.",
+          "description": "Predstavnici evropskih sila dogovarali su novi evropski poredak."
+        },
+        {
+          "id": "napoleon-card-kongres-cilj",
+          "question": "Koji je bio važan cilj Bečkog kongresa?",
+          "answer": "Obnova monarhija i ravnoteža snaga u Evropi",
+          "description": "Pobedničke sile nastojale su da spreče novu prevlast jedne države."
+        },
+        {
+          "id": "napoleon-card-francuska-granice",
+          "question": "?ta se posle Napoleonovih ratova dogodilo sa francuskim osvajanjima?",
+          "answer": "Francuska je izgubila većinu osvojenih teritorija",
+          "description": "Francuska je vraćena približno u predratne granice."
+        }
+      ],
+      "questions": [
+        {
+          "id": "napoleon-quiz-poreklo",
+          "prompt": "Sa kog ostrva je poticao Napoleon Bonaparta?",
+          "choices": [
+            "Korzika",
+            "Elba",
+            "Sveta Jelena",
+            "Sicilija"
+          ],
+          "answer": "Korzika"
+        },
+        {
+          "id": "napoleon-quiz-direktorijum",
+          "prompt": "Kakav je bio Napoleonov odnos prema Direktorijumu?",
+          "choices": [
+            "Bio je ?lan Direktorijuma",
+            "Osnovao je Direktorijum 1804.",
+            "Vratio je Direktorijum 1815.",
+            "Bio je general, a zatim ga je zbacio pučem"
+          ],
+          "answer": "Bio je general, a zatim ga je zbacio pučem"
+        },
+        {
+          "id": "napoleon-quiz-egipat",
+          "prompt": "Koje godine je Napoleon predvodio pohod na Egipat?",
+          "choices": [
+            "1804.",
+            "1812.",
+            "1798.",
+            "1799."
+          ],
+          "answer": "1798."
+        },
+        {
+          "id": "napoleon-quiz-puc",
+          "prompt": "Koje godine je Napoleon izveo državni puč i zbacio Direktorijum?",
+          "choices": [
+            "1815.",
+            "1799.",
+            "1798.",
+            "1804."
+          ],
+          "answer": "1799."
+        },
+        {
+          "id": "napoleon-quiz-konzulat",
+          "prompt": "Koji oblik vlasti je uveden posle puča 1799. godine?",
+          "choices": [
+            "Konzulat",
+            "Direktorijum",
+            "Carstvo",
+            "Apsolutna monarhija Burbona"
+          ],
+          "answer": "Konzulat"
+        },
+        {
+          "id": "napoleon-quiz-dozivotni",
+          "prompt": "Koje godine je Napoleon postao doživotni prvi konzul?",
+          "choices": [
+            "1798.",
+            "1804.",
+            "1815.",
+            "1802."
+          ],
+          "answer": "1802."
+        },
+        {
+          "id": "napoleon-quiz-carstvo",
+          "prompt": "Koje godine je Napoleon proglašen za cara Francuza?",
+          "choices": [
+            "1805.",
+            "1813.",
+            "1804.",
+            "1799."
+          ],
+          "answer": "1804."
+        },
+        {
+          "id": "napoleon-quiz-zakonik",
+          "prompt": "Koje godine je usvojen Napoleonov Građanski zakonik?",
+          "choices": [
+            "1815.",
+            "1804.",
+            "1798.",
+            "1805."
+          ],
+          "answer": "1804."
+        },
+        {
+          "id": "napoleon-quiz-nacela",
+          "prompt": "Koje načelo povezujemo sa Građanskim zakonikom?",
+          "choices": [
+            "Jednakost pred zakonom",
+            "Nasledne staleške povlastice",
+            "Vlast Direktorijuma",
+            "Zabranu britanske robe"
+          ],
+          "answer": "Jednakost pred zakonom"
+        },
+        {
+          "id": "napoleon-quiz-trafalgar-godina",
+          "prompt": "Koje godine se dogodila bitka kod Trafalgara?",
+          "choices": [
+            "1804.",
+            "1812.",
+            "1815.",
+            "1805."
+          ],
+          "answer": "1805."
+        },
+        {
+          "id": "napoleon-quiz-trafalgar-flota",
+          "prompt": "Koja flota je pobedila kod Trafalgara?",
+          "choices": [
+            "Ruska flota",
+            "Pruska flota",
+            "Britanska flota",
+            "Francusko-španska flota"
+          ],
+          "answer": "Britanska flota"
+        },
+        {
+          "id": "napoleon-quiz-blokada",
+          "prompt": "?ta je bila kontinentalna blokada?",
+          "choices": [
+            "Obnova Direktorijuma",
+            "Zabrana trgovine sa Britanijom",
+            "Savez Francuske i Britanije",
+            "Zabrana trgovine sa Rusijom"
+          ],
+          "answer": "Zabrana trgovine sa Britanijom"
+        },
+        {
+          "id": "napoleon-quiz-austerlic-godina",
+          "prompt": "Koje godine se dogodila bitka kod Austerlica?",
+          "choices": [
+            "1805.",
+            "1799.",
+            "1812.",
+            "1813."
+          ],
+          "answer": "1805."
+        },
+        {
+          "id": "napoleon-quiz-austerlic-snage",
+          "prompt": "?ije snage je Napoleon porazio kod Austerlica?",
+          "choices": [
+            "Britansku flotu",
+            "Pruske i britanske snage",
+            "?pansku flotu",
+            "Austrijske i ruske snage"
+          ],
+          "answer": "Austrijske i ruske snage"
+        },
+        {
+          "id": "napoleon-quiz-rusija",
+          "prompt": "Koje godine je Napoleon krenuo u pohod na Rusiju?",
+          "choices": [
+            "1813.",
+            "1815.",
+            "1812.",
+            "1805."
+          ],
+          "answer": "1812."
+        },
+        {
+          "id": "napoleon-quiz-borodino",
+          "prompt": "Koja bitka se dogodila tokom pohoda na Rusiju 1812. godine?",
+          "choices": [
+            "Bitka kod Vaterloa",
+            "Borodinska bitka",
+            "Bitka kod Trafalgara",
+            "Bitka kod Lajpciga"
+          ],
+          "answer": "Borodinska bitka"
+        },
+        {
+          "id": "napoleon-quiz-pohod-ishod",
+          "prompt": "Kako se završio Napoleonov pohod na Rusiju?",
+          "choices": [
+            "Povlačenjem uz ogromne gubitke",
+            "Trajnim osvajanjem Rusije",
+            "Britanskom pomorskom pobedom",
+            "Napoleonovim proglašenjem za cara"
+          ],
+          "answer": "Povlačenjem uz ogromne gubitke"
+        },
+        {
+          "id": "napoleon-quiz-lajpcig",
+          "prompt": "Koje godine je Napoleon poražen kod Lajpciga?",
+          "choices": [
+            "1805.",
+            "1812.",
+            "1815.",
+            "1813."
+          ],
+          "answer": "1813."
+        },
+        {
+          "id": "napoleon-quiz-koalicija",
+          "prompt": "Koje države su bile među Napoleonovim protivnicima kod Lajpciga?",
+          "choices": [
+            "Francuska, Rusija i Egipat",
+            "Britanija, Francuska i Pruska",
+            "Pruska, Austrija i Rusija",
+            "Francuska, ?panija i Britanija"
+          ],
+          "answer": "Pruska, Austrija i Rusija"
+        },
+        {
+          "id": "napoleon-quiz-elba",
+          "prompt": "Na koje ostrvo je Napoleon prognan 1814. godine?",
+          "choices": [
+            "Sicilija",
+            "Elba",
+            "Korzika",
+            "Sveta Jelena"
+          ],
+          "answer": "Elba"
+        },
+        {
+          "id": "napoleon-quiz-sto-dana",
+          "prompt": "Kako se naziva Napoleonov povratak na vlast 1815. godine?",
+          "choices": [
+            "Sto dana",
+            "Konzulat",
+            "Direktorijum",
+            "Kontinentalna blokada"
+          ],
+          "answer": "Sto dana"
+        },
+        {
+          "id": "napoleon-quiz-vaterlo",
+          "prompt": "Koje godine je Napoleon konačno poražen kod Vaterloa?",
+          "choices": [
+            "1805.",
+            "1812.",
+            "1813.",
+            "1815."
+          ],
+          "answer": "1815."
+        },
+        {
+          "id": "napoleon-quiz-sveta-jelena",
+          "prompt": "Gde je Napoleon proveo poslednje godine života?",
+          "choices": [
+            "Na Korzici",
+            "U Beču",
+            "Na Svetoj Jeleni",
+            "Na Elbi"
+          ],
+          "answer": "Na Svetoj Jeleni"
+        },
+        {
+          "id": "napoleon-quiz-kongres",
+          "prompt": "U kom gradu je održan kongres koji je uredio Evropu posle Napoleonovih ratova?",
+          "choices": [
+            "U Moskvi",
+            "U Beču",
+            "U Parizu",
+            "U Londonu"
+          ],
+          "answer": "U Beču"
+        },
+        {
+          "id": "napoleon-quiz-kongres-godina",
+          "prompt": "Koje godine je završen Bečki kongres?",
+          "choices": [
+            "1815.",
+            "1804.",
+            "1812.",
+            "1813."
+          ],
+          "answer": "1815."
+        },
+        {
+          "id": "napoleon-quiz-kongres-cilj",
+          "prompt": "Koji je bio važan cilj Bečkog kongresa?",
+          "choices": [
+            "Povratak Napoleona na vlast",
+            "Uvođenje Konzulata",
+            "Pokretanje pohoda na Egipat",
+            "Obnova monarhija i ravnoteža snaga u Evropi"
+          ],
+          "answer": "Obnova monarhija i ravnoteža snaga u Evropi"
+        },
+        {
+          "id": "napoleon-quiz-francuska-granice",
+          "prompt": "?ta se posle Napoleonovih ratova dogodilo sa francuskim osvajanjima?",
+          "choices": [
+            "Francuska je osvojila Rusiju",
+            "Francuska je preuzela Britaniju",
+            "Francuska je izgubila većinu osvojenih teritorija",
+            "Francuska je trajno zadržala sva osvajanja"
+          ],
+          "answer": "Francuska je izgubila većinu osvojenih teritorija"
+        }
+      ],
+      "timelineQuestions": [
+        {
+          "id": "napoleon-date-egipat",
+          "prompt": "Koje godine je Napoleon predvodio pohod na Egipat?",
+          "choices": [
+            "1804.",
+            "1812.",
+            "1798.",
+            "1799."
+          ],
+          "answer": "1798."
+        },
+        {
+          "id": "napoleon-date-puc",
+          "prompt": "Koje godine je Napoleon izveo državni puč i zbacio Direktorijum?",
+          "choices": [
+            "1815.",
+            "1799.",
+            "1798.",
+            "1804."
+          ],
+          "answer": "1799."
+        },
+        {
+          "id": "napoleon-date-dozivotni",
+          "prompt": "Koje godine je Napoleon postao doživotni prvi konzul?",
+          "choices": [
+            "1798.",
+            "1804.",
+            "1815.",
+            "1802."
+          ],
+          "answer": "1802."
+        },
+        {
+          "id": "napoleon-date-carstvo",
+          "prompt": "Koje godine je Napoleon proglašen za cara Francuza?",
+          "choices": [
+            "1805.",
+            "1813.",
+            "1804.",
+            "1799."
+          ],
+          "answer": "1804."
+        },
+        {
+          "id": "napoleon-date-zakonik",
+          "prompt": "Koje godine je usvojen Napoleonov Građanski zakonik?",
+          "choices": [
+            "1815.",
+            "1804.",
+            "1798.",
+            "1805."
+          ],
+          "answer": "1804."
+        },
+        {
+          "id": "napoleon-date-trafalgar-godina",
+          "prompt": "Koje godine se dogodila bitka kod Trafalgara?",
+          "choices": [
+            "1804.",
+            "1812.",
+            "1815.",
+            "1805."
+          ],
+          "answer": "1805."
+        },
+        {
+          "id": "napoleon-date-austerlic-godina",
+          "prompt": "Koje godine se dogodila bitka kod Austerlica?",
+          "choices": [
+            "1805.",
+            "1799.",
+            "1812.",
+            "1813."
+          ],
+          "answer": "1805."
+        },
+        {
+          "id": "napoleon-date-rusija",
+          "prompt": "Koje godine je Napoleon krenuo u pohod na Rusiju?",
+          "choices": [
+            "1813.",
+            "1815.",
+            "1812.",
+            "1805."
+          ],
+          "answer": "1812."
+        },
+        {
+          "id": "napoleon-date-lajpcig",
+          "prompt": "Koje godine je Napoleon poražen kod Lajpciga?",
+          "choices": [
+            "1805.",
+            "1812.",
+            "1815.",
+            "1813."
+          ],
+          "answer": "1813."
+        },
+        {
+          "id": "napoleon-date-vaterlo",
+          "prompt": "Koje godine je Napoleon konačno poražen kod Vaterloa?",
+          "choices": [
+            "1805.",
+            "1812.",
+            "1813.",
+            "1815."
+          ],
+          "answer": "1815."
+        },
+        {
+          "id": "napoleon-date-kongres-godina",
+          "prompt": "Koje godine je završen Bečki kongres?",
+          "choices": [
+            "1815.",
+            "1804.",
+            "1812.",
+            "1813."
+          ],
+          "answer": "1815."
+        }
+      ],
+      "activities": [
+        {
+          "id": "napoleon-kartice",
+          "type": "flashcards",
+          "title": "Kartice: Napoleonova epoha",
+          "description": "Upoznaj događaje, bitke i pojmove.",
+          "icon": "▣",
+          "frontField": "question",
+          "backField": "answer",
+          "itemSet": "items"
+        },
+        {
+          "id": "napoleon-kontrolni",
+          "type": "choice-quiz",
+          "title": "Kontrolni: Napoleonova epoha",
+          "description": "Proveri znanje iz celog poglavlja.",
+          "icon": "✓",
+          "itemSet": "questions",
+          "questionCount": 20,
+          "kindLabel": "Mešoviti test"
+        },
+        {
+          "id": "napoleon-datumi",
+          "type": "choice-quiz",
+          "title": "Datumi i događaji",
+          "description": "Poveži ključne događaje sa godinama.",
+          "icon": "⌛",
+          "itemSet": "timelineQuestions",
+          "questionCount": 10,
+          "kindLabel": "Vremenski izazov"
+        }
+      ]
     }
   ]
 }
