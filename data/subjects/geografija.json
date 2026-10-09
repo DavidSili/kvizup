@@ -1,0 +1,1883 @@
+{
+  "id": "geografija",
+  "title": "Geografija",
+  "description": "Regije, države, prirodne odlike i brojčani geografski podaci.",
+  "icon": "🌍",
+  "chapters": [
+    {
+      "id": "juzna-evropa",
+      "title": "Južna Evropa i region",
+      "description": "Regionalizacija, Južna Evropa, Srbija i države nastale raspadom SFRJ.",
+      "icon": "??",
+      "items": [
+        {
+          "id": "card-matching-1-1",
+          "question": "Poveži pojam: Srbija",
+          "answer": "Beograd",
+          "description": "Države i glavni gradovi"
+        },
+        {
+          "id": "card-matching-1-2",
+          "question": "Poveži pojam: Crna Gora",
+          "answer": "Podgorica",
+          "description": "Države i glavni gradovi"
+        },
+        {
+          "id": "card-matching-1-3",
+          "question": "Poveži pojam: Slovenija",
+          "answer": "Ljubljana",
+          "description": "Države i glavni gradovi"
+        },
+        {
+          "id": "card-matching-1-4",
+          "question": "Poveži pojam: Hrvatska",
+          "answer": "Zagreb",
+          "description": "Države i glavni gradovi"
+        },
+        {
+          "id": "card-matching-1-5",
+          "question": "Poveži pojam: Bosna i Hercegovina",
+          "answer": "Sarajevo",
+          "description": "Države i glavni gradovi"
+        },
+        {
+          "id": "card-matching-1-6",
+          "question": "Poveži pojam: Severna Makedonija",
+          "answer": "Skoplje",
+          "description": "Države i glavni gradovi"
+        },
+        {
+          "id": "card-matching-2-1",
+          "question": "Poveži pojam: Gibraltarski moreuz",
+          "answer": "Pomorski prolaz",
+          "description": "Pojmovi Južne Evrope"
+        },
+        {
+          "id": "card-matching-2-2",
+          "question": "Poveži pojam: Crvenica",
+          "answer": "Tip zemljišta",
+          "description": "Pojmovi Južne Evrope"
+        },
+        {
+          "id": "card-matching-2-3",
+          "question": "Poveži pojam: Makija",
+          "answer": "Sredozemna vegetacija",
+          "description": "Pojmovi Južne Evrope"
+        },
+        {
+          "id": "card-matching-2-4",
+          "question": "Poveži pojam: Skadarsko jezero",
+          "answer": "Jezero na granici Crne Gore i Albanije",
+          "description": "Pojmovi Južne Evrope"
+        },
+        {
+          "id": "card-matching-2-5",
+          "question": "Poveži pojam: Triglav",
+          "answer": "Najviši vrh Julijskih Alpa",
+          "description": "Pojmovi Južne Evrope"
+        },
+        {
+          "id": "card-matching-2-6",
+          "question": "Poveži pojam: Zetska ravnica",
+          "answer": "Nizija u Crnoj Gori",
+          "description": "Pojmovi Južne Evrope"
+        },
+        {
+          "id": "card-matching-2-7",
+          "question": "Poveži pojam: Bokokotorski zaliv",
+          "answer": "Zaliv u Crnoj Gori",
+          "description": "Pojmovi Južne Evrope"
+        },
+        {
+          "id": "card-matching-2-8",
+          "question": "Poveži pojam: Fruška gora",
+          "answer": "Niska ostrvska planina u Panonskoj niziji",
+          "description": "Pojmovi Južne Evrope"
+        },
+        {
+          "id": "card-matching-2-9",
+          "question": "Poveži pojam: Deliblatska peščara",
+          "answer": "Banat",
+          "description": "Pojmovi Južne Evrope"
+        },
+        {
+          "id": "card-matching-3-1",
+          "question": "Poveži pojam: Tara",
+          "answer": "Crna Gora",
+          "description": "Reke i jezera"
+        },
+        {
+          "id": "card-matching-3-2",
+          "question": "Poveži pojam: Morača",
+          "answer": "Zetska ravnica",
+          "description": "Reke i jezera"
+        },
+        {
+          "id": "card-matching-3-3",
+          "question": "Poveži pojam: Sava",
+          "answer": "Obedska bara",
+          "description": "Reke i jezera"
+        },
+        {
+          "id": "card-matching-3-4",
+          "question": "Poveži pojam: Begej",
+          "answer": "Carska bara",
+          "description": "Reke i jezera"
+        },
+        {
+          "id": "card-matching-3-5",
+          "question": "Poveži pojam: Dunav",
+          "answer": "Đerdapsko jezero",
+          "description": "Reke i jezera"
+        },
+        {
+          "id": "card-matching-3-6",
+          "question": "Poveži pojam: Bledsko jezero",
+          "answer": "Slovenija",
+          "description": "Reke i jezera"
+        },
+        {
+          "id": "card-matching-3-7",
+          "question": "Poveži pojam: Bohinjsko jezero",
+          "answer": "Slovenija",
+          "description": "Reke i jezera"
+        },
+        {
+          "id": "card-matching-3-8",
+          "question": "Poveži pojam: Crno jezero",
+          "answer": "Crna Gora",
+          "description": "Reke i jezera"
+        },
+        {
+          "id": "card-matching-4-1",
+          "question": "Poveži pojam: Dinara",
+          "answer": "Planina u Hrvatskoj",
+          "description": "Planine, reke i jezera ex-YU"
+        },
+        {
+          "id": "card-matching-4-2",
+          "question": "Poveži pojam: Velebit",
+          "answer": "Planina u Hrvatskoj",
+          "description": "Planine, reke i jezera ex-YU"
+        },
+        {
+          "id": "card-matching-4-3",
+          "question": "Poveži pojam: Maglić",
+          "answer": "Planina u Bosni i Hercegovini",
+          "description": "Planine, reke i jezera ex-YU"
+        },
+        {
+          "id": "card-matching-4-4",
+          "question": "Poveži pojam: Šara",
+          "answer": "Planina u Severnoj Makedoniji",
+          "description": "Planine, reke i jezera ex-YU"
+        },
+        {
+          "id": "card-matching-4-5",
+          "question": "Poveži pojam: Neretva",
+          "answer": "Rijeka u Bosni i Hercegovini",
+          "description": "Planine, reke i jezera ex-YU"
+        },
+        {
+          "id": "card-matching-4-6",
+          "question": "Poveži pojam: Drava",
+          "answer": "Rijeka u Sloveniji i Hrvatskoj",
+          "description": "Planine, reke i jezera ex-YU"
+        },
+        {
+          "id": "card-matching-4-7",
+          "question": "Poveži pojam: Ohridsko jezero",
+          "answer": "Jezero u Severnoj Makedoniji",
+          "description": "Planine, reke i jezera ex-YU"
+        },
+        {
+          "id": "card-matching-4-8",
+          "question": "Poveži pojam: Bohinjsko jezero",
+          "answer": "Jezero u Sloveniji",
+          "description": "Planine, reke i jezera ex-YU"
+        }
+      ],
+      "questions": [
+        {
+          "prompt": "Koja tri poluostrva čine Južnu Evropu?",
+          "options": [
+            "Pirinejsko, Apeninsko i Balkansko",
+            "Skandinavsko, Jitlandsko i Balkansko",
+            "Pirinejsko, Apeninsko i Mala Azija"
+          ],
+          "answer": "Pirinejsko, Apeninsko i Balkansko",
+          "id": "geography-quiz-1",
+          "choices": [
+            "Pirinejsko, Apeninsko i Balkansko",
+            "Skandinavsko, Jitlandsko i Balkansko",
+            "Pirinejsko, Apeninsko i Mala Azija"
+          ],
+          "source": "mixedQuestions"
+        },
+        {
+          "prompt": "Koji kanal povezuje Sredozemno i Crveno more?",
+          "options": [
+            "Panamski kanal",
+            "Suecki kanal",
+            "Kanal La Manš"
+          ],
+          "answer": "Suecki kanal",
+          "id": "geography-quiz-2",
+          "choices": [
+            "Panamski kanal",
+            "Suecki kanal",
+            "Kanal La Manš"
+          ],
+          "source": "mixedQuestions"
+        },
+        {
+          "prompt": "Koji moreuz je važan pomorski prolaz Južne Evrope?",
+          "options": [
+            "Gibraltarski moreuz",
+            "Bosfor",
+            "Otrantska vrata"
+          ],
+          "answer": "Gibraltarski moreuz",
+          "id": "geography-quiz-3",
+          "choices": [
+            "Gibraltarski moreuz",
+            "Bosfor",
+            "Otrantska vrata"
+          ],
+          "source": "mixedQuestions"
+        },
+        {
+          "prompt": "Koji sliv preovlađuje u Južnoj Evropi?",
+          "options": [
+            "Crnomorski",
+            "Sredozemni",
+            "Baltički"
+          ],
+          "answer": "Sredozemni",
+          "id": "geography-quiz-4",
+          "choices": [
+            "Crnomorski",
+            "Sredozemni",
+            "Baltički"
+          ],
+          "source": "mixedQuestions"
+        },
+        {
+          "prompt": "Koje je tipično zemljište navedeno za Južnu Evropu?",
+          "options": [
+            "Černozem",
+            "Crvenica",
+            "Podzol"
+          ],
+          "answer": "Crvenica",
+          "id": "geography-quiz-5",
+          "choices": [
+            "Černozem",
+            "Crvenica",
+            "Podzol"
+          ],
+          "source": "mixedQuestions"
+        },
+        {
+          "prompt": "Koja biljka je karakteristična za sredozemnu vegetaciju?",
+          "options": [
+            "Makija",
+            "Tajga",
+            "Tundra"
+          ],
+          "answer": "Makija",
+          "id": "geography-quiz-6",
+          "choices": [
+            "Makija",
+            "Tajga",
+            "Tundra"
+          ],
+          "source": "mixedQuestions"
+        },
+        {
+          "prompt": "Koje jezero se nalazi u Južnoj Evropi?",
+          "options": [
+            "Skadarsko",
+            "Balaton",
+            "Ladoga"
+          ],
+          "answer": "Skadarsko",
+          "id": "geography-quiz-7",
+          "choices": [
+            "Skadarsko",
+            "Balaton",
+            "Ladoga"
+          ],
+          "source": "mixedQuestions"
+        },
+        {
+          "prompt": "Kako se zove regija izdvojena po funkcijama?",
+          "options": [
+            "Fizionomska",
+            "Funkcionalna",
+            "Makroregija"
+          ],
+          "answer": "Funkcionalna",
+          "id": "geography-quiz-8",
+          "choices": [
+            "Fizionomska",
+            "Funkcionalna",
+            "Makroregija"
+          ],
+          "source": "mixedQuestions"
+        },
+        {
+          "prompt": "Koja je himna Republike Srbije?",
+          "options": [
+            "Oj svijetla majska zoro",
+            "Bože pravde",
+            "Lijepa naša domovino"
+          ],
+          "answer": "Bože pravde",
+          "id": "geography-quiz-9",
+          "choices": [
+            "Oj svijetla majska zoro",
+            "Bože pravde",
+            "Lijepa naša domovino"
+          ],
+          "source": "mixedQuestions"
+        },
+        {
+          "prompt": "Ko je osnivač srpske države prema beleškama?",
+          "options": [
+            "Stefan Nemanja",
+            "Karađorđe",
+            "Stefan Dušan"
+          ],
+          "answer": "Stefan Nemanja",
+          "id": "geography-quiz-10",
+          "choices": [
+            "Stefan Nemanja",
+            "Karađorđe",
+            "Stefan Dušan"
+          ],
+          "source": "mixedQuestions"
+        },
+        {
+          "prompt": "Od koje godine Srbija egzistira pod nazivom Republika Srbija?",
+          "options": [
+            "1991.",
+            "2003.",
+            "2006."
+          ],
+          "answer": "2006.",
+          "id": "geography-quiz-11",
+          "choices": [
+            "1991.",
+            "2003.",
+            "2006."
+          ],
+          "source": "mixedQuestions"
+        },
+        {
+          "prompt": "Koji je glavni grad Crne Gore?",
+          "options": [
+            "Cetinje",
+            "Podgorica",
+            "Nikšić"
+          ],
+          "answer": "Podgorica",
+          "id": "geography-quiz-12",
+          "choices": [
+            "Cetinje",
+            "Podgorica",
+            "Nikšić"
+          ],
+          "source": "mixedQuestions"
+        },
+        {
+          "prompt": "Koji zaliv se nalazi na crnogorskoj obali?",
+          "options": [
+            "Bokokotorski zaliv",
+            "Kvarnerski zaliv",
+            "Tršćanski zaliv"
+          ],
+          "answer": "Bokokotorski zaliv",
+          "id": "geography-quiz-13",
+          "choices": [
+            "Bokokotorski zaliv",
+            "Kvarnerski zaliv",
+            "Tršćanski zaliv"
+          ],
+          "source": "mixedQuestions"
+        },
+        {
+          "prompt": "Koja je crnogorska nizija u donjem toku Morače?",
+          "options": [
+            "Zetska ravnica",
+            "Mačva",
+            "Lika"
+          ],
+          "answer": "Zetska ravnica",
+          "id": "geography-quiz-14",
+          "choices": [
+            "Zetska ravnica",
+            "Mačva",
+            "Lika"
+          ],
+          "source": "mixedQuestions"
+        },
+        {
+          "prompt": "Koja planina je poznata po Njegoševom mauzoleju?",
+          "options": [
+            "Durmitor",
+            "Lovćen",
+            "Kopaonik"
+          ],
+          "answer": "Lovćen",
+          "id": "geography-quiz-15",
+          "choices": [
+            "Durmitor",
+            "Lovćen",
+            "Kopaonik"
+          ],
+          "source": "mixedQuestions"
+        },
+        {
+          "prompt": "Koji je glavni grad Slovenije?",
+          "options": [
+            "Maribor",
+            "Ljubljana",
+            "Kranj"
+          ],
+          "answer": "Ljubljana",
+          "id": "geography-quiz-16",
+          "choices": [
+            "Maribor",
+            "Ljubljana",
+            "Kranj"
+          ],
+          "source": "mixedQuestions"
+        },
+        {
+          "prompt": "Na kojoj planini se nalazi Triglav?",
+          "options": [
+            "Julijski Alpi",
+            "Dinaridi",
+            "Stara planina"
+          ],
+          "answer": "Julijski Alpi",
+          "id": "geography-quiz-17",
+          "choices": [
+            "Julijski Alpi",
+            "Dinaridi",
+            "Stara planina"
+          ],
+          "source": "mixedQuestions"
+        },
+        {
+          "prompt": "Koje reke su navedene za Sloveniju?",
+          "options": [
+            "Sava, Drava i Mura",
+            "Tara, Piva i Lim",
+            "Dunav, Tisa i Sava"
+          ],
+          "answer": "Sava, Drava i Mura",
+          "id": "geography-quiz-18",
+          "choices": [
+            "Sava, Drava i Mura",
+            "Tara, Piva i Lim",
+            "Dunav, Tisa i Sava"
+          ],
+          "source": "mixedQuestions"
+        },
+        {
+          "prompt": "Koji je glavni grad Hrvatske?",
+          "options": [
+            "Split",
+            "Zagreb",
+            "Dubrovnik"
+          ],
+          "answer": "Zagreb",
+          "id": "geography-quiz-19",
+          "choices": [
+            "Split",
+            "Zagreb",
+            "Dubrovnik"
+          ],
+          "source": "mixedQuestions"
+        },
+        {
+          "prompt": "Koje su tri celine regionalne Hrvatske?",
+          "options": [
+            "Panonska, planinska i jadranska",
+            "Alpska, egejska i crnomorska",
+            "Severna, južna i istočna"
+          ],
+          "answer": "Panonska, planinska i jadranska",
+          "id": "geography-quiz-20",
+          "choices": [
+            "Panonska, planinska i jadranska",
+            "Alpska, egejska i crnomorska",
+            "Severna, južna i istočna"
+          ],
+          "source": "mixedQuestions"
+        },
+        {
+          "prompt": "Koje oblasti pripadaju Jadranskoj Hrvatskoj?",
+          "options": [
+            "Istra, Kvarner i Dalmacija",
+            "Lika, Mačva i Banat",
+            "Šumadija, Srem i Bačka"
+          ],
+          "answer": "Istra, Kvarner i Dalmacija",
+          "id": "geography-quiz-21",
+          "choices": [
+            "Istra, Kvarner i Dalmacija",
+            "Lika, Mačva i Banat",
+            "Šumadija, Srem i Bačka"
+          ],
+          "source": "mixedQuestions"
+        },
+        {
+          "prompt": "Koji grad je u Hrvatskoj poznat kao veliki jadranski centar?",
+          "options": [
+            "Split",
+            "Niš",
+            "Kragujevac"
+          ],
+          "answer": "Split",
+          "id": "geography-quiz-22",
+          "choices": [
+            "Split",
+            "Niš",
+            "Kragujevac"
+          ],
+          "source": "mixedQuestions"
+        },
+        {
+          "prompt": "Koja planina je u Hrvatskoj i dio je dinarskog sistema?",
+          "options": [
+            "Velebit",
+            "Rtanj",
+            "Šara"
+          ],
+          "answer": "Velebit",
+          "id": "geography-quiz-23",
+          "choices": [
+            "Velebit",
+            "Rtanj",
+            "Šara"
+          ],
+          "source": "mixedQuestions"
+        },
+        {
+          "prompt": "Koja je glavni grad Bosne i Hercegovine?",
+          "options": [
+            "Sarajevo",
+            "Banja Luka",
+            "Mostar"
+          ],
+          "answer": "Sarajevo",
+          "id": "geography-quiz-24",
+          "choices": [
+            "Sarajevo",
+            "Banja Luka",
+            "Mostar"
+          ],
+          "source": "mixedQuestions"
+        },
+        {
+          "prompt": "Koja reka teče kroz Bosnu i Hercegovinu i uliva se u Savu?",
+          "options": [
+            "Drina",
+            "Neretva",
+            "Una"
+          ],
+          "answer": "Drina",
+          "id": "geography-quiz-25",
+          "choices": [
+            "Drina",
+            "Neretva",
+            "Una"
+          ],
+          "source": "mixedQuestions"
+        },
+        {
+          "prompt": "Koja planina je navedena u Bosni i Hercegovini?",
+          "options": [
+            "Maglić",
+            "Triglav",
+            "Korab"
+          ],
+          "answer": "Maglić",
+          "id": "geography-quiz-26",
+          "choices": [
+            "Maglić",
+            "Triglav",
+            "Korab"
+          ],
+          "source": "mixedQuestions"
+        },
+        {
+          "prompt": "Koji je glavni grad Severne Makedonije?",
+          "options": [
+            "Ohrid",
+            "Prilep",
+            "Skoplje"
+          ],
+          "answer": "Skoplje",
+          "id": "geography-quiz-27",
+          "choices": [
+            "Ohrid",
+            "Prilep",
+            "Skoplje"
+          ],
+          "source": "mixedQuestions"
+        },
+        {
+          "prompt": "Koje jezero je karakteristično za Severnu Makedoniju?",
+          "options": [
+            "Ohridsko",
+            "Palićko",
+            "Bledsko"
+          ],
+          "answer": "Ohridsko",
+          "id": "geography-quiz-28",
+          "choices": [
+            "Ohridsko",
+            "Palićko",
+            "Bledsko"
+          ],
+          "source": "mixedQuestions"
+        },
+        {
+          "prompt": "Koja planina je u Severnoj Makedoniji poznata po vrhu Kajmakčalan?",
+          "options": [
+            "Nidže",
+            "Šara",
+            "Korab"
+          ],
+          "answer": "Nidže",
+          "id": "geography-quiz-29",
+          "choices": [
+            "Nidže",
+            "Šara",
+            "Korab"
+          ],
+          "source": "mixedQuestions"
+        },
+        {
+          "prompt": "Koje jezero u Srbiji je veštačko?",
+          "options": [
+            "Palićko",
+            "Đerdapsko",
+            "Ludaško"
+          ],
+          "answer": "Đerdapsko",
+          "id": "geography-quiz-30",
+          "choices": [
+            "Palićko",
+            "Đerdapsko",
+            "Ludaško"
+          ],
+          "source": "mixedQuestions"
+        },
+        {
+          "prompt": "Koje jezero u Srbiji je eolsko?",
+          "options": [
+            "Vlasinsko",
+            "Palićko",
+            "Đerdapsko"
+          ],
+          "answer": "Palićko",
+          "id": "geography-quiz-31",
+          "choices": [
+            "Vlasinsko",
+            "Palićko",
+            "Đerdapsko"
+          ],
+          "source": "mixedQuestions"
+        },
+        {
+          "prompt": "Koja bara je vezana za reku Savu?",
+          "options": [
+            "Carska bara",
+            "Obedska bara",
+            "Skadarsko jezero"
+          ],
+          "answer": "Obedska bara",
+          "id": "geography-quiz-32",
+          "choices": [
+            "Carska bara",
+            "Obedska bara",
+            "Skadarsko jezero"
+          ],
+          "source": "mixedQuestions"
+        },
+        {
+          "prompt": "Koja planina je u Panonskoj niziji?",
+          "options": [
+            "Fruška gora",
+            "Prokletije",
+            "Durmitor"
+          ],
+          "answer": "Fruška gora",
+          "id": "geography-quiz-33",
+          "choices": [
+            "Fruška gora",
+            "Prokletije",
+            "Durmitor"
+          ],
+          "source": "mixedQuestions"
+        },
+        {
+          "prompt": "U kom delu Vojvodine je Deliblatska peščara?",
+          "options": [
+            "Banat",
+            "Bačka",
+            "Srem"
+          ],
+          "answer": "Banat",
+          "id": "geography-quiz-34",
+          "choices": [
+            "Banat",
+            "Bačka",
+            "Srem"
+          ],
+          "source": "mixedQuestions"
+        },
+        {
+          "prompt": "Koji sliv zauzima 92,5% Srbije prema gradivu?",
+          "options": [
+            "Jadranski",
+            "Egejski",
+            "Crnomorski"
+          ],
+          "answer": "Crnomorski",
+          "id": "geography-quiz-35",
+          "choices": [
+            "Jadranski",
+            "Egejski",
+            "Crnomorski"
+          ],
+          "source": "mixedQuestions"
+        },
+        {
+          "prompt": "Koji je najviši vrh Slovenije prema beleškama?",
+          "options": [
+            "Triglav",
+            "Lovćen",
+            "Rtanj"
+          ],
+          "answer": "Triglav",
+          "id": "geography-quiz-36",
+          "choices": [
+            "Triglav",
+            "Lovćen",
+            "Rtanj"
+          ],
+          "source": "mixedQuestions"
+        },
+        {
+          "prompt": "Koji grad je primorski grad Crne Gore?",
+          "options": [
+            "Kotor",
+            "Kolašin",
+            "Nikšić"
+          ],
+          "answer": "Kotor",
+          "id": "geography-quiz-37",
+          "choices": [
+            "Kotor",
+            "Kolašin",
+            "Nikšić"
+          ],
+          "source": "mixedQuestions"
+        },
+        {
+          "prompt": "Koja klima nije navedena za Srbiju?",
+          "options": [
+            "Planinska",
+            "Umereno-kontinentalna",
+            "Sredozemna"
+          ],
+          "answer": "Sredozemna",
+          "id": "geography-quiz-38",
+          "choices": [
+            "Planinska",
+            "Umereno-kontinentalna",
+            "Sredozemna"
+          ],
+          "source": "mixedQuestions"
+        },
+        {
+          "prompt": "Koji moreplovac je naveden u gradivu?",
+          "options": [
+            "Vasko de Gama",
+            "Džejms Kuk",
+            "Roald Amundsen"
+          ],
+          "answer": "Vasko de Gama",
+          "id": "geography-quiz-39",
+          "choices": [
+            "Vasko de Gama",
+            "Džejms Kuk",
+            "Roald Amundsen"
+          ],
+          "source": "mixedQuestions"
+        }
+      ],
+      "classificationQuestions": [
+        {
+          "id": "classification-1-1",
+          "prompt": "U koju grupu spada: Kontinent? (Veličina teritorije)",
+          "choices": [
+            "Makroregija",
+            "Mezoregija",
+            "Mikroregija"
+          ],
+          "answer": "Makroregija",
+          "source": "Veličina teritorije"
+        },
+        {
+          "id": "classification-1-2",
+          "prompt": "U koju grupu spada: Južna Evropa? (Veličina teritorije)",
+          "choices": [
+            "Makroregija",
+            "Mezoregija",
+            "Mikroregija"
+          ],
+          "answer": "Mezoregija",
+          "source": "Veličina teritorije"
+        },
+        {
+          "id": "classification-1-3",
+          "prompt": "U koju grupu spada: Mala oblast unutar regije? (Veličina teritorije)",
+          "choices": [
+            "Makroregija",
+            "Mezoregija",
+            "Mikroregija"
+          ],
+          "answer": "Mikroregija",
+          "source": "Veličina teritorije"
+        },
+        {
+          "id": "classification-1-4",
+          "prompt": "U koju grupu spada: Evropa? (Veličina teritorije)",
+          "choices": [
+            "Makroregija",
+            "Mezoregija",
+            "Mikroregija"
+          ],
+          "answer": "Makroregija",
+          "source": "Veličina teritorije"
+        },
+        {
+          "id": "classification-1-5",
+          "prompt": "U koju grupu spada: Jedan manji deo države? (Veličina teritorije)",
+          "choices": [
+            "Makroregija",
+            "Mezoregija",
+            "Mikroregija"
+          ],
+          "answer": "Mikroregija",
+          "source": "Veličina teritorije"
+        },
+        {
+          "id": "classification-1-6",
+          "prompt": "U koju grupu spada: Regija srednje veličine? (Veličina teritorije)",
+          "choices": [
+            "Makroregija",
+            "Mezoregija",
+            "Mikroregija"
+          ],
+          "answer": "Mezoregija",
+          "source": "Veličina teritorije"
+        },
+        {
+          "id": "classification-2-1",
+          "prompt": "U koju grupu spada: Fizionomska regija? (Principi regionalizacije)",
+          "choices": [
+            "Fizičko-geografska",
+            "Društveno-geografska"
+          ],
+          "answer": "Fizičko-geografska",
+          "source": "Principi regionalizacije"
+        },
+        {
+          "id": "classification-2-2",
+          "prompt": "U koju grupu spada: Funkcionalna regija? (Principi regionalizacije)",
+          "choices": [
+            "Fizičko-geografska",
+            "Društveno-geografska"
+          ],
+          "answer": "Društveno-geografska",
+          "source": "Principi regionalizacije"
+        },
+        {
+          "id": "classification-2-3",
+          "prompt": "U koju grupu spada: Izdvajanje prema prirodnim odlikama? (Principi regionalizacije)",
+          "choices": [
+            "Fizičko-geografska",
+            "Društveno-geografska"
+          ],
+          "answer": "Fizičko-geografska",
+          "source": "Principi regionalizacije"
+        },
+        {
+          "id": "classification-2-4",
+          "prompt": "U koju grupu spada: Izdvajanje prema društvenim funkcijama? (Principi regionalizacije)",
+          "choices": [
+            "Fizičko-geografska",
+            "Društveno-geografska"
+          ],
+          "answer": "Društveno-geografska",
+          "source": "Principi regionalizacije"
+        },
+        {
+          "id": "classification-3-1",
+          "prompt": "U koju grupu spada: Velika razuđenost obala? (Južna Evropa)",
+          "choices": [
+            "Fizičko-geografske odlike",
+            "Društveno-geografske odlike"
+          ],
+          "answer": "Fizičko-geografske odlike",
+          "source": "Južna Evropa"
+        },
+        {
+          "id": "classification-3-2",
+          "prompt": "U koju grupu spada: Kolevka starih civilizacija? (Južna Evropa)",
+          "choices": [
+            "Fizičko-geografske odlike",
+            "Društveno-geografske odlike"
+          ],
+          "answer": "Društveno-geografske odlike",
+          "source": "Južna Evropa"
+        },
+        {
+          "id": "classification-3-3",
+          "prompt": "U koju grupu spada: Mladi planinski venci i nizije? (Južna Evropa)",
+          "choices": [
+            "Fizičko-geografske odlike",
+            "Društveno-geografske odlike"
+          ],
+          "answer": "Fizičko-geografske odlike",
+          "source": "Južna Evropa"
+        },
+        {
+          "id": "classification-3-4",
+          "prompt": "U koju grupu spada: Duga pomorska tradicija? (Južna Evropa)",
+          "choices": [
+            "Fizičko-geografske odlike",
+            "Društveno-geografske odlike"
+          ],
+          "answer": "Društveno-geografske odlike",
+          "source": "Južna Evropa"
+        },
+        {
+          "id": "classification-3-5",
+          "prompt": "U koju grupu spada: Vulkani i zemljotresi? (Južna Evropa)",
+          "choices": [
+            "Fizičko-geografske odlike",
+            "Društveno-geografske odlike"
+          ],
+          "answer": "Fizičko-geografske odlike",
+          "source": "Južna Evropa"
+        },
+        {
+          "id": "classification-3-6",
+          "prompt": "U koju grupu spada: Preovlađuju romanski i slovenski narodi? (Južna Evropa)",
+          "choices": [
+            "Fizičko-geografske odlike",
+            "Društveno-geografske odlike"
+          ],
+          "answer": "Društveno-geografske odlike",
+          "source": "Južna Evropa"
+        },
+        {
+          "id": "classification-3-7",
+          "prompt": "U koju grupu spada: Crvenica i makija? (Južna Evropa)",
+          "choices": [
+            "Fizičko-geografske odlike",
+            "Društveno-geografske odlike"
+          ],
+          "answer": "Fizičko-geografske odlike",
+          "source": "Južna Evropa"
+        },
+        {
+          "id": "classification-3-8",
+          "prompt": "U koju grupu spada: Sedamnaest država? (Južna Evropa)",
+          "choices": [
+            "Fizičko-geografske odlike",
+            "Društveno-geografske odlike"
+          ],
+          "answer": "Društveno-geografske odlike",
+          "source": "Južna Evropa"
+        },
+        {
+          "id": "classification-4-1",
+          "prompt": "U koju grupu spada: Palićko jezero? (Jezera Srbije prema postanku)",
+          "choices": [
+            "Eolska",
+            "Rečna",
+            "Veštačka"
+          ],
+          "answer": "Eolska",
+          "source": "Jezera Srbije prema postanku"
+        },
+        {
+          "id": "classification-4-2",
+          "prompt": "U koju grupu spada: Ludaško jezero? (Jezera Srbije prema postanku)",
+          "choices": [
+            "Eolska",
+            "Rečna",
+            "Veštačka"
+          ],
+          "answer": "Eolska",
+          "source": "Jezera Srbije prema postanku"
+        },
+        {
+          "id": "classification-4-3",
+          "prompt": "U koju grupu spada: Carska bara? (Jezera Srbije prema postanku)",
+          "choices": [
+            "Eolska",
+            "Rečna",
+            "Veštačka"
+          ],
+          "answer": "Rečna",
+          "source": "Jezera Srbije prema postanku"
+        },
+        {
+          "id": "classification-4-4",
+          "prompt": "U koju grupu spada: Obedska bara? (Jezera Srbije prema postanku)",
+          "choices": [
+            "Eolska",
+            "Rečna",
+            "Veštačka"
+          ],
+          "answer": "Rečna",
+          "source": "Jezera Srbije prema postanku"
+        },
+        {
+          "id": "classification-4-5",
+          "prompt": "U koju grupu spada: Đerdapsko jezero? (Jezera Srbije prema postanku)",
+          "choices": [
+            "Eolska",
+            "Rečna",
+            "Veštačka"
+          ],
+          "answer": "Veštačka",
+          "source": "Jezera Srbije prema postanku"
+        },
+        {
+          "id": "classification-4-6",
+          "prompt": "U koju grupu spada: Vlasinsko jezero? (Jezera Srbije prema postanku)",
+          "choices": [
+            "Eolska",
+            "Rečna",
+            "Veštačka"
+          ],
+          "answer": "Veštačka",
+          "source": "Jezera Srbije prema postanku"
+        },
+        {
+          "id": "classification-5-1",
+          "prompt": "U koju grupu spada: Slovenija? (Republike nastale posle raspada SFRJ)",
+          "choices": [
+            "Jadranska i alpska",
+            "Panonska i jadranska",
+            "Balkanska i planinska",
+            "Balkanska i kontinentalna"
+          ],
+          "answer": "Jadranska i alpska",
+          "source": "Republike nastale posle raspada SFRJ"
+        },
+        {
+          "id": "classification-5-2",
+          "prompt": "U koju grupu spada: Hrvatska? (Republike nastale posle raspada SFRJ)",
+          "choices": [
+            "Jadranska i alpska",
+            "Panonska i jadranska",
+            "Balkanska i planinska",
+            "Balkanska i kontinentalna"
+          ],
+          "answer": "Panonska i jadranska",
+          "source": "Republike nastale posle raspada SFRJ"
+        },
+        {
+          "id": "classification-5-3",
+          "prompt": "U koju grupu spada: Bosna i Hercegovina? (Republike nastale posle raspada SFRJ)",
+          "choices": [
+            "Jadranska i alpska",
+            "Panonska i jadranska",
+            "Balkanska i planinska",
+            "Balkanska i kontinentalna"
+          ],
+          "answer": "Balkanska i planinska",
+          "source": "Republike nastale posle raspada SFRJ"
+        },
+        {
+          "id": "classification-5-4",
+          "prompt": "U koju grupu spada: Severna Makedonija? (Republike nastale posle raspada SFRJ)",
+          "choices": [
+            "Jadranska i alpska",
+            "Panonska i jadranska",
+            "Balkanska i planinska",
+            "Balkanska i kontinentalna"
+          ],
+          "answer": "Balkanska i kontinentalna",
+          "source": "Republike nastale posle raspada SFRJ"
+        }
+      ],
+      "matchingQuestions": [
+        {
+          "id": "matching-1-1",
+          "prompt": "Sa čim se povezuje: Srbija? (Države i glavni gradovi)",
+          "choices": [
+            "Beograd",
+            "Podgorica",
+            "Ljubljana",
+            "Zagreb",
+            "Sarajevo",
+            "Skoplje"
+          ],
+          "answer": "Beograd",
+          "source": "Države i glavni gradovi"
+        },
+        {
+          "id": "matching-1-2",
+          "prompt": "Sa čim se povezuje: Crna Gora? (Države i glavni gradovi)",
+          "choices": [
+            "Beograd",
+            "Podgorica",
+            "Ljubljana",
+            "Zagreb",
+            "Sarajevo",
+            "Skoplje"
+          ],
+          "answer": "Podgorica",
+          "source": "Države i glavni gradovi"
+        },
+        {
+          "id": "matching-1-3",
+          "prompt": "Sa čim se povezuje: Slovenija? (Države i glavni gradovi)",
+          "choices": [
+            "Beograd",
+            "Podgorica",
+            "Ljubljana",
+            "Zagreb",
+            "Sarajevo",
+            "Skoplje"
+          ],
+          "answer": "Ljubljana",
+          "source": "Države i glavni gradovi"
+        },
+        {
+          "id": "matching-1-4",
+          "prompt": "Sa čim se povezuje: Hrvatska? (Države i glavni gradovi)",
+          "choices": [
+            "Beograd",
+            "Podgorica",
+            "Ljubljana",
+            "Zagreb",
+            "Sarajevo",
+            "Skoplje"
+          ],
+          "answer": "Zagreb",
+          "source": "Države i glavni gradovi"
+        },
+        {
+          "id": "matching-1-5",
+          "prompt": "Sa čim se povezuje: Bosna i Hercegovina? (Države i glavni gradovi)",
+          "choices": [
+            "Beograd",
+            "Podgorica",
+            "Ljubljana",
+            "Zagreb",
+            "Sarajevo",
+            "Skoplje"
+          ],
+          "answer": "Sarajevo",
+          "source": "Države i glavni gradovi"
+        },
+        {
+          "id": "matching-1-6",
+          "prompt": "Sa čim se povezuje: Severna Makedonija? (Države i glavni gradovi)",
+          "choices": [
+            "Beograd",
+            "Podgorica",
+            "Ljubljana",
+            "Zagreb",
+            "Sarajevo",
+            "Skoplje"
+          ],
+          "answer": "Skoplje",
+          "source": "Države i glavni gradovi"
+        },
+        {
+          "id": "matching-2-1",
+          "prompt": "Sa čim se povezuje: Gibraltarski moreuz? (Pojmovi Južne Evrope)",
+          "choices": [
+            "Pomorski prolaz",
+            "Tip zemljišta",
+            "Sredozemna vegetacija",
+            "Jezero na granici Crne Gore i Albanije",
+            "Najviši vrh Julijskih Alpa",
+            "Nizija u Crnoj Gori",
+            "Zaliv u Crnoj Gori",
+            "Niska ostrvska planina u Panonskoj niziji",
+            "Banat"
+          ],
+          "answer": "Pomorski prolaz",
+          "source": "Pojmovi Južne Evrope"
+        },
+        {
+          "id": "matching-2-2",
+          "prompt": "Sa čim se povezuje: Crvenica? (Pojmovi Južne Evrope)",
+          "choices": [
+            "Pomorski prolaz",
+            "Tip zemljišta",
+            "Sredozemna vegetacija",
+            "Jezero na granici Crne Gore i Albanije",
+            "Najviši vrh Julijskih Alpa",
+            "Nizija u Crnoj Gori",
+            "Zaliv u Crnoj Gori",
+            "Niska ostrvska planina u Panonskoj niziji",
+            "Banat"
+          ],
+          "answer": "Tip zemljišta",
+          "source": "Pojmovi Južne Evrope"
+        },
+        {
+          "id": "matching-2-3",
+          "prompt": "Sa čim se povezuje: Makija? (Pojmovi Južne Evrope)",
+          "choices": [
+            "Pomorski prolaz",
+            "Tip zemljišta",
+            "Sredozemna vegetacija",
+            "Jezero na granici Crne Gore i Albanije",
+            "Najviši vrh Julijskih Alpa",
+            "Nizija u Crnoj Gori",
+            "Zaliv u Crnoj Gori",
+            "Niska ostrvska planina u Panonskoj niziji",
+            "Banat"
+          ],
+          "answer": "Sredozemna vegetacija",
+          "source": "Pojmovi Južne Evrope"
+        },
+        {
+          "id": "matching-2-4",
+          "prompt": "Sa čim se povezuje: Skadarsko jezero? (Pojmovi Južne Evrope)",
+          "choices": [
+            "Pomorski prolaz",
+            "Tip zemljišta",
+            "Sredozemna vegetacija",
+            "Jezero na granici Crne Gore i Albanije",
+            "Najviši vrh Julijskih Alpa",
+            "Nizija u Crnoj Gori",
+            "Zaliv u Crnoj Gori",
+            "Niska ostrvska planina u Panonskoj niziji",
+            "Banat"
+          ],
+          "answer": "Jezero na granici Crne Gore i Albanije",
+          "source": "Pojmovi Južne Evrope"
+        },
+        {
+          "id": "matching-2-5",
+          "prompt": "Sa čim se povezuje: Triglav? (Pojmovi Južne Evrope)",
+          "choices": [
+            "Pomorski prolaz",
+            "Tip zemljišta",
+            "Sredozemna vegetacija",
+            "Jezero na granici Crne Gore i Albanije",
+            "Najviši vrh Julijskih Alpa",
+            "Nizija u Crnoj Gori",
+            "Zaliv u Crnoj Gori",
+            "Niska ostrvska planina u Panonskoj niziji",
+            "Banat"
+          ],
+          "answer": "Najviši vrh Julijskih Alpa",
+          "source": "Pojmovi Južne Evrope"
+        },
+        {
+          "id": "matching-2-6",
+          "prompt": "Sa čim se povezuje: Zetska ravnica? (Pojmovi Južne Evrope)",
+          "choices": [
+            "Pomorski prolaz",
+            "Tip zemljišta",
+            "Sredozemna vegetacija",
+            "Jezero na granici Crne Gore i Albanije",
+            "Najviši vrh Julijskih Alpa",
+            "Nizija u Crnoj Gori",
+            "Zaliv u Crnoj Gori",
+            "Niska ostrvska planina u Panonskoj niziji",
+            "Banat"
+          ],
+          "answer": "Nizija u Crnoj Gori",
+          "source": "Pojmovi Južne Evrope"
+        },
+        {
+          "id": "matching-2-7",
+          "prompt": "Sa čim se povezuje: Bokokotorski zaliv? (Pojmovi Južne Evrope)",
+          "choices": [
+            "Pomorski prolaz",
+            "Tip zemljišta",
+            "Sredozemna vegetacija",
+            "Jezero na granici Crne Gore i Albanije",
+            "Najviši vrh Julijskih Alpa",
+            "Nizija u Crnoj Gori",
+            "Zaliv u Crnoj Gori",
+            "Niska ostrvska planina u Panonskoj niziji",
+            "Banat"
+          ],
+          "answer": "Zaliv u Crnoj Gori",
+          "source": "Pojmovi Južne Evrope"
+        },
+        {
+          "id": "matching-2-8",
+          "prompt": "Sa čim se povezuje: Fruška gora? (Pojmovi Južne Evrope)",
+          "choices": [
+            "Pomorski prolaz",
+            "Tip zemljišta",
+            "Sredozemna vegetacija",
+            "Jezero na granici Crne Gore i Albanije",
+            "Najviši vrh Julijskih Alpa",
+            "Nizija u Crnoj Gori",
+            "Zaliv u Crnoj Gori",
+            "Niska ostrvska planina u Panonskoj niziji",
+            "Banat"
+          ],
+          "answer": "Niska ostrvska planina u Panonskoj niziji",
+          "source": "Pojmovi Južne Evrope"
+        },
+        {
+          "id": "matching-2-9",
+          "prompt": "Sa čim se povezuje: Deliblatska peščara? (Pojmovi Južne Evrope)",
+          "choices": [
+            "Pomorski prolaz",
+            "Tip zemljišta",
+            "Sredozemna vegetacija",
+            "Jezero na granici Crne Gore i Albanije",
+            "Najviši vrh Julijskih Alpa",
+            "Nizija u Crnoj Gori",
+            "Zaliv u Crnoj Gori",
+            "Niska ostrvska planina u Panonskoj niziji",
+            "Banat"
+          ],
+          "answer": "Banat",
+          "source": "Pojmovi Južne Evrope"
+        },
+        {
+          "id": "matching-3-1",
+          "prompt": "Sa čim se povezuje: Tara? (Reke i jezera)",
+          "choices": [
+            "Crna Gora",
+            "Zetska ravnica",
+            "Obedska bara",
+            "Carska bara",
+            "Đerdapsko jezero",
+            "Slovenija"
+          ],
+          "answer": "Crna Gora",
+          "source": "Reke i jezera"
+        },
+        {
+          "id": "matching-3-2",
+          "prompt": "Sa čim se povezuje: Morača? (Reke i jezera)",
+          "choices": [
+            "Crna Gora",
+            "Zetska ravnica",
+            "Obedska bara",
+            "Carska bara",
+            "Đerdapsko jezero",
+            "Slovenija"
+          ],
+          "answer": "Zetska ravnica",
+          "source": "Reke i jezera"
+        },
+        {
+          "id": "matching-3-3",
+          "prompt": "Sa čim se povezuje: Sava? (Reke i jezera)",
+          "choices": [
+            "Crna Gora",
+            "Zetska ravnica",
+            "Obedska bara",
+            "Carska bara",
+            "Đerdapsko jezero",
+            "Slovenija"
+          ],
+          "answer": "Obedska bara",
+          "source": "Reke i jezera"
+        },
+        {
+          "id": "matching-3-4",
+          "prompt": "Sa čim se povezuje: Begej? (Reke i jezera)",
+          "choices": [
+            "Crna Gora",
+            "Zetska ravnica",
+            "Obedska bara",
+            "Carska bara",
+            "Đerdapsko jezero",
+            "Slovenija"
+          ],
+          "answer": "Carska bara",
+          "source": "Reke i jezera"
+        },
+        {
+          "id": "matching-3-5",
+          "prompt": "Sa čim se povezuje: Dunav? (Reke i jezera)",
+          "choices": [
+            "Crna Gora",
+            "Zetska ravnica",
+            "Obedska bara",
+            "Carska bara",
+            "Đerdapsko jezero",
+            "Slovenija"
+          ],
+          "answer": "Đerdapsko jezero",
+          "source": "Reke i jezera"
+        },
+        {
+          "id": "matching-3-6",
+          "prompt": "Sa čim se povezuje: Bledsko jezero? (Reke i jezera)",
+          "choices": [
+            "Crna Gora",
+            "Zetska ravnica",
+            "Obedska bara",
+            "Carska bara",
+            "Đerdapsko jezero",
+            "Slovenija"
+          ],
+          "answer": "Slovenija",
+          "source": "Reke i jezera"
+        },
+        {
+          "id": "matching-3-7",
+          "prompt": "Sa čim se povezuje: Bohinjsko jezero? (Reke i jezera)",
+          "choices": [
+            "Crna Gora",
+            "Zetska ravnica",
+            "Obedska bara",
+            "Carska bara",
+            "Đerdapsko jezero",
+            "Slovenija"
+          ],
+          "answer": "Slovenija",
+          "source": "Reke i jezera"
+        },
+        {
+          "id": "matching-3-8",
+          "prompt": "Sa čim se povezuje: Crno jezero? (Reke i jezera)",
+          "choices": [
+            "Crna Gora",
+            "Zetska ravnica",
+            "Obedska bara",
+            "Carska bara",
+            "Đerdapsko jezero",
+            "Slovenija"
+          ],
+          "answer": "Crna Gora",
+          "source": "Reke i jezera"
+        },
+        {
+          "id": "matching-4-1",
+          "prompt": "Sa čim se povezuje: Dinara? (Planine, reke i jezera ex-YU)",
+          "choices": [
+            "Planina u Hrvatskoj",
+            "Planina u Bosni i Hercegovini",
+            "Planina u Severnoj Makedoniji",
+            "Rijeka u Bosni i Hercegovini",
+            "Rijeka u Sloveniji i Hrvatskoj",
+            "Jezero u Severnoj Makedoniji",
+            "Jezero u Sloveniji"
+          ],
+          "answer": "Planina u Hrvatskoj",
+          "source": "Planine, reke i jezera ex-YU"
+        },
+        {
+          "id": "matching-4-2",
+          "prompt": "Sa čim se povezuje: Velebit? (Planine, reke i jezera ex-YU)",
+          "choices": [
+            "Planina u Hrvatskoj",
+            "Planina u Bosni i Hercegovini",
+            "Planina u Severnoj Makedoniji",
+            "Rijeka u Bosni i Hercegovini",
+            "Rijeka u Sloveniji i Hrvatskoj",
+            "Jezero u Severnoj Makedoniji",
+            "Jezero u Sloveniji"
+          ],
+          "answer": "Planina u Hrvatskoj",
+          "source": "Planine, reke i jezera ex-YU"
+        },
+        {
+          "id": "matching-4-3",
+          "prompt": "Sa čim se povezuje: Maglić? (Planine, reke i jezera ex-YU)",
+          "choices": [
+            "Planina u Hrvatskoj",
+            "Planina u Bosni i Hercegovini",
+            "Planina u Severnoj Makedoniji",
+            "Rijeka u Bosni i Hercegovini",
+            "Rijeka u Sloveniji i Hrvatskoj",
+            "Jezero u Severnoj Makedoniji",
+            "Jezero u Sloveniji"
+          ],
+          "answer": "Planina u Bosni i Hercegovini",
+          "source": "Planine, reke i jezera ex-YU"
+        },
+        {
+          "id": "matching-4-4",
+          "prompt": "Sa čim se povezuje: Šara? (Planine, reke i jezera ex-YU)",
+          "choices": [
+            "Planina u Hrvatskoj",
+            "Planina u Bosni i Hercegovini",
+            "Planina u Severnoj Makedoniji",
+            "Rijeka u Bosni i Hercegovini",
+            "Rijeka u Sloveniji i Hrvatskoj",
+            "Jezero u Severnoj Makedoniji",
+            "Jezero u Sloveniji"
+          ],
+          "answer": "Planina u Severnoj Makedoniji",
+          "source": "Planine, reke i jezera ex-YU"
+        },
+        {
+          "id": "matching-4-5",
+          "prompt": "Sa čim se povezuje: Neretva? (Planine, reke i jezera ex-YU)",
+          "choices": [
+            "Planina u Hrvatskoj",
+            "Planina u Bosni i Hercegovini",
+            "Planina u Severnoj Makedoniji",
+            "Rijeka u Bosni i Hercegovini",
+            "Rijeka u Sloveniji i Hrvatskoj",
+            "Jezero u Severnoj Makedoniji",
+            "Jezero u Sloveniji"
+          ],
+          "answer": "Rijeka u Bosni i Hercegovini",
+          "source": "Planine, reke i jezera ex-YU"
+        },
+        {
+          "id": "matching-4-6",
+          "prompt": "Sa čim se povezuje: Drava? (Planine, reke i jezera ex-YU)",
+          "choices": [
+            "Planina u Hrvatskoj",
+            "Planina u Bosni i Hercegovini",
+            "Planina u Severnoj Makedoniji",
+            "Rijeka u Bosni i Hercegovini",
+            "Rijeka u Sloveniji i Hrvatskoj",
+            "Jezero u Severnoj Makedoniji",
+            "Jezero u Sloveniji"
+          ],
+          "answer": "Rijeka u Sloveniji i Hrvatskoj",
+          "source": "Planine, reke i jezera ex-YU"
+        },
+        {
+          "id": "matching-4-7",
+          "prompt": "Sa čim se povezuje: Ohridsko jezero? (Planine, reke i jezera ex-YU)",
+          "choices": [
+            "Planina u Hrvatskoj",
+            "Planina u Bosni i Hercegovini",
+            "Planina u Severnoj Makedoniji",
+            "Rijeka u Bosni i Hercegovini",
+            "Rijeka u Sloveniji i Hrvatskoj",
+            "Jezero u Severnoj Makedoniji",
+            "Jezero u Sloveniji"
+          ],
+          "answer": "Jezero u Severnoj Makedoniji",
+          "source": "Planine, reke i jezera ex-YU"
+        },
+        {
+          "id": "matching-4-8",
+          "prompt": "Sa čim se povezuje: Bohinjsko jezero? (Planine, reke i jezera ex-YU)",
+          "choices": [
+            "Planina u Hrvatskoj",
+            "Planina u Bosni i Hercegovini",
+            "Planina u Severnoj Makedoniji",
+            "Rijeka u Bosni i Hercegovini",
+            "Rijeka u Sloveniji i Hrvatskoj",
+            "Jezero u Severnoj Makedoniji",
+            "Jezero u Sloveniji"
+          ],
+          "answer": "Jezero u Sloveniji",
+          "source": "Planine, reke i jezera ex-YU"
+        }
+      ],
+      "numberQuestions": [
+        {
+          "id": "number-serbia-area",
+          "prompt": "Koji je podatak za površina srbije (Srbija)?",
+          "choices": [
+            "88.499 km²",
+            "13.812 km²",
+            "20.273 km²"
+          ],
+          "answer": "88.499 km²",
+          "source": "numberFacts"
+        },
+        {
+          "id": "number-serbia-population",
+          "prompt": "Koji je podatak za broj stanovnika srbije po popisu 2022. (Srbija)?",
+          "choices": [
+            "6.647.003",
+            "626.000"
+          ],
+          "answer": "6.647.003",
+          "source": "numberFacts"
+        },
+        {
+          "id": "number-serbia-density",
+          "prompt": "Koji je podatak za gustina naseljenosti srbije (Srbija)?",
+          "choices": [
+            "90 stanovnika/km²",
+            "45 stanovnika/km²",
+            "105 stanovnika/km²"
+          ],
+          "answer": "90 stanovnika/km²",
+          "source": "numberFacts"
+        },
+        {
+          "id": "number-serbia-black-sea",
+          "prompt": "Koji je podatak za udeo teritorije srbije u crnomorskom slivu (Srbija)?",
+          "choices": [
+            "92,5%",
+            "75,6%",
+            "100%"
+          ],
+          "answer": "92,5%",
+          "source": "numberFacts"
+        },
+        {
+          "id": "number-serbia-balkan",
+          "prompt": "Koji je podatak za udeo srbije koji pripada balkanskom poluostrvu (Srbija)?",
+          "choices": [
+            "75,6%",
+            "92,5%",
+            "100%"
+          ],
+          "answer": "75,6%",
+          "source": "numberFacts"
+        },
+        {
+          "id": "number-montenegro-area",
+          "prompt": "Koji je podatak za površina crne gore (Crna Gora)?",
+          "choices": [
+            "13.812 km²",
+            "88.499 km²",
+            "20.273 km²"
+          ],
+          "answer": "13.812 km²",
+          "source": "numberFacts"
+        },
+        {
+          "id": "number-montenegro-population",
+          "prompt": "Koji je podatak za broj stanovnika crne gore (Crna Gora)?",
+          "choices": [
+            "626.000",
+            "6.647.003"
+          ],
+          "answer": "626.000",
+          "source": "numberFacts"
+        },
+        {
+          "id": "number-montenegro-density",
+          "prompt": "Koji je podatak za gustina naseljenosti crne gore (Crna Gora)?",
+          "choices": [
+            "45 stanovnika/km²",
+            "90 stanovnika/km²",
+            "105 stanovnika/km²"
+          ],
+          "answer": "45 stanovnika/km²",
+          "source": "numberFacts"
+        },
+        {
+          "id": "number-slovenia-area",
+          "prompt": "Koji je podatak za površina slovenije (Slovenija)?",
+          "choices": [
+            "20.273 km²",
+            "88.499 km²",
+            "13.812 km²"
+          ],
+          "answer": "20.273 km²",
+          "source": "numberFacts"
+        },
+        {
+          "id": "number-slovenia-population",
+          "prompt": "Koji je podatak za broj stanovnika slovenije (Slovenija)?",
+          "choices": [
+            "2,1 miliona",
+            "4 miliona",
+            "3,2 miliona"
+          ],
+          "answer": "2,1 miliona",
+          "source": "numberFacts"
+        },
+        {
+          "id": "number-slovenia-density",
+          "prompt": "Koji je podatak za gustina naseljenosti slovenije (Slovenija)?",
+          "choices": [
+            "105 stanovnika/km²",
+            "90 stanovnika/km²",
+            "45 stanovnika/km²"
+          ],
+          "answer": "105 stanovnika/km²",
+          "source": "numberFacts"
+        },
+        {
+          "id": "number-croatia-area",
+          "prompt": "Koji je podatak za površina hrvatske (Hrvatska)?",
+          "choices": [
+            "56.594 km²",
+            "88.499 km²",
+            "13.812 km²"
+          ],
+          "answer": "56.594 km²",
+          "source": "numberFacts"
+        },
+        {
+          "id": "number-croatia-population",
+          "prompt": "Koji je podatak za broj stanovnika hrvatske (Hrvatska)?",
+          "choices": [
+            "4 miliona",
+            "2,1 miliona",
+            "3,2 miliona"
+          ],
+          "answer": "4 miliona",
+          "source": "numberFacts"
+        },
+        {
+          "id": "number-croatia-density",
+          "prompt": "Koji je podatak za gustina naseljenosti hrvatske (Hrvatska)?",
+          "choices": [
+            "71 stanovnik/km²"
+          ],
+          "answer": "71 stanovnik/km²",
+          "source": "numberFacts"
+        },
+        {
+          "id": "number-bosnia-area",
+          "prompt": "Koji je podatak za površina bosne i hercegovine (Bosna i Hercegovina)?",
+          "choices": [
+            "51.197 km²",
+            "88.499 km²",
+            "13.812 km²"
+          ],
+          "answer": "51.197 km²",
+          "source": "numberFacts"
+        },
+        {
+          "id": "number-bosnia-population",
+          "prompt": "Koji je podatak za broj stanovnika bosne i hercegovine (Bosna i Hercegovina)?",
+          "choices": [
+            "3,2 miliona",
+            "2,1 miliona",
+            "4 miliona"
+          ],
+          "answer": "3,2 miliona",
+          "source": "numberFacts"
+        },
+        {
+          "id": "number-bosnia-density",
+          "prompt": "Koji je podatak za gustina naseljenosti bosne i hercegovine (Bosna i Hercegovina)?",
+          "choices": [
+            "63 stanovnika/km²",
+            "90 stanovnika/km²",
+            "45 stanovnika/km²"
+          ],
+          "answer": "63 stanovnika/km²",
+          "source": "numberFacts"
+        },
+        {
+          "id": "number-macedonia-area",
+          "prompt": "Koji je podatak za površina severne makedonije (Severna Makedonija)?",
+          "choices": [
+            "25.718 km²",
+            "88.499 km²",
+            "13.812 km²"
+          ],
+          "answer": "25.718 km²",
+          "source": "numberFacts"
+        },
+        {
+          "id": "number-macedonia-population",
+          "prompt": "Koji je podatak za broj stanovnika severne makedonije (Severna Makedonija)?",
+          "choices": [
+            "2 miliona",
+            "2,1 miliona",
+            "4 miliona"
+          ],
+          "answer": "2 miliona",
+          "source": "numberFacts"
+        },
+        {
+          "id": "number-macedonia-density",
+          "prompt": "Koji je podatak za gustina naseljenosti severne makedonije (Severna Makedonija)?",
+          "choices": [
+            "80 stanovnika/km²",
+            "90 stanovnika/km²",
+            "45 stanovnika/km²"
+          ],
+          "answer": "80 stanovnika/km²",
+          "source": "numberFacts"
+        },
+        {
+          "id": "number-triglav-height",
+          "prompt": "Koji je podatak za nadmorska visina triglava (Slovenija)?",
+          "choices": [
+            "2.863 m",
+            "2.764 m",
+            "2.386 m"
+          ],
+          "answer": "2.863 m",
+          "source": "numberFacts"
+        }
+      ],
+      "activities": [
+        {
+          "id": "kartice-geografija",
+          "type": "flashcards",
+          "title": "Kartice: geografski pojmovi",
+          "description": "Poveži pojam sa njegovim geografskim značenjem.",
+          "frontField": "question",
+          "backField": "answer",
+          "itemSet": "items",
+          "descriptionField": "description",
+          "icon": "?"
+        },
+        {
+          "id": "kontrolni-geografija",
+          "type": "choice-quiz",
+          "title": "Mešoviti test",
+          "description": "Proveri znanje o Južnoj Evropi i državama regiona.",
+          "itemSet": "questions",
+          "questionCount": 20,
+          "kindLabel": "Mešoviti test",
+          "icon": "?"
+        },
+        {
+          "id": "razvrstavanje-geografija",
+          "type": "choice-quiz",
+          "title": "Razvrstaj pojmove",
+          "description": "Vežbaj regije, fizičko-geografske i društvene odlike.",
+          "itemSet": "classificationQuestions",
+          "questionCount": 15,
+          "kindLabel": "Igra razvrstavanja",
+          "icon": "?"
+        },
+        {
+          "id": "povezivanje-geografija",
+          "type": "choice-quiz",
+          "title": "Poveži geografske pojmove",
+          "description": "Upari države, gradove, reljefne oblike i vode.",
+          "itemSet": "matchingQuestions",
+          "questionCount": 15,
+          "kindLabel": "Igra povezivanja",
+          "icon": "?"
+        },
+        {
+          "id": "brojke-geografija",
+          "type": "choice-quiz",
+          "title": "Brojčani izazov",
+          "description": "Uvežbaj površine, stanovništvo, gustinu i nadmorsku visinu.",
+          "itemSet": "numberQuestions",
+          "questionCount": 15,
+          "kindLabel": "Brojčani test",
+          "icon": "#"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,830 @@
+{
+  "id": "istorija",
+  "title": "Istorija",
+  "description": "Revolucije, ideje i događaji koji su promenili svet.",
+  "icon": "⌛",
+  "chapters": [
+    {
+      "id": "revolucije",
+      "title": "Industrijska, Američka i Francuska revolucija",
+      "description": "Izumi, događaji, uzroci i tekovine revolucija.",
+      "icon": "?",
+      "items": [
+        {
+          "id": "steam-engine",
+          "date": "1769.",
+          "order": 17690000,
+          "text": "Džejms Vat pronalazi parnu mašinu.",
+          "question": "Džejms Vat pronalazi parnu mašinu.",
+          "answer": "1769.",
+          "description": "Hronološki redosled: 1."
+        },
+        {
+          "id": "independence-declaration",
+          "date": "4. jul 1776.",
+          "order": 17760704,
+          "text": "Usvojena Deklaracija o nezavisnosti u Filadelfiji.",
+          "question": "Usvojena Deklaracija o nezavisnosti u Filadelfiji.",
+          "answer": "4. jul 1776.",
+          "description": "Hronološki redosled: 2."
+        },
+        {
+          "id": "british-defeat",
+          "date": "1781.",
+          "order": 17810000,
+          "text": "Poraz britanske vojske u ratu za nezavisnost.",
+          "question": "Poraz britanske vojske u ratu za nezavisnost.",
+          "answer": "1781.",
+          "description": "Hronološki redosled: 3."
+        },
+        {
+          "id": "american-peace",
+          "date": "1783.",
+          "order": 17830000,
+          "text": "U Francuskoj je potpisan mir.",
+          "question": "U Francuskoj je potpisan mir.",
+          "answer": "1783.",
+          "description": "Hronološki redosled: 4."
+        },
+        {
+          "id": "us-constitution",
+          "date": "1787.",
+          "order": 17870000,
+          "text": "Donet je prvi ustav SAD.",
+          "question": "Donet je prvi ustav SAD.",
+          "answer": "1787.",
+          "description": "Hronološki redosled: 5."
+        },
+        {
+          "id": "estates-general",
+          "date": "maj 1789.",
+          "order": 17890500,
+          "text": "Luj XVI traži poreze, a treći stalež se suprotstavlja.",
+          "question": "Luj XVI traži poreze, a treći stalež se suprotstavlja.",
+          "answer": "maj 1789.",
+          "description": "Hronološki redosled: 6."
+        },
+        {
+          "id": "bastille",
+          "date": "14. jul 1789.",
+          "order": 17890714,
+          "text": "Pad Bastilje u Francuskoj.",
+          "question": "Pad Bastilje u Francuskoj.",
+          "answer": "14. jul 1789.",
+          "description": "Hronološki redosled: 7."
+        },
+        {
+          "id": "french-republic",
+          "date": "1792.",
+          "order": 17920000,
+          "text": "Francuska postaje republika.",
+          "question": "Francuska postaje republika.",
+          "answer": "1792.",
+          "description": "Hronološki redosled: 8."
+        },
+        {
+          "id": "napoleon-power",
+          "date": "1799.",
+          "order": 17990000,
+          "text": "Napoleon Bonaparta dolazi na čelo Francuske.",
+          "question": "Napoleon Bonaparta dolazi na čelo Francuske.",
+          "answer": "1799.",
+          "description": "Hronološki redosled: 9."
+        },
+        {
+          "id": "steamboat",
+          "date": "1807.",
+          "order": 18070000,
+          "text": "Robert Fulton pravi parobrod.",
+          "question": "Robert Fulton pravi parobrod.",
+          "answer": "1807.",
+          "description": "Hronološki redosled: 10."
+        },
+        {
+          "id": "locomotive",
+          "date": "1814.",
+          "order": 18140000,
+          "text": "Stivenson pravi lokomotivu.",
+          "question": "Stivenson pravi lokomotivu.",
+          "answer": "1814.",
+          "description": "Hronološki redosled: 11."
+        }
+      ],
+      "questions": [
+        {
+          "id": "industrial-definition",
+          "prompt": "Šta označava industrijska revolucija?",
+          "choices": [
+            "Prelazak sa manufakture na industrijsku proizvodnju",
+            "Prelazak sa poljoprivrede na trgovinu",
+            "Podelu fabrika na staleže"
+          ],
+          "answer": "Prelazak sa manufakture na industrijsku proizvodnju",
+          "source": "quiz"
+        },
+        {
+          "id": "industrial-start",
+          "prompt": "Gde je počela industrijska revolucija?",
+          "choices": [
+            "U Francuskoj",
+            "U Engleskoj",
+            "U američkim kolonijama"
+          ],
+          "answer": "U Engleskoj",
+          "source": "quiz"
+        },
+        {
+          "id": "steam-inventor",
+          "prompt": "Ko je prema gradivu pronašao parnu mašinu?",
+          "choices": [
+            "Robert Fulton",
+            "Džejms Vat",
+            "Stivenson"
+          ],
+          "answer": "Džejms Vat",
+          "source": "quiz"
+        },
+        {
+          "id": "steamboat-inventor",
+          "prompt": "Ko je napravio parobrod?",
+          "choices": [
+            "Džejms Vat",
+            "Stivenson",
+            "Robert Fulton"
+          ],
+          "answer": "Robert Fulton",
+          "source": "quiz"
+        },
+        {
+          "id": "locomotive-inventor",
+          "prompt": "Ko je napravio lokomotivu?",
+          "choices": [
+            "Stivenson",
+            "Robert Fulton",
+            "Džejms Vat"
+          ],
+          "answer": "Stivenson",
+          "source": "quiz"
+        },
+        {
+          "id": "american-dates",
+          "prompt": "Kada je trajala Američka revolucija prema beleškama?",
+          "choices": [
+            "1776–1783.",
+            "1789–1799.",
+            "1769–1814."
+          ],
+          "answer": "1776–1783.",
+          "source": "quiz"
+        },
+        {
+          "id": "american-colonies",
+          "prompt": "Koliko se kolonija borilo za nezavisnost od Britanaca?",
+          "choices": [
+            "10",
+            "13",
+            "15"
+          ],
+          "answer": "13",
+          "source": "quiz"
+        },
+        {
+          "id": "american-cause",
+          "prompt": "Šta je bio uzrok Američke revolucije?",
+          "choices": [
+            "Nezadovoljstvo britanskim izrabljivanjem i porezima",
+            "Pad Bastilje",
+            "Jakobinska diktatura"
+          ],
+          "answer": "Nezadovoljstvo britanskim izrabljivanjem i porezima",
+          "source": "quiz"
+        },
+        {
+          "id": "american-trigger",
+          "prompt": "Šta je bio povod Američke revolucije?",
+          "choices": [
+            "Bostonska čajanka",
+            "Deklaracija o pravima čoveka",
+            "Pad Bastilje"
+          ],
+          "answer": "Bostonska čajanka",
+          "source": "quiz"
+        },
+        {
+          "id": "declaration-date",
+          "prompt": "Kada je usvojena Deklaracija o nezavisnosti?",
+          "choices": [
+            "4. jula 1776.",
+            "14. jula 1789.",
+            "4. jula 1783."
+          ],
+          "answer": "4. jula 1776.",
+          "source": "quiz"
+        },
+        {
+          "id": "declaration-place",
+          "prompt": "Gde je usvojena Deklaracija o nezavisnosti?",
+          "choices": [
+            "Bostonu",
+            "Filadelfiji",
+            "Parizu"
+          ],
+          "answer": "Filadelfiji",
+          "source": "quiz"
+        },
+        {
+          "id": "us-president",
+          "prompt": "Ko je bio prvi predsednik SAD?",
+          "choices": [
+            "Džordž Vašington",
+            "Napoleon Bonaparta",
+            "Maksimilijan Robespjer"
+          ],
+          "answer": "Džordž Vašington",
+          "source": "quiz"
+        },
+        {
+          "id": "french-estates",
+          "prompt": "Koliko staleža je bilo u Francuskoj?",
+          "choices": [
+            "Dva",
+            "Tri",
+            "Četiri"
+          ],
+          "answer": "Tri",
+          "source": "quiz"
+        },
+        {
+          "id": "third-estate",
+          "prompt": "Ko je činio treći stalež?",
+          "choices": [
+            "Sveštenstvo",
+            "Plemstvo",
+            "Seljaci, intelektualci i građani"
+          ],
+          "answer": "Seljaci, intelektualci i građani",
+          "source": "quiz"
+        },
+        {
+          "id": "french-assembly",
+          "prompt": "Kako su se predstavnici trećeg staleža organizovali?",
+          "choices": [
+            "U Narodnu skupštinu",
+            "U Direktorijum",
+            "U Jakobinski klub"
+          ],
+          "answer": "U Narodnu skupštinu",
+          "source": "quiz"
+        },
+        {
+          "id": "bastille-date",
+          "prompt": "Kada je pala Bastilja?",
+          "choices": [
+            "14. jula 1789.",
+            "4. jula 1776.",
+            "14. jula 1792."
+          ],
+          "answer": "14. jula 1789.",
+          "source": "quiz"
+        },
+        {
+          "id": "revolution-ideals",
+          "prompt": "Koji su ideali Francuske revolucije?",
+          "choices": [
+            "Jednakost, sloboda i bratstvo",
+            "Porezi, staleži i monarhija",
+            "Razum, suša i glad"
+          ],
+          "answer": "Jednakost, sloboda i bratstvo",
+          "source": "quiz"
+        },
+        {
+          "id": "french-republic-year",
+          "prompt": "Koje godine je Francuska postala republika?",
+          "choices": [
+            "1789.",
+            "1792.",
+            "1799."
+          ],
+          "answer": "1792.",
+          "source": "quiz"
+        },
+        {
+          "id": "jacobin-leader",
+          "prompt": "Ko je bio vođa jakobinske diktature?",
+          "choices": [
+            "Maksimilijan Robespjer",
+            "Luj XVI",
+            "Džordž Vašington"
+          ],
+          "answer": "Maksimilijan Robespjer",
+          "source": "quiz"
+        },
+        {
+          "id": "directory",
+          "prompt": "Koliko direktora je vladalo u fazi Direktorijuma?",
+          "choices": [
+            "Tri",
+            "Pet",
+            "Sedam"
+          ],
+          "answer": "Pet",
+          "source": "quiz"
+        },
+        {
+          "id": "napoleon-year",
+          "prompt": "Koje godine Napoleon Bonaparta dolazi na čelo?",
+          "choices": [
+            "1792.",
+            "1799.",
+            "1807."
+          ],
+          "answer": "1799.",
+          "source": "quiz"
+        },
+        {
+          "id": "french-achievements",
+          "prompt": "Koje su tekovine Francuske revolucije navedene u beleškama?",
+          "choices": [
+            "Boja zastave i himna Marseljeza",
+            "Parobrod i lokomotiva",
+            "13 kolonija i prvi ustav SAD"
+          ],
+          "answer": "Boja zastave i himna Marseljeza",
+          "source": "quiz"
+        },
+        {
+          "id": "enlightenment",
+          "prompt": "Šta je prosvetiteljstvo prema beleškama?",
+          "choices": [
+            "Uzdizanje razuma i znanja",
+            "Vladavina pet direktora",
+            "Nezadovoljstvo kolonija porezima"
+          ],
+          "answer": "Uzdizanje razuma i znanja",
+          "source": "quiz"
+        },
+        {
+          "id": "philosophers",
+          "prompt": "Ko su predstavnici filozofi prosvetiteljstva?",
+          "choices": [
+            "Volter, Monteskje i Ruso",
+            "Vat, Fulton i Stivenson",
+            "Luj XVI, Robespjer i Napoleon"
+          ],
+          "answer": "Volter, Monteskje i Ruso",
+          "source": "quiz"
+        },
+        {
+          "id": "encyclopedia",
+          "prompt": "Koliko knjiga je imala navedena enciklopedija?",
+          "choices": [
+            "18",
+            "28",
+            "38"
+          ],
+          "answer": "28",
+          "source": "quiz"
+        }
+      ],
+      "timelineQuestions": [
+        {
+          "id": "timeline-steam-engine",
+          "prompt": "Kada se dogodilo: Džejms Vat pronalazi parnu mašinu.",
+          "choices": [
+            "1769.",
+            "4. jul 1776.",
+            "1814."
+          ],
+          "answer": "1769.",
+          "source": "timeline"
+        },
+        {
+          "id": "timeline-independence-declaration",
+          "prompt": "Kada se dogodilo: Usvojena Deklaracija o nezavisnosti u Filadelfiji.",
+          "choices": [
+            "4. jul 1776.",
+            "1781.",
+            "1769."
+          ],
+          "answer": "4. jul 1776.",
+          "source": "timeline"
+        },
+        {
+          "id": "timeline-british-defeat",
+          "prompt": "Kada se dogodilo: Poraz britanske vojske u ratu za nezavisnost.",
+          "choices": [
+            "1781.",
+            "1783.",
+            "4. jul 1776."
+          ],
+          "answer": "1781.",
+          "source": "timeline"
+        },
+        {
+          "id": "timeline-american-peace",
+          "prompt": "Kada se dogodilo: U Francuskoj je potpisan mir.",
+          "choices": [
+            "1783.",
+            "1787.",
+            "1781."
+          ],
+          "answer": "1783.",
+          "source": "timeline"
+        },
+        {
+          "id": "timeline-us-constitution",
+          "prompt": "Kada se dogodilo: Donet je prvi ustav SAD.",
+          "choices": [
+            "1787.",
+            "maj 1789.",
+            "1783."
+          ],
+          "answer": "1787.",
+          "source": "timeline"
+        },
+        {
+          "id": "timeline-estates-general",
+          "prompt": "Kada se dogodilo: Luj XVI traži poreze, a treći stalež se suprotstavlja.",
+          "choices": [
+            "maj 1789.",
+            "14. jul 1789.",
+            "1787."
+          ],
+          "answer": "maj 1789.",
+          "source": "timeline"
+        },
+        {
+          "id": "timeline-bastille",
+          "prompt": "Kada se dogodilo: Pad Bastilje u Francuskoj.",
+          "choices": [
+            "14. jul 1789.",
+            "1792.",
+            "maj 1789."
+          ],
+          "answer": "14. jul 1789.",
+          "source": "timeline"
+        },
+        {
+          "id": "timeline-french-republic",
+          "prompt": "Kada se dogodilo: Francuska postaje republika.",
+          "choices": [
+            "1792.",
+            "1799.",
+            "14. jul 1789."
+          ],
+          "answer": "1792.",
+          "source": "timeline"
+        },
+        {
+          "id": "timeline-napoleon-power",
+          "prompt": "Kada se dogodilo: Napoleon Bonaparta dolazi na čelo Francuske.",
+          "choices": [
+            "1799.",
+            "1807.",
+            "1792."
+          ],
+          "answer": "1799.",
+          "source": "timeline"
+        },
+        {
+          "id": "timeline-steamboat",
+          "prompt": "Kada se dogodilo: Robert Fulton pravi parobrod.",
+          "choices": [
+            "1807.",
+            "1814.",
+            "1799."
+          ],
+          "answer": "1807.",
+          "source": "timeline"
+        },
+        {
+          "id": "timeline-locomotive",
+          "prompt": "Kada se dogodilo: Stivenson pravi lokomotivu.",
+          "choices": [
+            "1814.",
+            "1769.",
+            "1807."
+          ],
+          "answer": "1814.",
+          "source": "timeline"
+        }
+      ],
+      "matchingQuestions": [
+        {
+          "id": "match-watt-steam",
+          "prompt": "Sa čim se povezuje: Džejms Vat? (Pronalazači i izumi)",
+          "choices": [
+            "Parna mašina (1769.)",
+            "Parobrod (1807.)",
+            "Lokomotiva (1814.)"
+          ],
+          "answer": "Parna mašina (1769.)",
+          "source": "Pronalazači i izumi"
+        },
+        {
+          "id": "match-fulton-boat",
+          "prompt": "Sa čim se povezuje: Robert Fulton? (Pronalazači i izumi)",
+          "choices": [
+            "Parna mašina (1769.)",
+            "Parobrod (1807.)",
+            "Lokomotiva (1814.)"
+          ],
+          "answer": "Parobrod (1807.)",
+          "source": "Pronalazači i izumi"
+        },
+        {
+          "id": "match-stephenson-locomotive",
+          "prompt": "Sa čim se povezuje: Stivenson? (Pronalazači i izumi)",
+          "choices": [
+            "Parna mašina (1769.)",
+            "Parobrod (1807.)",
+            "Lokomotiva (1814.)"
+          ],
+          "answer": "Lokomotiva (1814.)",
+          "source": "Pronalazači i izumi"
+        },
+        {
+          "id": "match-washington-president",
+          "prompt": "Sa čim se povezuje: Džordž Vašington? (Američka revolucija)",
+          "choices": [
+            "Prvi predsednik SAD",
+            "Rat za nezavisnost od Britanaca",
+            "Povod Američke revolucije",
+            "Usvojena 4. jula 1776. u Filadelfiji"
+          ],
+          "answer": "Prvi predsednik SAD",
+          "source": "Američka revolucija"
+        },
+        {
+          "id": "match-thirteen-colonies",
+          "prompt": "Sa čim se povezuje: 13 kolonija? (Američka revolucija)",
+          "choices": [
+            "Prvi predsednik SAD",
+            "Rat za nezavisnost od Britanaca",
+            "Povod Američke revolucije",
+            "Usvojena 4. jula 1776. u Filadelfiji"
+          ],
+          "answer": "Rat za nezavisnost od Britanaca",
+          "source": "Američka revolucija"
+        },
+        {
+          "id": "match-boston-tea-party",
+          "prompt": "Sa čim se povezuje: Bostonska čajanka? (Američka revolucija)",
+          "choices": [
+            "Prvi predsednik SAD",
+            "Rat za nezavisnost od Britanaca",
+            "Povod Američke revolucije",
+            "Usvojena 4. jula 1776. u Filadelfiji"
+          ],
+          "answer": "Povod Američke revolucije",
+          "source": "Američka revolucija"
+        },
+        {
+          "id": "match-declaration-us",
+          "prompt": "Sa čim se povezuje: Deklaracija o nezavisnosti? (Američka revolucija)",
+          "choices": [
+            "Prvi predsednik SAD",
+            "Rat za nezavisnost od Britanaca",
+            "Povod Američke revolucije",
+            "Usvojena 4. jula 1776. u Filadelfiji"
+          ],
+          "answer": "Usvojena 4. jula 1776. u Filadelfiji",
+          "source": "Američka revolucija"
+        },
+        {
+          "id": "match-robespierre-jacobins",
+          "prompt": "Sa čim se povezuje: Maksimilijan Robespjer? (Francuska revolucija i prosvetiteljstvo)",
+          "choices": [
+            "Vođa jakobinske diktature",
+            "Dolazi na čelo 1799. godine",
+            "Himna navedena kao tekovina revolucije"
+          ],
+          "answer": "Vođa jakobinske diktature",
+          "source": "Francuska revolucija i prosvetiteljstvo"
+        },
+        {
+          "id": "match-napoleon-1799",
+          "prompt": "Sa čim se povezuje: Napoleon Bonaparta? (Francuska revolucija i prosvetiteljstvo)",
+          "choices": [
+            "Vođa jakobinske diktature",
+            "Dolazi na čelo 1799. godine",
+            "Himna navedena kao tekovina revolucije"
+          ],
+          "answer": "Dolazi na čelo 1799. godine",
+          "source": "Francuska revolucija i prosvetiteljstvo"
+        },
+        {
+          "id": "match-marseillaise",
+          "prompt": "Sa čim se povezuje: Marseljeza? (Francuska revolucija i prosvetiteljstvo)",
+          "choices": [
+            "Vođa jakobinske diktature",
+            "Dolazi na čelo 1799. godine",
+            "Himna navedena kao tekovina revolucije"
+          ],
+          "answer": "Himna navedena kao tekovina revolucije",
+          "source": "Francuska revolucija i prosvetiteljstvo"
+        }
+      ],
+      "classificationQuestions": [
+        {
+          "id": "class-colonial-taxes",
+          "prompt": "Kako razvrstavamo: Nezadovoljstvo kolonija zbog britanskog izrabljivanja i velikih poreza?",
+          "choices": [
+            "Uzrok",
+            "Povod",
+            "Događaj",
+            "Tekovina / ideja"
+          ],
+          "answer": "Uzrok",
+          "source": "Uzroci, povod, događaji i tekovine"
+        },
+        {
+          "id": "class-tea-party-trigger",
+          "prompt": "Kako razvrstavamo: Bostonska čajanka?",
+          "choices": [
+            "Uzrok",
+            "Povod",
+            "Događaj",
+            "Tekovina / ideja"
+          ],
+          "answer": "Povod",
+          "source": "Uzroci, povod, događaji i tekovine"
+        },
+        {
+          "id": "class-independence-war",
+          "prompt": "Kako razvrstavamo: Rat 13 kolonija za nezavisnost od Britanaca?",
+          "choices": [
+            "Uzrok",
+            "Povod",
+            "Događaj",
+            "Tekovina / ideja"
+          ],
+          "answer": "Događaj",
+          "source": "Uzroci, povod, događaji i tekovine"
+        },
+        {
+          "id": "class-us-declaration-outcome",
+          "prompt": "Kako razvrstavamo: Deklaracija o nezavisnosti i stvaranje SAD?",
+          "choices": [
+            "Uzrok",
+            "Povod",
+            "Događaj",
+            "Tekovina / ideja"
+          ],
+          "answer": "Tekovina / ideja",
+          "source": "Uzroci, povod, događaji i tekovine"
+        },
+        {
+          "id": "class-third-estate-taxes",
+          "prompt": "Kako razvrstavamo: Nezadovoljstvo trećeg staleža porezima i kraljem Lujem XVI?",
+          "choices": [
+            "Uzrok",
+            "Povod",
+            "Događaj",
+            "Tekovina / ideja"
+          ],
+          "answer": "Uzrok",
+          "source": "Uzroci, povod, događaji i tekovine"
+        },
+        {
+          "id": "class-french-crisis",
+          "prompt": "Kako razvrstavamo: Novčana kriza zbog suše i gladi?",
+          "choices": [
+            "Uzrok",
+            "Povod",
+            "Događaj",
+            "Tekovina / ideja"
+          ],
+          "answer": "Uzrok",
+          "source": "Uzroci, povod, događaji i tekovine"
+        },
+        {
+          "id": "class-bastille-event",
+          "prompt": "Kako razvrstavamo: Pad Bastilje 14. jula 1789.?",
+          "choices": [
+            "Uzrok",
+            "Povod",
+            "Događaj",
+            "Tekovina / ideja"
+          ],
+          "answer": "Događaj",
+          "source": "Uzroci, povod, događaji i tekovine"
+        },
+        {
+          "id": "class-liberty-equality",
+          "prompt": "Kako razvrstavamo: Sloboda, jednakost i bratstvo?",
+          "choices": [
+            "Uzrok",
+            "Povod",
+            "Događaj",
+            "Tekovina / ideja"
+          ],
+          "answer": "Tekovina / ideja",
+          "source": "Uzroci, povod, događaji i tekovine"
+        },
+        {
+          "id": "class-abolition-feudalism",
+          "prompt": "Kako razvrstavamo: Ukidanje feudalizma?",
+          "choices": [
+            "Uzrok",
+            "Povod",
+            "Događaj",
+            "Tekovina / ideja"
+          ],
+          "answer": "Tekovina / ideja",
+          "source": "Uzroci, povod, događaji i tekovine"
+        },
+        {
+          "id": "class-rights-declaration",
+          "prompt": "Kako razvrstavamo: Deklaracija o pravima čoveka?",
+          "choices": [
+            "Uzrok",
+            "Povod",
+            "Događaj",
+            "Tekovina / ideja"
+          ],
+          "answer": "Tekovina / ideja",
+          "source": "Uzroci, povod, događaji i tekovine"
+        },
+        {
+          "id": "class-french-republic-sort",
+          "prompt": "Kako razvrstavamo: Ukidanje monarhije i proglašenje republike 1792.?",
+          "choices": [
+            "Uzrok",
+            "Povod",
+            "Događaj",
+            "Tekovina / ideja"
+          ],
+          "answer": "Događaj",
+          "source": "Uzroci, povod, događaji i tekovine"
+        },
+        {
+          "id": "class-french-anthem",
+          "prompt": "Kako razvrstavamo: Marseljeza kao tekovina Francuske revolucije?",
+          "choices": [
+            "Uzrok",
+            "Povod",
+            "Događaj",
+            "Tekovina / ideja"
+          ],
+          "answer": "Tekovina / ideja",
+          "source": "Uzroci, povod, događaji i tekovine"
+        }
+      ],
+      "activities": [
+        {
+          "id": "vremenska-linija",
+          "type": "flashcards",
+          "title": "Vremenska linija",
+          "description": "Poveži događaje sa datumima i hronološkim redosledom.",
+          "frontField": "question",
+          "backField": "answer",
+          "itemSet": "items",
+          "descriptionField": "description",
+          "icon": "?"
+        },
+        {
+          "id": "kontrolni-revolucije",
+          "type": "choice-quiz",
+          "title": "Kontrolni: revolucije",
+          "description": "Proveri osnovne činjenice iz gradiva.",
+          "itemSet": "questions",
+          "questionCount": 15,
+          "kindLabel": "Mešoviti test",
+          "icon": "?"
+        },
+        {
+          "id": "datumi-revolucija",
+          "type": "choice-quiz",
+          "title": "Datumi i događaji",
+          "description": "Uvežbaj kada su se dogodili ključni događaji.",
+          "itemSet": "timelineQuestions",
+          "questionCount": 10,
+          "kindLabel": "Vremenski izazov",
+          "icon": "?"
+        },
+        {
+          "id": "povezivanje-istorija",
+          "type": "choice-quiz",
+          "title": "Ličnosti i pojmovi",
+          "description": "Poveži ličnosti, izume, uzroke i tekovine.",
+          "itemSet": "matchingQuestions",
+          "questionCount": 10,
+          "kindLabel": "Igra povezivanja",
+          "icon": "?"
+        },
+        {
+          "id": "razvrstavanje-istorija",
+          "type": "choice-quiz",
+          "title": "Uzrok, povod ili tekovina?",
+          "description": "Prepoznaj ulogu događaja i ideja.",
+          "itemSet": "classificationQuestions",
+          "questionCount": 10,
+          "kindLabel": "Igra razvrstavanja",
+          "icon": "?"
+        }
+      ]
+    }
+  ]
+}
