@@ -105,7 +105,9 @@ function flashcardsView(activity) {
     const image = activity.imageOn === side ? imageMarkup(practice.item) : '';
     const description = field(practice.item, activity.descriptionField || 'description');
     const showDescription = activity.imageOn ? activity.imageOn === side : side === 'back';
-    const className = key === 'symbol' ? 'card-value card-value--symbol' : 'card-value';
+    const className = key === 'symbol' ? 'card-value card-value--symbol'
+      : value.length > 80 ? 'card-value card-value--long-text'
+      : value.length > 25 ? 'card-value card-value--text' : 'card-value';
     return `${image}<span class="${className}">${escapeHtml(value)}</span>${description && showDescription ? `<p class="element-description">${escapeHtml(description)}</p>` : ''}${side === 'front' ? referenceMarkup(practice.item) : ''}`;
   };
   const imageName = field(practice.item, activity.imageField || currentChapter.imageField || 'image');
