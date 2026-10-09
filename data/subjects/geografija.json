@@ -1878,6 +1878,783 @@
           "icon": "#"
         }
       ]
+    },
+    {
+      "id": "spanija",
+      "title": "Kraljevina Španija",
+      "description": "Položaj, reljef, stanovništvo, privreda i gradovi Španije.",
+      "icon": "🌍",
+      "items": [
+        {
+          "id": "card-spanija-1",
+          "question": "Kako glasi puno ime Španije?",
+          "answer": "Kraljevina Španija",
+          "description": ""
+        },
+        {
+          "id": "card-spanija-2",
+          "question": "Koja je površina Španije prema beleškama?",
+          "answer": "505.370 km²",
+          "description": "Brojčani podatak iz beležaka."
+        },
+        {
+          "id": "card-spanija-3",
+          "question": "Koliko stanovnika ima Španija prema beleškama?",
+          "answer": "47,5 miliona",
+          "description": "Godina podatka nije navedena; ovo nije prikaz trenutnog broja stanovnika."
+        },
+        {
+          "id": "card-spanija-4",
+          "question": "Kolika je gustina naseljenosti Španije prema beleškama?",
+          "answer": "94 st/km²",
+          "description": "Godina podatka nije navedena."
+        },
+        {
+          "id": "card-spanija-5",
+          "question": "Koji je glavni grad Španije?",
+          "answer": "Madrid",
+          "description": ""
+        },
+        {
+          "id": "card-spanija-6",
+          "question": "Na kom poluostrvu se nalazi najveći deo Španije?",
+          "answer": "Pirinejsko poluostrvo",
+          "description": "Španija je pirinejska, sredozemna i atlantska država."
+        },
+        {
+          "id": "card-spanija-7",
+          "question": "Na koje more i okean izlazi Španija?",
+          "answer": "Sredozemno more i Atlantski okean",
+          "description": ""
+        },
+        {
+          "id": "card-spanija-8",
+          "question": "Koje planine se nalaze između Španije i Francuske?",
+          "answer": "Pirineji",
+          "description": ""
+        },
+        {
+          "id": "card-spanija-9",
+          "question": "Kako se naziva velika visoravan u Španiji?",
+          "answer": "Mezeta",
+          "description": ""
+        },
+        {
+          "id": "card-spanija-10",
+          "question": "U kom planinskom sistemu se nalazi Mulhasen?",
+          "answer": "Betijski Kordiljeri",
+          "description": "Mulhasen se nalazi u Sijera Nevadi, u okviru Betijskih Kordiljera."
+        },
+        {
+          "id": "card-spanija-11",
+          "question": "Kolika je visina Mulhasena prema beleškama?",
+          "answer": "3.482 m n. v.",
+          "description": "Visina navedena u dostavljenom gradivu."
+        },
+        {
+          "id": "card-spanija-12",
+          "question": "Koje nizije povezujemo sa Španijom?",
+          "answer": "Andaluzija i Aragonija",
+          "description": ""
+        },
+        {
+          "id": "card-spanija-13",
+          "question": "Koji proizvodi su važni za poljoprivredu Španije?",
+          "answer": "Maslinovo ulje i grožđe",
+          "description": "Važna je i proizvodnja vina; industrija i turizam su značajne privredne grane."
+        },
+        {
+          "id": "card-spanija-14",
+          "question": "Koja uslužna delatnost je naročito važna za Španiju?",
+          "answer": "Turizam",
+          "description": "U beleškama je navedeno drugo mesto u svetu, bez godine i kriterijuma rangiranja."
+        },
+        {
+          "id": "card-spanija-15",
+          "question": "Kojoj zajednici pripada Španija?",
+          "answer": "Evropskoj uniji",
+          "description": ""
+        },
+        {
+          "id": "card-spanija-16",
+          "question": "Koje grupe stanovništva su navedene u beleškama o Španiji?",
+          "answer": "Španci, Katalonci i Baski",
+          "description": ""
+        },
+        {
+          "id": "card-spanija-17",
+          "question": "U kom gradu se nalazi muzej Prado?",
+          "answer": "Madrid",
+          "description": ""
+        },
+        {
+          "id": "card-spanija-18",
+          "question": "Gde se nalazi Palma de Majorka?",
+          "answer": "Na Balearskim ostrvima",
+          "description": ""
+        },
+        {
+          "id": "card-spanija-19",
+          "question": "Koja grupa sadrži samo gradove Španije?",
+          "answer": "Barselona, Valensija, Malaga i Bilbao",
+          "description": "U Španiji su i Madrid, Sevilja, Kordoba i Palma de Majorka."
+        },
+        {
+          "id": "card-spanija-20",
+          "question": "U kojoj državi se nalaze Sevilja i Kordoba?",
+          "answer": "Španija",
+          "description": "Oba grada nalaze se u Andaluziji."
+        }
+      ],
+      "questions": [
+        {
+          "id": "quiz-spanija-1",
+          "prompt": "Kako glasi puno ime Španije?",
+          "answer": "Kraljevina Španija",
+          "choices": [
+            "Kraljevina Španija",
+            "Republika Španija",
+            "Kraljevina Italija",
+            "Republika Italija"
+          ]
+        },
+        {
+          "id": "quiz-spanija-2",
+          "prompt": "Koja je površina Španije prema beleškama?",
+          "answer": "505.370 km²",
+          "choices": [
+            "301.350 km²",
+            "50.537 km²",
+            "94.000 km²",
+            "505.370 km²"
+          ]
+        },
+        {
+          "id": "quiz-spanija-3",
+          "prompt": "Koliko stanovnika ima Španija prema beleškama?",
+          "answer": "47,5 miliona",
+          "choices": [
+            "94 miliona",
+            "19,5 miliona",
+            "47,5 miliona",
+            "58,8 miliona"
+          ]
+        },
+        {
+          "id": "quiz-spanija-4",
+          "prompt": "Kolika je gustina naseljenosti Španije prema beleškama?",
+          "answer": "94 st/km²",
+          "choices": [
+            "348 st/km²",
+            "94 st/km²",
+            "195 st/km²",
+            "47 st/km²"
+          ]
+        },
+        {
+          "id": "quiz-spanija-5",
+          "prompt": "Koji je glavni grad Španije?",
+          "answer": "Madrid",
+          "choices": [
+            "Madrid",
+            "Barselona",
+            "Valensija",
+            "Sevilja"
+          ]
+        },
+        {
+          "id": "quiz-spanija-6",
+          "prompt": "Na kom poluostrvu se nalazi najveći deo Španije?",
+          "answer": "Pirinejsko poluostrvo",
+          "choices": [
+            "Apeninsko poluostrvo",
+            "Balkansko poluostrvo",
+            "Skandinavsko poluostrvo",
+            "Pirinejsko poluostrvo"
+          ]
+        },
+        {
+          "id": "quiz-spanija-7",
+          "prompt": "Na koje more i okean izlazi Španija?",
+          "answer": "Sredozemno more i Atlantski okean",
+          "choices": [
+            "Crno more i Tihi okean",
+            "Baltičko more i Severni ledeni okean",
+            "Sredozemno more i Atlantski okean",
+            "Jadransko more i Indijski okean"
+          ]
+        },
+        {
+          "id": "quiz-spanija-8",
+          "prompt": "Koje planine se nalaze između Španije i Francuske?",
+          "answer": "Pirineji",
+          "choices": [
+            "Dinaridi",
+            "Pirineji",
+            "Apenini",
+            "Alpi"
+          ]
+        },
+        {
+          "id": "quiz-spanija-9",
+          "prompt": "Kako se naziva velika visoravan u Španiji?",
+          "answer": "Mezeta",
+          "choices": [
+            "Mezeta",
+            "Padska nizija",
+            "Andaluzija",
+            "Aragonija"
+          ]
+        },
+        {
+          "id": "quiz-spanija-10",
+          "prompt": "U kom planinskom sistemu se nalazi Mulhasen?",
+          "answer": "Betijski Kordiljeri",
+          "choices": [
+            "Pirineji",
+            "Alpi",
+            "Apenini",
+            "Betijski Kordiljeri"
+          ]
+        },
+        {
+          "id": "quiz-spanija-11",
+          "prompt": "Kolika je visina Mulhasena prema beleškama?",
+          "answer": "3.482 m n. v.",
+          "choices": [
+            "1.482 m n. v.",
+            "4.482 m n. v.",
+            "3.482 m n. v.",
+            "2.482 m n. v."
+          ]
+        },
+        {
+          "id": "quiz-spanija-12",
+          "prompt": "Koje nizije povezujemo sa Španijom?",
+          "answer": "Andaluzija i Aragonija",
+          "choices": [
+            "Sicilija i Sardinija",
+            "Andaluzija i Aragonija",
+            "Padska i Panonska nizija",
+            "Mezeta i Alpi"
+          ]
+        },
+        {
+          "id": "quiz-spanija-13",
+          "prompt": "Koji proizvodi su važni za poljoprivredu Španije?",
+          "answer": "Maslinovo ulje i grožđe",
+          "choices": [
+            "Maslinovo ulje i grožđe",
+            "Kafa i kakao",
+            "Pirinač i čaj",
+            "Kaučuk i pamuk"
+          ]
+        },
+        {
+          "id": "quiz-spanija-14",
+          "prompt": "Koja uslužna delatnost je naročito važna za Španiju?",
+          "answer": "Turizam",
+          "choices": [
+            "Šumarstvo",
+            "Rudarstvo",
+            "Stočarstvo",
+            "Turizam"
+          ]
+        },
+        {
+          "id": "quiz-spanija-15",
+          "prompt": "Kojoj zajednici pripada Španija?",
+          "answer": "Evropskoj uniji",
+          "choices": [
+            "ASEAN-u",
+            "Nijednoj od navedenih",
+            "Evropskoj uniji",
+            "Afričkoj uniji"
+          ]
+        },
+        {
+          "id": "quiz-spanija-16",
+          "prompt": "Koje grupe stanovništva su navedene u beleškama o Španiji?",
+          "answer": "Španci, Katalonci i Baski",
+          "choices": [
+            "Francuzi, Nemci i Austrijanci",
+            "Španci, Katalonci i Baski",
+            "Italijani, Sicilijanci i Sardinci",
+            "Grci, Albanci i Bugari"
+          ]
+        },
+        {
+          "id": "quiz-spanija-17",
+          "prompt": "U kom gradu se nalazi muzej Prado?",
+          "answer": "Madrid",
+          "choices": [
+            "Madrid",
+            "Barselona",
+            "Bilbao",
+            "Malaga"
+          ]
+        },
+        {
+          "id": "quiz-spanija-18",
+          "prompt": "Gde se nalazi Palma de Majorka?",
+          "answer": "Na Balearskim ostrvima",
+          "choices": [
+            "Na Siciliji",
+            "Na Sardiniji",
+            "Na Kanarskim ostrvima",
+            "Na Balearskim ostrvima"
+          ]
+        },
+        {
+          "id": "quiz-spanija-19",
+          "prompt": "Koja grupa sadrži samo gradove Španije?",
+          "answer": "Barselona, Valensija, Malaga i Bilbao",
+          "choices": [
+            "Rim, Venecija, Madrid i Torino",
+            "Atina, Beč, Pariz i London",
+            "Barselona, Valensija, Malaga i Bilbao",
+            "Milano, Torino, Đenova i Firenca"
+          ]
+        },
+        {
+          "id": "quiz-spanija-20",
+          "prompt": "U kojoj državi se nalaze Sevilja i Kordoba?",
+          "answer": "Španija",
+          "choices": [
+            "Grčka",
+            "Španija",
+            "Italija",
+            "Francuska"
+          ]
+        }
+      ],
+      "numberQuestions": [
+        {
+          "id": "number-spanija-2",
+          "prompt": "Koja je površina Španije prema beleškama?",
+          "answer": "505.370 km²",
+          "choices": [
+            "301.350 km²",
+            "50.537 km²",
+            "94.000 km²",
+            "505.370 km²"
+          ]
+        },
+        {
+          "id": "number-spanija-3",
+          "prompt": "Koliko stanovnika ima Španija prema beleškama?",
+          "answer": "47,5 miliona",
+          "choices": [
+            "94 miliona",
+            "19,5 miliona",
+            "47,5 miliona",
+            "58,8 miliona"
+          ]
+        },
+        {
+          "id": "number-spanija-4",
+          "prompt": "Kolika je gustina naseljenosti Španije prema beleškama?",
+          "answer": "94 st/km²",
+          "choices": [
+            "348 st/km²",
+            "94 st/km²",
+            "195 st/km²",
+            "47 st/km²"
+          ]
+        },
+        {
+          "id": "number-spanija-11",
+          "prompt": "Kolika je visina Mulhasena prema beleškama?",
+          "answer": "3.482 m n. v.",
+          "choices": [
+            "1.482 m n. v.",
+            "4.482 m n. v.",
+            "3.482 m n. v.",
+            "2.482 m n. v."
+          ]
+        }
+      ],
+      "activities": [
+        {
+          "id": "spanija-kartice",
+          "type": "flashcards",
+          "title": "Kartice: Kraljevina Španija",
+          "description": "Upoznaj položaj, reljef, gradove i privredu.",
+          "icon": "▣",
+          "itemSet": "items",
+          "frontField": "question",
+          "backField": "answer"
+        },
+        {
+          "id": "spanija-test",
+          "type": "choice-quiz",
+          "title": "Test: Kraljevina Španija",
+          "description": "Proveri znanje iz celog poglavlja.",
+          "icon": "✓",
+          "itemSet": "questions",
+          "questionCount": 15,
+          "kindLabel": "Mešoviti test"
+        },
+        {
+          "id": "spanija-brojke",
+          "type": "choice-quiz",
+          "title": "Brojčani izazov",
+          "description": "Uvežbaj brojčane podatke. Stanovništvo i gustina su iz beležaka, bez navedene godine.",
+          "icon": "#",
+          "itemSet": "numberQuestions",
+          "questionCount": 5,
+          "kindLabel": "Brojčani test"
+        }
+      ]
+    },
+    {
+      "id": "italija",
+      "title": "Republika Italija",
+      "description": "Položaj, prirodne celine, stanovništvo i gradovi Italije.",
+      "icon": "🌍",
+      "items": [
+        {
+          "id": "card-italija-1",
+          "question": "Kako glasi puno ime Italije?",
+          "answer": "Republika Italija",
+          "description": ""
+        },
+        {
+          "id": "card-italija-2",
+          "question": "Kolika je približna površina Italije prema ISTAT-u za 2021?",
+          "answer": "302.110 km²",
+          "description": "ISTAT navodi 302.109,6 km² za 2021. godinu. Broj 30.135 km² u beleškama je greška."
+        },
+        {
+          "id": "card-italija-3",
+          "question": "Koliko stanovnika ima Italija prema beleškama?",
+          "answer": "58,8 miliona",
+          "description": "Godina podatka nije navedena; ovo nije prikaz trenutnog broja stanovnika."
+        },
+        {
+          "id": "card-italija-4",
+          "question": "Kolika je gustina naseljenosti Italije prema beleškama?",
+          "answer": "195 st/km²",
+          "description": "Godina podatka nije navedena."
+        },
+        {
+          "id": "card-italija-5",
+          "question": "Koji je glavni grad Italije?",
+          "answer": "Rim",
+          "description": ""
+        },
+        {
+          "id": "card-italija-6",
+          "question": "Kako opisujemo geografski položaj Italije?",
+          "answer": "Alpska, poluostrvska i sredozemna država",
+          "description": ""
+        },
+        {
+          "id": "card-italija-7",
+          "question": "Na kom poluostrvu se nalazi najveći deo Italije?",
+          "answer": "Apeninsko poluostrvo",
+          "description": ""
+        },
+        {
+          "id": "card-italija-8",
+          "question": "Koje planine se nalaze na severu Italije?",
+          "answer": "Alpi",
+          "description": ""
+        },
+        {
+          "id": "card-italija-9",
+          "question": "Koja velika nizija se nalazi u severnoj Italiji?",
+          "answer": "Padska nizija",
+          "description": ""
+        },
+        {
+          "id": "card-italija-10",
+          "question": "Koji planinski venac se pruža duž Apeninskog poluostrva?",
+          "answer": "Apenini",
+          "description": ""
+        },
+        {
+          "id": "card-italija-11",
+          "question": "Koja dva velika ostrva pripadaju Italiji?",
+          "answer": "Sicilija i Sardinija",
+          "description": ""
+        },
+        {
+          "id": "card-italija-12",
+          "question": "U kom gradu se nalazi Koloseum?",
+          "answer": "Rim",
+          "description": "Vatikan je zasebna država unutar grada Rima."
+        },
+        {
+          "id": "card-italija-13",
+          "question": "Gde se nalazi Vatikan?",
+          "answer": "Unutar grada Rima",
+          "description": "Vatikan je nezavisna država."
+        },
+        {
+          "id": "card-italija-14",
+          "question": "U kom gradu se nalazi operska kuća Milanska skala?",
+          "answer": "Milano",
+          "description": ""
+        },
+        {
+          "id": "card-italija-15",
+          "question": "U kom gradu su Trg Svetog Marka i Duždeva palata?",
+          "answer": "Venecija",
+          "description": ""
+        },
+        {
+          "id": "card-italija-16",
+          "question": "Koja grupa sadrži samo gradove Italije?",
+          "answer": "Torino, Đenova i Firenca",
+          "description": "Važni gradovi su i Rim, Milano i Venecija."
+        }
+      ],
+      "questions": [
+        {
+          "id": "quiz-italija-1",
+          "prompt": "Kako glasi puno ime Italije?",
+          "answer": "Republika Italija",
+          "choices": [
+            "Republika Italija",
+            "Kraljevina Italija",
+            "Republika Španija",
+            "Kraljevina Španija"
+          ]
+        },
+        {
+          "id": "quiz-italija-2",
+          "prompt": "Kolika je približna površina Italije prema ISTAT-u za 2021?",
+          "answer": "302.110 km²",
+          "choices": [
+            "30.135 km²",
+            "505.370 km²",
+            "58.800 km²",
+            "302.110 km²"
+          ]
+        },
+        {
+          "id": "quiz-italija-3",
+          "prompt": "Koliko stanovnika ima Italija prema beleškama?",
+          "answer": "58,8 miliona",
+          "choices": [
+            "19,5 miliona",
+            "94 miliona",
+            "58,8 miliona",
+            "47,5 miliona"
+          ]
+        },
+        {
+          "id": "quiz-italija-4",
+          "prompt": "Kolika je gustina naseljenosti Italije prema beleškama?",
+          "answer": "195 st/km²",
+          "choices": [
+            "348 st/km²",
+            "195 st/km²",
+            "94 st/km²",
+            "58 st/km²"
+          ]
+        },
+        {
+          "id": "quiz-italija-5",
+          "prompt": "Koji je glavni grad Italije?",
+          "answer": "Rim",
+          "choices": [
+            "Rim",
+            "Milano",
+            "Torino",
+            "Venecija"
+          ]
+        },
+        {
+          "id": "quiz-italija-6",
+          "prompt": "Kako opisujemo geografski položaj Italije?",
+          "answer": "Alpska, poluostrvska i sredozemna država",
+          "choices": [
+            "Pirinejska i atlantska država",
+            "Skandinavska i baltička država",
+            "Kontinentalna država bez izlaza na more",
+            "Alpska, poluostrvska i sredozemna država"
+          ]
+        },
+        {
+          "id": "quiz-italija-7",
+          "prompt": "Na kom poluostrvu se nalazi najveći deo Italije?",
+          "answer": "Apeninsko poluostrvo",
+          "choices": [
+            "Balkansko poluostrvo",
+            "Skandinavsko poluostrvo",
+            "Apeninsko poluostrvo",
+            "Pirinejsko poluostrvo"
+          ]
+        },
+        {
+          "id": "quiz-italija-8",
+          "prompt": "Koje planine se nalaze na severu Italije?",
+          "answer": "Alpi",
+          "choices": [
+            "Dinaridi",
+            "Alpi",
+            "Pirineji",
+            "Betijski Kordiljeri"
+          ]
+        },
+        {
+          "id": "quiz-italija-9",
+          "prompt": "Koja velika nizija se nalazi u severnoj Italiji?",
+          "answer": "Padska nizija",
+          "choices": [
+            "Padska nizija",
+            "Andaluzija",
+            "Aragonija",
+            "Mezeta"
+          ]
+        },
+        {
+          "id": "quiz-italija-10",
+          "prompt": "Koji planinski venac se pruža duž Apeninskog poluostrva?",
+          "answer": "Apenini",
+          "choices": [
+            "Pirineji",
+            "Betijski Kordiljeri",
+            "Karpati",
+            "Apenini"
+          ]
+        },
+        {
+          "id": "quiz-italija-11",
+          "prompt": "Koja dva velika ostrva pripadaju Italiji?",
+          "answer": "Sicilija i Sardinija",
+          "choices": [
+            "Korzika i Krit",
+            "Kipar i Malta",
+            "Sicilija i Sardinija",
+            "Majorka i Elba"
+          ]
+        },
+        {
+          "id": "quiz-italija-12",
+          "prompt": "U kom gradu se nalazi Koloseum?",
+          "answer": "Rim",
+          "choices": [
+            "Đenova",
+            "Rim",
+            "Milano",
+            "Firenca"
+          ]
+        },
+        {
+          "id": "quiz-italija-13",
+          "prompt": "Gde se nalazi Vatikan?",
+          "answer": "Unutar grada Rima",
+          "choices": [
+            "Unutar grada Rima",
+            "U Milanu",
+            "U Veneciji",
+            "U Torinu"
+          ]
+        },
+        {
+          "id": "quiz-italija-14",
+          "prompt": "U kom gradu se nalazi operska kuća Milanska skala?",
+          "answer": "Milano",
+          "choices": [
+            "Rim",
+            "Torino",
+            "Firenca",
+            "Milano"
+          ]
+        },
+        {
+          "id": "quiz-italija-15",
+          "prompt": "U kom gradu su Trg Svetog Marka i Duždeva palata?",
+          "answer": "Venecija",
+          "choices": [
+            "Đenova",
+            "Milano",
+            "Venecija",
+            "Rim"
+          ]
+        },
+        {
+          "id": "quiz-italija-16",
+          "prompt": "Koja grupa sadrži samo gradove Italije?",
+          "answer": "Torino, Đenova i Firenca",
+          "choices": [
+            "Kordoba, Palma de Majorka i Madrid",
+            "Torino, Đenova i Firenca",
+            "Bilbao, Malaga i Sevilja",
+            "Madrid, Barselona i Valensija"
+          ]
+        }
+      ],
+      "numberQuestions": [
+        {
+          "id": "number-italija-2",
+          "prompt": "Kolika je približna površina Italije prema ISTAT-u za 2021?",
+          "answer": "302.110 km²",
+          "choices": [
+            "30.135 km²",
+            "505.370 km²",
+            "58.800 km²",
+            "302.110 km²"
+          ]
+        },
+        {
+          "id": "number-italija-3",
+          "prompt": "Koliko stanovnika ima Italija prema beleškama?",
+          "answer": "58,8 miliona",
+          "choices": [
+            "19,5 miliona",
+            "94 miliona",
+            "58,8 miliona",
+            "47,5 miliona"
+          ]
+        },
+        {
+          "id": "number-italija-4",
+          "prompt": "Kolika je gustina naseljenosti Italije prema beleškama?",
+          "answer": "195 st/km²",
+          "choices": [
+            "348 st/km²",
+            "195 st/km²",
+            "94 st/km²",
+            "58 st/km²"
+          ]
+        }
+      ],
+      "activities": [
+        {
+          "id": "italija-kartice",
+          "type": "flashcards",
+          "title": "Kartice: Republika Italija",
+          "description": "Upoznaj položaj, reljef, gradove i privredu.",
+          "icon": "▣",
+          "itemSet": "items",
+          "frontField": "question",
+          "backField": "answer"
+        },
+        {
+          "id": "italija-test",
+          "type": "choice-quiz",
+          "title": "Test: Republika Italija",
+          "description": "Proveri znanje iz celog poglavlja.",
+          "icon": "✓",
+          "itemSet": "questions",
+          "questionCount": 15,
+          "kindLabel": "Mešoviti test"
+        },
+        {
+          "id": "italija-brojke",
+          "type": "choice-quiz",
+          "title": "Brojčani izazov",
+          "description": "Uvežbaj brojčane podatke. Stanovništvo i gustina su iz beležaka, bez navedene godine.",
+          "icon": "#",
+          "itemSet": "numberQuestions",
+          "questionCount": 5,
+          "kindLabel": "Brojčani test"
+        }
+      ]
     }
   ]
 }

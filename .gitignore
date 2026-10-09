@@ -1,3 +1,4 @@
 # Local source scans are not application assets.
 /source-materials/
 /assets/hemija-laboratory/
+/temp_files/
