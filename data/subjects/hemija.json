@@ -9,7 +9,7 @@
       "title": "Hemijski elementi",
       "description": "Uči hemijske simbole i nazive elemenata, uz kratke opise i testove.",
       "icon": "⚗",
-      "imageDirectory": "assets/hemija-elements",
+      "imageDirectory": "assets/images/illustrations/chemistry/elements",
       "imageField": "image",
       "items": [
         {
@@ -350,7 +350,6 @@
       "title": "Hemijska laboratorija",
       "description": "Laboratorijski pribor, merenje i bezbedan rad, kao i fizičke i hemijske promene.",
       "icon": "⚗",
-      "imageDirectory": "assets/hemija-laboratory",
       "imageField": "image",
       "items": [
         {
@@ -358,7 +357,6 @@
           "name": "Epruveta",
           "purpose": "Za izvođenje manjih ogleda i zagrevanje manjih količina supstance.",
           "material": "staklo",
-          "referenceImage": "str_8.jpg",
           "enabled": true
         },
         {
@@ -366,7 +364,6 @@
           "name": "Reagens-boce",
           "purpose": "Za čuvanje tečnih i čvrstih supstanci.",
           "material": "staklo",
-          "referenceImage": "str_8.jpg",
           "enabled": true
         },
         {
@@ -374,7 +371,6 @@
           "name": "Laboratorijska čaša",
           "purpose": "Za mešanje, zagrevanje i presipanje; zapreminu meri samo približno.",
           "material": "staklo",
-          "referenceImage": "str_8.jpg",
           "enabled": true
         },
         {
@@ -382,7 +378,6 @@
           "name": "Levak",
           "purpose": "Za presipanje tečnosti i ceđenje pomoću filter-papira.",
           "material": "staklo",
-          "referenceImage": "str_8.jpg",
           "enabled": true
         },
         {
@@ -390,7 +385,6 @@
           "name": "Sahatno staklo",
           "purpose": "Za isparavanje malih količina tečnosti ili pokrivanje čaše.",
           "material": "staklo",
-          "referenceImage": "str_8.jpg",
           "enabled": true
         },
         {
@@ -398,7 +392,6 @@
           "name": "Erlenmajerova tikvica",
           "purpose": "Za mešanje i zagrevanje tečnosti; uz pažljivo kružno mućkanje.",
           "material": "staklo",
-          "referenceImage": "str_9.jpg",
           "enabled": true
         },
         {
@@ -406,7 +399,6 @@
           "name": "Tikvica sa okruglim dnom",
           "purpose": "Za zagrevanje i izvođenje ogleda sa tečnostima.",
           "material": "staklo",
-          "referenceImage": "str_9.jpg",
           "enabled": true
         },
         {
@@ -414,7 +406,6 @@
           "name": "Hladnjak (kondenzator)",
           "purpose": "Za hlađenje pare i njeno pretvaranje u tečnost tokom destilacije.",
           "material": "staklo",
-          "referenceImage": "str_9.jpg",
           "enabled": true
         },
         {
@@ -422,7 +413,6 @@
           "name": "Menzura",
           "purpose": "Za merenje zapremine tečnosti.",
           "material": "staklo",
-          "referenceImage": "str_9.jpg",
           "enabled": true
         },
         {
@@ -430,7 +420,6 @@
           "name": "Pipeta",
           "purpose": "Za precizno odmeravanje i prenošenje manjih zapremina tečnosti.",
           "material": "staklo",
-          "referenceImage": "str_9.jpg",
           "enabled": true
         },
         {
@@ -438,7 +427,6 @@
           "name": "Bireta",
           "purpose": "Za precizno odmeravanje i ispuštanje tečnosti, kap po kap.",
           "material": "staklo",
-          "referenceImage": "str_9.jpg",
           "enabled": true
         },
         {
@@ -446,7 +434,6 @@
           "name": "Špric-boca",
           "purpose": "Za ispiranje posuđa mlazom destilovane vode.",
           "material": "plastika",
-          "referenceImage": "str_9.jpg",
           "enabled": true
         },
         {
@@ -454,7 +441,6 @@
           "name": "Špiritusna lampa",
           "purpose": "Za zagrevanje supstanci plamenom.",
           "material": "staklo i metal",
-          "referenceImage": "str_9.jpg",
           "enabled": true
         },
         {
@@ -462,7 +448,6 @@
           "name": "Gasna grejna lampa",
           "purpose": "Za zagrevanje supstanci plamenom.",
           "material": "metal",
-          "referenceImage": "str_10.jpg",
           "enabled": true
         },
         {
@@ -470,7 +455,6 @@
           "name": "Stativ",
           "purpose": "Za pričvršćivanje pribora i držanje aparature tokom ogleda.",
           "material": "metal",
-          "referenceImage": "str_10.jpg",
           "enabled": true
         },
         {
@@ -478,7 +462,6 @@
           "name": "Muf",
           "purpose": "Za pričvršćivanje držača i prstenova na stativ.",
           "material": "metal",
-          "referenceImage": "str_10.jpg",
           "enabled": true
         },
         {
@@ -486,7 +469,6 @@
           "name": "Metalni prsten za stativ",
           "purpose": "Za oslanjanje posuđa ili mrežice na stativu.",
           "material": "metal",
-          "referenceImage": "str_10.jpg",
           "enabled": true
         },
         {
@@ -494,7 +476,6 @@
           "name": "Tronožac",
           "purpose": "Nosač posuđa tokom zagrevanja, obično uz metalnu mrežicu.",
           "material": "metal",
-          "referenceImage": "str_10.jpg",
           "enabled": true
         },
         {
@@ -502,7 +483,6 @@
           "name": "Metalna mrežica",
           "purpose": "Postavlja se na nosač i ravnomernije raspoređuje toplotu.",
           "material": "metal",
-          "referenceImage": "str_10.jpg",
           "enabled": true
         },
         {
@@ -510,7 +490,6 @@
           "name": "Metalne hvataljke",
           "purpose": "Za držanje i prenošenje zagrejanog posuđa.",
           "material": "metal",
-          "referenceImage": "str_10.jpg",
           "enabled": true
         },
         {
@@ -518,7 +497,6 @@
           "name": "Mehanička vaga",
           "purpose": "Za merenje mase supstance pomoću tegova.",
           "material": "metal i drugi materijali",
-          "referenceImage": "str_10.jpg",
           "enabled": true
         },
         {
@@ -526,7 +504,6 @@
           "name": "Elektronska vaga",
           "purpose": "Za precizno merenje mase supstance.",
           "material": "metal i drugi materijali",
-          "referenceImage": "str_10.jpg",
           "enabled": true
         },
         {
@@ -534,7 +511,6 @@
           "name": "Porcelanska šolja",
           "purpose": "Za držanje ili zagrevanje manjih količina čvrste supstance.",
           "material": "porcelan",
-          "referenceImage": "str_11.jpg",
           "enabled": true
         },
         {
@@ -542,7 +518,6 @@
           "name": "Porcelanski lončić",
           "purpose": "Za snažno zagrevanje malih količina čvrste supstance.",
           "material": "porcelan",
-          "referenceImage": "str_11.jpg",
           "enabled": true
         },
         {
@@ -550,7 +525,6 @@
           "name": "Avan sa tučkom",
           "purpose": "Za usitnjavanje čvrstih supstanci.",
           "material": "porcelan",
-          "referenceImage": "str_11.jpg",
           "enabled": true
         },
         {
@@ -558,7 +532,6 @@
           "name": "Stalak za epruvete",
           "purpose": "Za uspravno držanje epruveta.",
           "material": "drvo",
-          "referenceImage": "str_11.jpg",
           "enabled": true
         },
         {
@@ -566,7 +539,6 @@
           "name": "Drvena štipaljka",
           "purpose": "Za držanje epruvete tokom zagrevanja na otvorenom plamenu.",
           "material": "drvo",
-          "referenceImage": "str_11.jpg",
           "enabled": true
         },
         {
@@ -574,7 +546,6 @@
           "name": "Kašičica",
           "purpose": "Za uzimanje i prenošenje malih količina čvrste supstance.",
           "material": "metal",
-          "referenceImage": "str_12.jpg",
           "enabled": true
         },
         {
@@ -582,7 +553,6 @@
           "name": "Stakleni štapić",
           "purpose": "Za mešanje tečnosti.",
           "material": "staklo",
-          "referenceImage": "str_12.jpg",
           "enabled": true
         }
       ],
@@ -595,7 +565,6 @@
             "Netačno"
           ],
           "answer": "Netačno",
-          "referenceImage": "str_5.jpg",
           "sourceTask": "1",
           "enabled": true
         },
@@ -607,7 +576,6 @@
             "Netačno"
           ],
           "answer": "Tačno",
-          "referenceImage": "str_5.jpg",
           "sourceTask": "1",
           "enabled": true
         },
@@ -619,7 +587,6 @@
             "Netačno"
           ],
           "answer": "Netačno",
-          "referenceImage": "str_5.jpg",
           "sourceTask": "1",
           "enabled": true
         },
@@ -642,7 +609,6 @@
             "Netačno"
           ],
           "answer": "Tačno",
-          "referenceImage": "str_5.jpg",
           "sourceTask": "1",
           "enabled": true
         },
@@ -655,7 +621,6 @@
             "Levakom"
           ],
           "answer": "Vagom",
-          "referenceImage": "str_5.jpg",
           "sourceTask": "4",
           "enabled": true
         },
@@ -668,7 +633,6 @@
             "Stalak za epruvete"
           ],
           "answer": "Menzura",
-          "referenceImage": "str_5.jpg",
           "sourceTask": "4",
           "enabled": true
         },
@@ -681,7 +645,6 @@
             "Pipeta"
           ],
           "answer": "Špiritusna lampa",
-          "referenceImage": "str_5.jpg",
           "sourceTask": "4",
           "enabled": true
         },
@@ -694,7 +657,6 @@
             "Levak"
           ],
           "answer": "Termometar",
-          "referenceImage": "str_6.jpg",
           "sourceTask": "5",
           "enabled": true
         },
@@ -707,7 +669,6 @@
             "Pipeta"
           ],
           "answer": "Reagens-boca",
-          "referenceImage": "str_6.jpg",
           "sourceTask": "5",
           "enabled": true
         },
@@ -720,7 +681,6 @@
             "Pipeta i reagens-boca"
           ],
           "answer": "Špiritusna lampa i metalna mrežica",
-          "referenceImage": "str_6.jpg",
           "sourceTask": "6",
           "enabled": true
         },
@@ -733,7 +693,6 @@
             "Metalna mrežica i tronožac"
           ],
           "answer": "Menzura i pipeta",
-          "referenceImage": "str_6.jpg",
           "sourceTask": "7",
           "enabled": true
         },
@@ -746,7 +705,6 @@
             "Drveta"
           ],
           "answer": "Porcelana",
-          "referenceImage": "str_4.jpg",
           "sourceTask": "8",
           "enabled": true
         },
@@ -759,7 +717,6 @@
             "Stalak za epruvete"
           ],
           "answer": "Avan sa tučkom",
-          "referenceImage": "str_4.jpg",
           "sourceTask": "9",
           "enabled": true
         },
@@ -772,7 +729,6 @@
             "Rđanje gvožđa"
           ],
           "answer": "Savijanje aluminijumske folije",
-          "referenceImage": "str_3.jpg",
           "sourceTask": "2",
           "enabled": true
         },
@@ -785,7 +741,6 @@
             "Topljenje leda"
           ],
           "answer": "Pečenje kolača",
-          "referenceImage": "str_3.jpg",
           "sourceTask": "2",
           "enabled": true
         },
@@ -797,7 +752,6 @@
             "Fizička promena"
           ],
           "answer": "Hemijska promena",
-          "referenceImage": "str_3.jpg",
           "sourceTask": "2",
           "enabled": true
         },
@@ -809,7 +763,6 @@
             "Hemijska promena"
           ],
           "answer": "Fizička promena",
-          "referenceImage": "str_3.jpg",
           "sourceTask": "2",
           "enabled": true
         },
@@ -821,7 +774,6 @@
             "Hemijska promena"
           ],
           "answer": "Fizička promena",
-          "referenceImage": "str_3.jpg",
           "sourceTask": "2",
           "enabled": true
         },
@@ -833,7 +785,6 @@
             "Fizička promena"
           ],
           "answer": "Hemijska promena",
-          "referenceImage": "str_3.jpg",
           "sourceTask": "2",
           "enabled": true
         },
@@ -845,7 +796,6 @@
             "Hemijska promena"
           ],
           "answer": "Fizička promena",
-          "referenceImage": "str_3.jpg",
           "sourceTask": "3",
           "enabled": true
         },
@@ -857,7 +807,6 @@
             "Hemijska promena"
           ],
           "answer": "Fizička promena",
-          "referenceImage": "str_3.jpg",
           "sourceTask": "3",
           "enabled": true
         },
@@ -869,7 +818,6 @@
             "Da, to je hemijska promena"
           ],
           "answer": "Ne, to je fizička promena",
-          "referenceImage": "str_3.jpg",
           "sourceTask": "3",
           "enabled": true
         },
@@ -881,7 +829,6 @@
             "Fizička promena"
           ],
           "answer": "Hemijska promena",
-          "referenceImage": "str_3.jpg",
           "sourceTask": "3",
           "enabled": true
         },
@@ -893,7 +840,6 @@
             "Hemijska promena"
           ],
           "answer": "Fizička promena",
-          "referenceImage": "str_3.jpg",
           "sourceTask": "3",
           "enabled": true
         },
@@ -906,7 +852,6 @@
             "Mržnjenje"
           ],
           "answer": "Isparavanje",
-          "referenceImage": "str_2.jpg",
           "sourceTask": "9",
           "enabled": true
         },
@@ -919,7 +864,6 @@
             "Topljenje"
           ],
           "answer": "Kondenzacija",
-          "referenceImage": "str_2.jpg",
           "sourceTask": "9",
           "enabled": true
         },
@@ -931,7 +875,6 @@
             "Fizičke promene jer se menja samo oblik"
           ],
           "answer": "Hemijske promene jer nastaju nove supstance",
-          "referenceImage": "str_2.jpg",
           "sourceTask": "6",
           "enabled": true
         },
@@ -943,7 +886,6 @@
             "Netačno"
           ],
           "answer": "Tačno",
-          "referenceImage": "str_2.jpg",
           "sourceTask": "7",
           "enabled": true
         },
@@ -955,7 +897,6 @@
             "Tačno"
           ],
           "answer": "Netačno",
-          "referenceImage": "str_2.jpg",
           "sourceTask": "8",
           "enabled": true
         },
@@ -967,7 +908,6 @@
             "Hemijska promena"
           ],
           "answer": "Fizička promena",
-          "referenceImage": "str_2.jpg",
           "sourceTask": "10",
           "enabled": true
         },
@@ -979,7 +919,6 @@
             "Hemijska promena"
           ],
           "answer": "Fizička promena",
-          "referenceImage": "str_2.jpg",
           "sourceTask": "10",
           "enabled": true
         }
