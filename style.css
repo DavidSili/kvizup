@@ -354,7 +354,7 @@ h3 {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 28px;
+  padding: 28px 28px 52px;
   overflow: hidden;
   border: 1px solid rgba(32, 59, 56, .12);
   border-radius: 25px;
@@ -386,6 +386,17 @@ h3 {
 
 .card-value {
   font: 700 clamp(2.25rem, 9vw, 4.2rem) var(--font-display);
+  max-width: 100%;
+  overflow-wrap: anywhere;
+  line-height: 1.2;
+}
+
+.card-value--text {
+  font-size: clamp(1.4rem, 3.5vw, 2rem);
+}
+
+.card-value--long-text {
+  font-size: clamp(1.15rem, 2.8vw, 1.55rem);
 }
 
 .card-value--symbol {
@@ -435,6 +446,10 @@ h3 {
   font-size: .9rem;
   line-height: 1.4;
   text-align: center;
+}
+
+.flashcard .card-value + .element-description {
+  margin-top: 16px;
 }
 
 .card-front .element-description {
