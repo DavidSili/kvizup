@@ -1,7 +1,9 @@
 <?php
+
 declare(strict_types=1);
 
-function asset_url(string $path): string {
+function asset_url(string $path): string
+{
     $root = __DIR__;
     $version = trim(file_get_contents($root . '/VERSION'));
     $hash = hash_file('sha256', $root . '/' . $path);
