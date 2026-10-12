@@ -123,4 +123,4 @@ A missing activity `questionCount` uses the global preference (default 20). An a
 
 - `../app.js` contains navigation, shared activity renderers, scoring, reports, preferences, and category-specific learning statistics.
 - `catalog.php` discovers subject files; it should not contain lesson content.
-- `../style.css` and `../index.html` contain shared visual structure. Add a new activity renderer only once to the shared renderer registry; do not create a subject-specific app.
+- `../assets/css/style.css` and `../index.html` contain shared visual structure. Add a new activity renderer only once to the shared renderer registry; do not create a subject-specific app.

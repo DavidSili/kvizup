@@ -1,0 +1,10 @@
+.git
+.vscode
+.idea
+.env
+.env.*
+source-materials
+temp_files
+assets/hemija-laboratory
+node_modules
+*.log

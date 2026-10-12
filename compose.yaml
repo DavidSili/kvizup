@@ -1,0 +1,21 @@
+services:
+  web:
+    build: .
+    ports:
+      - "127.0.0.1:8080:80"
+    volumes:
+      - ./index.html:/var/www/html/index.html:ro
+      - ./app.js:/var/www/html/app.js:ro
+      - ./data:/var/www/html/data:ro
+      - ./assets:/var/www/html/assets:ro
+  styles:
+    image: node:22-alpine
+    profiles: ["dev"]
+    working_dir: /workspace
+    command: ["sh", "-c", "npm ci --no-audit --no-fund && npm run styles:watch"]
+    volumes:
+      - .:/workspace
+      - styles_node_modules:/workspace/node_modules
+
+volumes:
+  styles_node_modules:
