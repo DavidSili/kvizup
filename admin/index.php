@@ -1,4 +1,5 @@
 <?php
+require_once dirname(__DIR__) . '/assets.php';
 header("Content-Security-Policy: default-src 'self'; script-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' blob:; connect-src 'self'; frame-ancestors 'none'; form-action 'self'; base-uri 'self'");
 header('Cache-Control: no-store');
 header('X-Content-Type-Options: nosniff');
@@ -10,9 +11,9 @@ header('X-Content-Type-Options: nosniff');
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>KvizUp · Uređivanje lekcija</title>
   <link rel="icon" type="image/svg+xml" href="../assets/images/favicon.svg">
-  <link rel="stylesheet" href="../assets/css/style.css">
-  <link rel="stylesheet" href="../assets/css/admin.css">
-  <script src="admin.js" defer></script>
+  <link rel="stylesheet" href="../<?= asset_url('assets/css/style.css') ?>">
+  <link rel="stylesheet" href="../<?= asset_url('assets/css/admin.css') ?>">
+  <script src="../<?= asset_url('admin/admin.js') ?>" defer></script>
 </head>
 <body class="admin-body">
   <header class="admin-header"><a href="../">KvizUp</a><span>Uređivanje lekcija</span><span id="account"></span><button id="logout" hidden>Odjavi se</button></header>

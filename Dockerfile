@@ -8,7 +8,7 @@ RUN npm run styles:build
 FROM php:8.4-apache
 
 WORKDIR /var/www/html
-COPY index.html app.js ./
+COPY index.php assets.php VERSION app.js ./
 COPY .htaccess ./
 COPY admin/ ./admin/
 COPY docker/security.conf /etc/apache2/conf-enabled/kvizup-security.conf
@@ -16,6 +16,6 @@ COPY docker/uploads.ini /usr/local/etc/php/conf.d/kvizup-uploads.ini
 COPY data/ ./data/
 COPY assets/ ./assets/
 COPY --from=styles /build/assets/css/ ./assets/css/
-RUN mkdir -p /var/lib/kvizup && chown -R www-data:www-data /var/www/html/data/subjects /var/lib/kvizup
+RUN a2enmod rewrite headers && mkdir -p /var/lib/kvizup && chown -R www-data:www-data /var/www/html/data/subjects /var/lib/kvizup
 
 EXPOSE 80

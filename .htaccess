@@ -1,4 +1,13 @@
 Options -Indexes
+DirectoryIndex index.php
+RewriteEngine On
+RewriteCond %{REQUEST_URI} ^(.*/)index\.html$
+RewriteRule ^index\.html$ %1 [R=302,L]
+<IfModule mod_headers.c>
+    <FilesMatch "\.(js|css)$">
+        Header set Cache-Control "public, max-age=0, must-revalidate"
+    </FilesMatch>
+</IfModule>
 <FilesMatch "^(\.env.*|package.*\.json|compose\.yaml|Dockerfile)$">
     Require all denied
 </FilesMatch>

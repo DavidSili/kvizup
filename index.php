@@ -1,3 +1,7 @@
+<?php
+require_once __DIR__ . '/assets.php';
+header('Cache-Control: no-store');
+?>
 <!doctype html>
 <html lang="sr-Latn">
 <head>
@@ -7,7 +11,7 @@
   <meta name="description" content="Izaberi predmet, poglavlje i način vežbanja.">
   <title>KvizUp · Učenje po tvom ritmu</title>
   <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
-  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="<?= asset_url('assets/css/style.css') ?>">
 </head>
 <body>
   <div class="app-shell">
@@ -25,6 +29,6 @@
       <a href="#settings" data-nav="settings"><span>⚙</span>Podešavanja</a>
     </nav>
   </div>
-  <script src="app.js?v=1.0.0"></script>
+  <script src="<?= asset_url('app.js') ?>"></script>
 </body>
 </html>

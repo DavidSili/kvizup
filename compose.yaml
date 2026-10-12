@@ -6,7 +6,10 @@ services:
     environment:
       KVIZUP_PRIVATE_DIR: /var/lib/kvizup
     volumes:
-      - ./index.html:/var/www/html/index.html:ro
+      - ./index.php:/var/www/html/index.php:ro
+      - ./assets.php:/var/www/html/assets.php:ro
+      - ./VERSION:/var/www/html/VERSION:ro
+      - ./.htaccess:/var/www/html/.htaccess:ro
       - ./app.js:/var/www/html/app.js:ro
       - ./data:/var/www/html/data
       - ./assets:/var/www/html/assets:ro

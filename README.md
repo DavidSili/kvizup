@@ -9,7 +9,7 @@ KvizUp is a mobile-first, data-driven study app with a three-level flow:
 2. Choose a chapter.
 3. Choose a learning activity or test.
 
-The shared interface and activity engine live in `index.html`, `assets/css/style.css`, and `app.js`. Subject content lives in one JSON file per subject under `data/subjects/`. `data/catalog.php` discovers those JSON files automatically, so adding a subject does not require copying the app or editing the catalog endpoint.
+The shared interface and activity engine live in `index.php`, `assets/css/style.css`, and `app.js`. Subject content lives in one JSON file per subject under `data/subjects/`. `data/catalog.php` discovers those JSON files automatically, so adding a subject does not require copying the app or editing the catalog endpoint.
 
 ### Run locally
 
@@ -19,7 +19,7 @@ Serve the folder through Apache/PHP, for example:
 http://localhost/MySite/kvizup/
 ```
 
-The PHP endpoint is required to discover subject JSON files. Do not open `index.html` using a `file://` URL.
+The PHP endpoint is required to discover subject JSON files. Do not open `index.php` using a `file://` URL.
 
 ### Run with Docker (Windows)
 
@@ -278,3 +278,7 @@ Unos toleriše jednu grešku u kucanju (uključujući zamenu susednih slova) u o
 
 Provere: `node tests/typed_answers.cjs` i `node tests/admin_submit.cjs`.
 
+
+## Asset cache and app version
+
+The app version is `1.0.0`, stored in `VERSION`. Public and admin pages generate JS/CSS URLs using the app version and a SHA-256 content fingerprint. Editing a file automatically changes its URL; no manual version bump or mobile cache clearing is needed. HTML is served with `Cache-Control: no-store`; JS/CSS must revalidate cached copies. Existing `index.html` links redirect to the app root. PHP and Apache rewrite/headers modules are required (enabled by the Dockerfile). After this change run `docker compose up --build -d web`.
