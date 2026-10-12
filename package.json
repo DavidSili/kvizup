@@ -2,8 +2,8 @@
   "name": "kvizup",
   "private": true,
   "scripts": {
-    "styles:build": "sass --no-source-map styles/style.scss assets/css/style.css",
-    "styles:watch": "sass --watch --poll --no-source-map styles/style.scss:assets/css/style.css"
+    "styles:build": "sass --no-source-map styles/style.scss:assets/css/style.css styles/admin.scss:assets/css/admin.css",
+    "styles:watch": "sass --watch --poll --no-source-map styles/style.scss:assets/css/style.css styles/admin.scss:assets/css/admin.css"
   },
   "devDependencies": {
     "sass": "^1.93.2"

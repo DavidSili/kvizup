@@ -36,12 +36,23 @@ function normalizeAnswer(value) {
     .replace(/Ć|Č/g, 'C').replace(/Š/g, 'S').replace(/Ž/g, 'Z').replace(/\s+/g, '');
 }
 function field(item, key) { return item?.[key] == null ? '' : String(item[key]); }
+function matchesTypedAnswer(value, expected) {
+  const a = normalizeAnswer(value), b = normalizeAnswer(expected);
+  if (a === b) return true;
+  // Keep years, numbers, symbols and short words exact. Allow one typo in words.
+  if (!/^[A-Z]{5,}$/.test(a) || !/^[A-Z]{5,}$/.test(b) || Math.abs(a.length - b.length) > 1) return false;
+  let i = 0;
+  while (i < Math.min(a.length, b.length) && a[i] === b[i]) i++;
+  if (a.length === b.length) return a.slice(i + 1) === b.slice(i + 1)
+    || (a[i] === b[i + 1] && a[i + 1] === b[i] && a.slice(i + 2) === b.slice(i + 2));
+  return a.length > b.length ? a.slice(i + 1) === b.slice(i) : a.slice(i) === b.slice(i + 1);
+}
 function storageStatsKey() { return `${STORAGE.statsPrefix}${currentSubject.id}:${currentChapter.id}`; }
 function itemKey(item) { return item.id || item.symbol || item.name || item.title || item.question; }
 function getStats() { return readStorage(storageStatsKey(), {}); }
 function activeItems(chapter = currentChapter, activity = currentActivity) {
   const collection = activity?.itemSet ? chapter[activity.itemSet] : chapter.items;
-  return (collection || []).filter(item => item.enabled !== false);
+  return (collection || []).filter(item => item.enabled !== false && (!activity?.itemIds || activity.itemIds.includes(item.id)));
 }
 function pickItem(pool = activeItems()) {
   if (!pool.length) return null;
@@ -122,7 +133,7 @@ function textQuizView(activity) {
   if (!item) return '<div class="empty">Nema aktivnih pitanja u ovom poglavlju.</div>';
   const expected = field(item, activity.answerField || 'answer');
   const showImage = activity.imageField && (activity.imageTiming !== 'after-answer' || practice.answered);
-  const result = practice.answered ? `<div class="result ${practice.lastCorrect ? 'correct' : 'wrong'}">${practice.lastCorrect ? 'Tačno!<small>Odličan odgovor.</small>' : `Nije tačno.<div class="answer-correction"><span>Tačan odgovor</span><strong>${escapeHtml(expected)}</strong></div>`}</div>` : '';
+  const result = practice.answered ? `<div class="result ${practice.lastCorrect ? 'correct' : 'wrong'}">${practice.lastCorrect ? `Tačno!<small>${normalizeAnswer(practice.answerValue) !== normalizeAnswer(expected) ? `Prihvaćena mala greška u kucanju. Pravilan odgovor: ${escapeHtml(expected)}` : 'Odličan odgovor.'}</small>` : `Nije tačno.<div class="answer-correction"><span>Tačan odgovor</span><strong>${escapeHtml(expected)}</strong></div>`}</div>` : '';
   const prompt = field(item, activity.promptField || 'question');
   return `${breadcrumb([{ label: 'Predmeti', href: '#home' }, { label: currentSubject.title, href: `#subject/${encodeURIComponent(currentSubject.id)}` }, { label: currentChapter.title, href: `#chapter/${encodeURIComponent(currentSubject.id)}/${encodeURIComponent(currentChapter.id)}` }])}<div class="practice-head"><span class="eyebrow">Test · ${escapeHtml(activity.title)}</span><span class="progress">Pitanje ${practice.index + 1} / ${count}</span></div><section class="quiz-panel"><div class="quiz-prompt ${prompt.length > 30 ? 'quiz-prompt--text' : ''}">${escapeHtml(prompt)}</div>${showImage ? imageMarkup(item, true) : ''}${practice.answered ? referenceMarkup(item) : ''}<input class="answer-input" data-answer autocomplete="off" autocapitalize="words" placeholder="Tvoj odgovor" aria-label="Upiši ${escapeHtml(activity.answerLabel || 'odgovor')}" value="${escapeHtml(practice.answerValue)}" ${practice.answered ? 'disabled' : ''}>${result}<button class="button primary" data-check-answer>${practice.answered ? (practice.index + 1 === count ? 'Završi test' : 'Sledeće pitanje') : 'Proveri odgovor'}</button></section>`;
 }
@@ -216,7 +227,9 @@ function checkAnswer() {
   const count = Math.max(1, Number(currentActivity.questionCount || preferences.questionCount));
   if (!practice.answered) {
     practice.answerValue = answer;
-    practice.lastCorrect = normalizeAnswer(answer) === normalizeAnswer(expected);
+    practice.lastCorrect = currentActivity.type === 'text-quiz'
+      ? matchesTypedAnswer(answer, expected)
+      : normalizeAnswer(answer) === normalizeAnswer(expected);
     practice.answered = true;
     if (practice.lastCorrect) practice.correct += 1;
     updateStats(item, practice.lastCorrect);

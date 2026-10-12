@@ -1,973 +1,1149 @@
 {
-  "id": "hemija",
-  "title": "Hemija",
-  "description": "Hemija za 7. razred osnovne škole.",
-  "icon": "⚗",
-  "chapters": [
-    {
-      "id": "elements",
-      "title": "Hemijski elementi",
-      "description": "Uči hemijske simbole i nazive elemenata, uz kratke opise i testove.",
-      "icon": "⚗",
-      "imageDirectory": "assets/images/illustrations/chemistry/elements",
-      "imageField": "image",
-      "items": [
+    "id": "hemija",
+    "title": "Hemija",
+    "description": "Hemija za 7. razred osnovne škole.",
+    "icon": "⚗",
+    "chapters": [
         {
-          "name": "Vodonik",
-          "symbol": "H",
-          "image": "H.png",
-          "description": "Sunce i zvezde",
-          "enabled": true
+            "id": "elements",
+            "title": "Hemijski elementi",
+            "description": "Uči hemijske simbole i nazive elemenata, uz kratke opise i testove.",
+            "icon": "⚗",
+            "imageDirectory": "assets/images/illustrations/chemistry/elements",
+            "imageField": "image",
+            "items": [
+                {
+                    "name": "Vodonik",
+                    "symbol": "H",
+                    "image": "H.png",
+                    "description": "Sunce i zvezde",
+                    "enabled": true
+                },
+                {
+                    "name": "Helijum",
+                    "symbol": "He",
+                    "image": "HE.png",
+                    "description": "Baloni",
+                    "enabled": true
+                },
+                {
+                    "name": "Litijum",
+                    "symbol": "Li",
+                    "image": "LI.png",
+                    "description": "Baterije",
+                    "enabled": true
+                },
+                {
+                    "name": "Berilijum",
+                    "symbol": "Be",
+                    "image": "BE.png",
+                    "description": "Smaragdi",
+                    "enabled": true
+                },
+                {
+                    "name": "Bor",
+                    "symbol": "B",
+                    "image": "B.png",
+                    "description": "Sportska oprema",
+                    "enabled": true
+                },
+                {
+                    "name": "Ugljenik",
+                    "symbol": "C",
+                    "image": "C.png",
+                    "description": "Osnova molekula života",
+                    "enabled": true
+                },
+                {
+                    "name": "Azot",
+                    "symbol": "N",
+                    "image": "N.png",
+                    "description": "Belančevine",
+                    "enabled": true
+                },
+                {
+                    "name": "Kiseonik",
+                    "symbol": "O",
+                    "image": "O.png",
+                    "description": "Vazduh",
+                    "enabled": true
+                },
+                {
+                    "name": "Fluor",
+                    "symbol": "F",
+                    "image": "F.png",
+                    "description": "Pasta za zube",
+                    "enabled": true
+                },
+                {
+                    "name": "Natrijum",
+                    "symbol": "Na",
+                    "image": "NA.png",
+                    "description": "Kuhinjska so",
+                    "enabled": true
+                },
+                {
+                    "name": "Magnezijum",
+                    "symbol": "Mg",
+                    "image": "MG.png",
+                    "description": "Hlorofil",
+                    "enabled": true
+                },
+                {
+                    "name": "Aluminijum",
+                    "symbol": "Al",
+                    "image": "AL.png",
+                    "description": "Avioni",
+                    "enabled": true
+                },
+                {
+                    "name": "Silicijum",
+                    "symbol": "Si",
+                    "image": "SI.png",
+                    "description": "Kamenje, pesak i zemlja",
+                    "enabled": true
+                },
+                {
+                    "name": "Fosfor",
+                    "symbol": "P",
+                    "image": "P.png",
+                    "description": "Kosti",
+                    "enabled": true
+                },
+                {
+                    "name": "Sumpor",
+                    "symbol": "S",
+                    "image": "S.png",
+                    "description": "Jaja",
+                    "enabled": true
+                },
+                {
+                    "name": "Hlor",
+                    "symbol": "Cl",
+                    "image": "CL.png",
+                    "description": "Bazeni",
+                    "enabled": true
+                },
+                {
+                    "name": "Kalijum",
+                    "symbol": "K",
+                    "image": "K.png",
+                    "description": "Voće i povrće",
+                    "enabled": true
+                },
+                {
+                    "name": "Kalcijum",
+                    "symbol": "Ca",
+                    "image": "CA.png",
+                    "description": "Školjke i kosti",
+                    "enabled": true
+                },
+                {
+                    "name": "Hrom",
+                    "symbol": "Cr",
+                    "image": "CR.png",
+                    "description": "Nerđajući čelik",
+                    "enabled": true
+                },
+                {
+                    "name": "Mangan",
+                    "symbol": "Mn",
+                    "image": "MN.png",
+                    "description": "Buldožeri",
+                    "enabled": true
+                },
+                {
+                    "name": "Gvožđe",
+                    "symbol": "Fe",
+                    "image": "FE.png",
+                    "description": "Mostovi",
+                    "enabled": true
+                },
+                {
+                    "name": "Kobalt",
+                    "symbol": "Co",
+                    "image": "CO.png",
+                    "description": "Magneti",
+                    "enabled": true
+                },
+                {
+                    "name": "Nikal",
+                    "symbol": "Ni",
+                    "image": "NI.png",
+                    "description": "Novčići",
+                    "enabled": true
+                },
+                {
+                    "name": "Bakar",
+                    "symbol": "Cu",
+                    "image": "CU.png",
+                    "description": "Električne žice",
+                    "enabled": true
+                },
+                {
+                    "name": "Cink",
+                    "symbol": "Zn",
+                    "image": "ZN.png",
+                    "description": "Trube",
+                    "enabled": true
+                },
+                {
+                    "name": "Galijum",
+                    "symbol": "Ga",
+                    "image": "GA.png",
+                    "description": "LED lampice",
+                    "enabled": true
+                },
+                {
+                    "name": "Arsen",
+                    "symbol": "As",
+                    "image": "AS.png",
+                    "description": "Otrov",
+                    "enabled": true
+                },
+                {
+                    "name": "Selen",
+                    "symbol": "Se",
+                    "image": "SE.png",
+                    "description": "Kopir mašine",
+                    "enabled": true
+                },
+                {
+                    "name": "Brom",
+                    "symbol": "Br",
+                    "image": "BR.png",
+                    "description": "Fotografski film",
+                    "enabled": true
+                },
+                {
+                    "name": "Stroncijum",
+                    "symbol": "Sr",
+                    "image": "SR.png",
+                    "description": "Vatrometi",
+                    "enabled": true
+                },
+                {
+                    "name": "Srebro",
+                    "symbol": "Ag",
+                    "image": "AG.png",
+                    "description": "Nakit",
+                    "enabled": true
+                },
+                {
+                    "name": "Kadmijum",
+                    "symbol": "Cd",
+                    "image": "CD.png",
+                    "description": "Boja",
+                    "enabled": true
+                },
+                {
+                    "name": "Kalaj",
+                    "symbol": "Sn",
+                    "image": "SN.png",
+                    "description": "Konzerve za hranu",
+                    "enabled": true
+                },
+                {
+                    "name": "Antimon",
+                    "symbol": "Sb",
+                    "image": "SB.png",
+                    "description": "Auto akumulatori",
+                    "enabled": true
+                },
+                {
+                    "name": "Jod",
+                    "symbol": "I",
+                    "image": "I.png",
+                    "description": "Sredstvo za dezinfekciju",
+                    "enabled": true
+                },
+                {
+                    "name": "Barijum",
+                    "symbol": "Ba",
+                    "image": "BA.png",
+                    "description": "Rendgenski snimak",
+                    "enabled": true
+                },
+                {
+                    "name": "Platina",
+                    "symbol": "Pt",
+                    "image": "PT.png",
+                    "description": "Laboratorijski pribor",
+                    "enabled": true
+                },
+                {
+                    "name": "Zlato",
+                    "symbol": "Au",
+                    "image": "AU.png",
+                    "description": "Nakit",
+                    "enabled": true
+                },
+                {
+                    "name": "Živa",
+                    "symbol": "Hg",
+                    "image": "HG.png",
+                    "description": "Termometri",
+                    "enabled": true
+                },
+                {
+                    "name": "Olovo",
+                    "symbol": "Pb",
+                    "image": "PB.png",
+                    "description": "Tegovi",
+                    "enabled": true
+                },
+                {
+                    "name": "Bizmut",
+                    "symbol": "Bi",
+                    "image": "BI.png",
+                    "description": "Protivpožarne prskalice",
+                    "enabled": true
+                }
+            ],
+            "activities": [
+                {
+                    "id": "learn-symbol",
+                    "type": "flashcards",
+                    "title": "Simbol → naziv",
+                    "description": "Pogledaj simbol, pa okreni karticu da vidiš naziv i sliku.",
+                    "frontField": "symbol",
+                    "backField": "name",
+                    "imageField": "image",
+                    "imageOn": "back"
+                },
+                {
+                    "id": "learn-name",
+                    "type": "flashcards",
+                    "title": "Naziv → simbol",
+                    "description": "Pogledaj naziv i sliku, pa otkrij hemijski simbol.",
+                    "frontField": "name",
+                    "backField": "symbol",
+                    "imageField": "image",
+                    "imageOn": "front"
+                },
+                {
+                    "id": "test-name",
+                    "type": "text-quiz",
+                    "title": "Testiraj naziv",
+                    "description": "Upiši naziv elementa na osnovu hemijskog simbola.",
+                    "promptField": "symbol",
+                    "answerField": "name",
+                    "imageField": "image",
+                    "imageTiming": "after-answer",
+                    "answerLabel": "naziv elementa"
+                },
+                {
+                    "id": "test-symbol",
+                    "type": "text-quiz",
+                    "title": "Testiraj simbol",
+                    "description": "Upiši simbol na osnovu naziva i slike elementa.",
+                    "promptField": "name",
+                    "answerField": "symbol",
+                    "imageField": "image",
+                    "imageTiming": "always",
+                    "answerLabel": "hemijski simbol"
+                }
+            ]
         },
         {
-          "name": "Helijum",
-          "symbol": "He",
-          "image": "HE.png",
-          "description": "Baloni",
-          "enabled": true
+            "id": "hemijska-laboratorija",
+            "title": "Hemijska laboratorija",
+            "description": "Laboratorijski pribor, merenje i bezbedan rad, kao i fizičke i hemijske promene.",
+            "icon": "⚗",
+            "imageField": "image",
+            "items": [
+                {
+                    "id": "epruveta",
+                    "name": "Epruveta",
+                    "purpose": "Za izvođenje manjih ogleda i zagrevanje manjih količina supstance.",
+                    "material": "staklo",
+                    "enabled": true
+                },
+                {
+                    "id": "reagens-boce",
+                    "name": "Reagens-boce",
+                    "purpose": "Za čuvanje tečnih i čvrstih supstanci.",
+                    "material": "staklo",
+                    "enabled": true
+                },
+                {
+                    "id": "laboratorijska-casa",
+                    "name": "Laboratorijska čaša",
+                    "purpose": "Za mešanje, zagrevanje i presipanje; zapreminu meri samo približno.",
+                    "material": "staklo",
+                    "enabled": true
+                },
+                {
+                    "id": "levak",
+                    "name": "Levak",
+                    "purpose": "Za presipanje tečnosti i ceđenje pomoću filter-papira.",
+                    "material": "staklo",
+                    "enabled": true
+                },
+                {
+                    "id": "sahatno-staklo",
+                    "name": "Sahatno staklo",
+                    "purpose": "Za isparavanje malih količina tečnosti ili pokrivanje čaše.",
+                    "material": "staklo",
+                    "enabled": true
+                },
+                {
+                    "id": "erlenmajerova-tikvica",
+                    "name": "Erlenmajerova tikvica",
+                    "purpose": "Za mešanje i zagrevanje tečnosti; uz pažljivo kružno mućkanje.",
+                    "material": "staklo",
+                    "enabled": true
+                },
+                {
+                    "id": "tikvica-sa-okruglim-dnom",
+                    "name": "Tikvica sa okruglim dnom",
+                    "purpose": "Za zagrevanje i izvođenje ogleda sa tečnostima.",
+                    "material": "staklo",
+                    "enabled": true
+                },
+                {
+                    "id": "hladnjak",
+                    "name": "Hladnjak (kondenzator)",
+                    "purpose": "Za hlađenje pare i njeno pretvaranje u tečnost tokom destilacije.",
+                    "material": "staklo",
+                    "enabled": true
+                },
+                {
+                    "id": "menzura",
+                    "name": "Menzura",
+                    "purpose": "Za merenje zapremine tečnosti.",
+                    "material": "staklo",
+                    "enabled": true
+                },
+                {
+                    "id": "pipeta",
+                    "name": "Pipeta",
+                    "purpose": "Za precizno odmeravanje i prenošenje manjih zapremina tečnosti.",
+                    "material": "staklo",
+                    "enabled": true
+                },
+                {
+                    "id": "bireta",
+                    "name": "Bireta",
+                    "purpose": "Za precizno odmeravanje i ispuštanje tečnosti, kap po kap.",
+                    "material": "staklo",
+                    "enabled": true
+                },
+                {
+                    "id": "spric-boca",
+                    "name": "Špric-boca",
+                    "purpose": "Za ispiranje posuđa mlazom destilovane vode.",
+                    "material": "plastika",
+                    "enabled": true
+                },
+                {
+                    "id": "spiritusna-lampa",
+                    "name": "Špiritusna lampa",
+                    "purpose": "Za zagrevanje supstanci plamenom.",
+                    "material": "staklo i metal",
+                    "enabled": true
+                },
+                {
+                    "id": "gasna-grejna-lampa",
+                    "name": "Gasna grejna lampa",
+                    "purpose": "Za zagrevanje supstanci plamenom.",
+                    "material": "metal",
+                    "enabled": true
+                },
+                {
+                    "id": "stativ",
+                    "name": "Stativ",
+                    "purpose": "Za pričvršćivanje pribora i držanje aparature tokom ogleda.",
+                    "material": "metal",
+                    "enabled": true
+                },
+                {
+                    "id": "muf",
+                    "name": "Muf",
+                    "purpose": "Za pričvršćivanje držača i prstenova na stativ.",
+                    "material": "metal",
+                    "enabled": true
+                },
+                {
+                    "id": "metalni-prsten",
+                    "name": "Metalni prsten za stativ",
+                    "purpose": "Za oslanjanje posuđa ili mrežice na stativu.",
+                    "material": "metal",
+                    "enabled": true
+                },
+                {
+                    "id": "tronozac",
+                    "name": "Tronožac",
+                    "purpose": "Nosač posuđa tokom zagrevanja, obično uz metalnu mrežicu.",
+                    "material": "metal",
+                    "enabled": true
+                },
+                {
+                    "id": "azbestna-mrezica",
+                    "name": "Metalna mrežica",
+                    "purpose": "Postavlja se na nosač i ravnomernije raspoređuje toplotu.",
+                    "material": "metal",
+                    "enabled": true
+                },
+                {
+                    "id": "hvataljke",
+                    "name": "Metalne hvataljke",
+                    "purpose": "Za držanje i prenošenje zagrejanog posuđa.",
+                    "material": "metal",
+                    "enabled": true
+                },
+                {
+                    "id": "mehanicka-vaga",
+                    "name": "Mehanička vaga",
+                    "purpose": "Za merenje mase supstance pomoću tegova.",
+                    "material": "metal i drugi materijali",
+                    "enabled": true
+                },
+                {
+                    "id": "elektronska-vaga",
+                    "name": "Elektronska vaga",
+                    "purpose": "Za precizno merenje mase supstance.",
+                    "material": "metal i drugi materijali",
+                    "enabled": true
+                },
+                {
+                    "id": "porcelanska-skoljka",
+                    "name": "Porcelanska šolja",
+                    "purpose": "Za držanje ili zagrevanje manjih količina čvrste supstance.",
+                    "material": "porcelan",
+                    "enabled": true
+                },
+                {
+                    "id": "porcelanski-loncic",
+                    "name": "Porcelanski lončić",
+                    "purpose": "Za snažno zagrevanje malih količina čvrste supstance.",
+                    "material": "porcelan",
+                    "enabled": true
+                },
+                {
+                    "id": "avan-sa-tuckom",
+                    "name": "Avan sa tučkom",
+                    "purpose": "Za usitnjavanje čvrstih supstanci.",
+                    "material": "porcelan",
+                    "enabled": true
+                },
+                {
+                    "id": "stalak-za-epruvete",
+                    "name": "Stalak za epruvete",
+                    "purpose": "Za uspravno držanje epruveta.",
+                    "material": "drvo",
+                    "enabled": true
+                },
+                {
+                    "id": "drvena-stipaljka",
+                    "name": "Drvena štipaljka",
+                    "purpose": "Za držanje epruvete tokom zagrevanja na otvorenom plamenu.",
+                    "material": "drvo",
+                    "enabled": true
+                },
+                {
+                    "id": "kasicica",
+                    "name": "Kašičica",
+                    "purpose": "Za uzimanje i prenošenje malih količina čvrste supstance.",
+                    "material": "metal",
+                    "enabled": true
+                },
+                {
+                    "id": "stakleni-stapic",
+                    "name": "Stakleni štapić",
+                    "purpose": "Za mešanje tečnosti.",
+                    "material": "staklo",
+                    "enabled": true
+                }
+            ],
+            "questions": [
+                {
+                    "id": "q1-menzura",
+                    "prompt": "Menzura je namenjena zagrevanju supstanci.",
+                    "choices": [
+                        "Tačno",
+                        "Netačno"
+                    ],
+                    "answer": "Netačno",
+                    "sourceTask": "1",
+                    "enabled": true
+                },
+                {
+                    "id": "q1-levak",
+                    "prompt": "Levak može da se koristi za ceđenje uz odgovarajući filter.",
+                    "choices": [
+                        "Tačno",
+                        "Netačno"
+                    ],
+                    "answer": "Tačno",
+                    "sourceTask": "1",
+                    "enabled": true
+                },
+                {
+                    "id": "q1-kasicica",
+                    "prompt": "Kašičicu možemo koristiti za drugu supstancu bez prethodnog pranja.",
+                    "choices": [
+                        "Tačno",
+                        "Netačno"
+                    ],
+                    "answer": "Netačno",
+                    "sourceTask": "1",
+                    "enabled": true
+                },
+                {
+                    "id": "q1-avan",
+                    "prompt": "Čvrste supstance usitnjavamo u avanu pomoću tučka.",
+                    "choices": [
+                        "Tačno",
+                        "Netačno"
+                    ],
+                    "answer": "Tačno",
+                    "sourceTask": "1",
+                    "enabled": true
+                },
+                {
+                    "id": "q1-pipeta",
+                    "prompt": "Pipeta služi za odmeravanje zapremine tečnosti.",
+                    "choices": [
+                        "Tačno",
+                        "Netačno"
+                    ],
+                    "answer": "Tačno",
+                    "sourceTask": "1",
+                    "enabled": true
+                },
+                {
+                    "id": "q4-masa",
+                    "prompt": "Čime merimo masu supstance?",
+                    "choices": [
+                        "Vagom",
+                        "Menzurom",
+                        "Levakom"
+                    ],
+                    "answer": "Vagom",
+                    "sourceTask": "4",
+                    "enabled": true
+                },
+                {
+                    "id": "q4-zapremina",
+                    "prompt": "Koji pribor je namenjen merenju zapremine tečnosti?",
+                    "choices": [
+                        "Menzura",
+                        "Avan",
+                        "Stalak za epruvete"
+                    ],
+                    "answer": "Menzura",
+                    "sourceTask": "4",
+                    "enabled": true
+                },
+                {
+                    "id": "q4-zagrevanje",
+                    "prompt": "Koji izvor toplote možemo koristiti za zagrevanje u školskom ogledu?",
+                    "choices": [
+                        "Špiritusna lampa",
+                        "Menzura",
+                        "Pipeta"
+                    ],
+                    "answer": "Špiritusna lampa",
+                    "sourceTask": "4",
+                    "enabled": true
+                },
+                {
+                    "id": "q5-temperatura",
+                    "prompt": "Koji pribor koristimo za merenje temperature?",
+                    "choices": [
+                        "Termometar",
+                        "Kašičica",
+                        "Levak"
+                    ],
+                    "answer": "Termometar",
+                    "sourceTask": "5",
+                    "enabled": true
+                },
+                {
+                    "id": "q5-cuvanje",
+                    "prompt": "Koji pribor služi za čuvanje praškastih supstanci?",
+                    "choices": [
+                        "Reagens-boca",
+                        "Tronožac",
+                        "Pipeta"
+                    ],
+                    "answer": "Reagens-boca",
+                    "sourceTask": "5",
+                    "enabled": true
+                },
+                {
+                    "id": "q6-zagrevanje",
+                    "prompt": "Šta može biti deo pribora za zagrevanje supstance?",
+                    "choices": [
+                        "Špiritusna lampa i metalna mrežica",
+                        "Menzura i levak",
+                        "Pipeta i reagens-boca"
+                    ],
+                    "answer": "Špiritusna lampa i metalna mrežica",
+                    "sourceTask": "6",
+                    "enabled": true
+                },
+                {
+                    "id": "q7-zapremina",
+                    "prompt": "Izaberi pribor kojim možemo meriti zapreminu tečnosti.",
+                    "choices": [
+                        "Menzura i pipeta",
+                        "Avan i tučak",
+                        "Metalna mrežica i tronožac"
+                    ],
+                    "answer": "Menzura i pipeta",
+                    "sourceTask": "7",
+                    "enabled": true
+                },
+                {
+                    "id": "q8-materijal",
+                    "prompt": "Od kog materijala je napravljen avan sa tučkom?",
+                    "choices": [
+                        "Porcelana",
+                        "Stakla",
+                        "Drveta"
+                    ],
+                    "answer": "Porcelana",
+                    "sourceTask": "8",
+                    "enabled": true
+                },
+                {
+                    "id": "q9-funkcija",
+                    "prompt": "Koji pribor koristimo za usitnjavanje čvrste supstance?",
+                    "choices": [
+                        "Avan sa tučkom",
+                        "Menzura",
+                        "Stalak za epruvete"
+                    ],
+                    "answer": "Avan sa tučkom",
+                    "sourceTask": "9",
+                    "enabled": true
+                },
+                {
+                    "id": "q10-fizicka",
+                    "prompt": "Koji primer predstavlja fizičku promenu?",
+                    "choices": [
+                        "Savijanje aluminijumske folije",
+                        "Pečenje kolača",
+                        "Rđanje gvožđa"
+                    ],
+                    "answer": "Savijanje aluminijumske folije",
+                    "sourceTask": "2",
+                    "enabled": true
+                },
+                {
+                    "id": "q10-hemijska",
+                    "prompt": "Koji primer predstavlja hemijsku promenu?",
+                    "choices": [
+                        "Pečenje kolača",
+                        "Sečenje papira",
+                        "Topljenje leda"
+                    ],
+                    "answer": "Pečenje kolača",
+                    "sourceTask": "2",
+                    "enabled": true
+                },
+                {
+                    "id": "promena-kuvanje",
+                    "prompt": "Kuvanje jajeta je:",
+                    "choices": [
+                        "Hemijska promena",
+                        "Fizička promena"
+                    ],
+                    "answer": "Hemijska promena",
+                    "sourceTask": "2",
+                    "enabled": true
+                },
+                {
+                    "id": "promena-savijanje",
+                    "prompt": "Savijanje aluminijumske folije je:",
+                    "choices": [
+                        "Fizička promena",
+                        "Hemijska promena"
+                    ],
+                    "answer": "Fizička promena",
+                    "sourceTask": "2",
+                    "enabled": true
+                },
+                {
+                    "id": "promena-mlevenje",
+                    "prompt": "Mlevenjem zrna kafe nastaje drugačija veličina čestica, ali ne i nova supstanca. To je:",
+                    "choices": [
+                        "Fizička promena",
+                        "Hemijska promena"
+                    ],
+                    "answer": "Fizička promena",
+                    "sourceTask": "2",
+                    "enabled": true
+                },
+                {
+                    "id": "promena-gorenje",
+                    "prompt": "Gorenje sveće pri kome nastaju nove supstance je:",
+                    "choices": [
+                        "Hemijska promena",
+                        "Fizička promena"
+                    ],
+                    "answer": "Hemijska promena",
+                    "sourceTask": "2",
+                    "enabled": true
+                },
+                {
+                    "id": "promena-mlevenje-zrna",
+                    "prompt": "Mlevenje zrna u brašno je fizička ili hemijska promena?",
+                    "choices": [
+                        "Fizička promena",
+                        "Hemijska promena"
+                    ],
+                    "answer": "Fizička promena",
+                    "sourceTask": "3",
+                    "enabled": true
+                },
+                {
+                    "id": "promena-razbijanje-jajeta",
+                    "prompt": "Razbijanje jajeta je fizička ili hemijska promena?",
+                    "choices": [
+                        "Fizička promena",
+                        "Hemijska promena"
+                    ],
+                    "answer": "Fizička promena",
+                    "sourceTask": "3",
+                    "enabled": true
+                },
+                {
+                    "id": "promena-mesenje",
+                    "prompt": "Mešanje sastojaka pre pečenja stvara novu supstancu?",
+                    "choices": [
+                        "Ne, to je fizička promena",
+                        "Da, to je hemijska promena"
+                    ],
+                    "answer": "Ne, to je fizička promena",
+                    "sourceTask": "3",
+                    "enabled": true
+                },
+                {
+                    "id": "promena-pecenje-hleba",
+                    "prompt": "Pečenje testa u hleb je fizička ili hemijska promena?",
+                    "choices": [
+                        "Hemijska promena",
+                        "Fizička promena"
+                    ],
+                    "answer": "Hemijska promena",
+                    "sourceTask": "3",
+                    "enabled": true
+                },
+                {
+                    "id": "promena-secenje-hleba",
+                    "prompt": "Sečenje ispečenog hleba je fizička ili hemijska promena?",
+                    "choices": [
+                        "Fizička promena",
+                        "Hemijska promena"
+                    ],
+                    "answer": "Fizička promena",
+                    "sourceTask": "3",
+                    "enabled": true
+                },
+                {
+                    "id": "stanje-isparavanje",
+                    "prompt": "Kako se zove prelazak tečnosti u gasovito agregatno stanje?",
+                    "choices": [
+                        "Isparavanje",
+                        "Kondenzacija",
+                        "Mržnjenje"
+                    ],
+                    "answer": "Isparavanje",
+                    "sourceTask": "9",
+                    "enabled": true
+                },
+                {
+                    "id": "stanje-kondenzacija",
+                    "prompt": "Kako se zove prelazak gasa u tečno agregatno stanje?",
+                    "choices": [
+                        "Kondenzacija",
+                        "Sublimacija",
+                        "Topljenje"
+                    ],
+                    "answer": "Kondenzacija",
+                    "sourceTask": "9",
+                    "enabled": true
+                },
+                {
+                    "id": "rdjanje-gvozdja",
+                    "prompt": "Rđanje gvožđa i pojava zelenog sloja na bakru su:",
+                    "choices": [
+                        "Hemijske promene jer nastaju nove supstance",
+                        "Fizičke promene jer se menja samo oblik"
+                    ],
+                    "answer": "Hemijske promene jer nastaju nove supstance",
+                    "sourceTask": "6",
+                    "enabled": true
+                },
+                {
+                    "id": "razlikovanje-supstanci",
+                    "prompt": "Supstance možemo razlikovati po boji, mirisu, obliku i agregatnom stanju.",
+                    "choices": [
+                        "Tačno",
+                        "Netačno"
+                    ],
+                    "answer": "Tačno",
+                    "sourceTask": "7",
+                    "enabled": true
+                },
+                {
+                    "id": "promena-velicina-zrna",
+                    "prompt": "Ako se zrna razlikuju samo po veličini, nastala je nova supstanca.",
+                    "choices": [
+                        "Netačno",
+                        "Tačno"
+                    ],
+                    "answer": "Netačno",
+                    "sourceTask": "8",
+                    "enabled": true
+                },
+                {
+                    "id": "secer-usitnjavanje",
+                    "prompt": "Usitnjavanje šećera u avanu je:",
+                    "choices": [
+                        "Fizička promena",
+                        "Hemijska promena"
+                    ],
+                    "answer": "Fizička promena",
+                    "sourceTask": "10",
+                    "enabled": true
+                },
+                {
+                    "id": "secer-rastvaranje",
+                    "prompt": "Rastvaranje šećera u vodi je:",
+                    "choices": [
+                        "Fizička promena",
+                        "Hemijska promena"
+                    ],
+                    "answer": "Fizička promena",
+                    "sourceTask": "10",
+                    "enabled": true
+                }
+            ],
+            "activities": [
+                {
+                    "id": "pribor-kartice",
+                    "type": "flashcards",
+                    "title": "Kartice: pribor i namena",
+                    "description": "Poveži naziv laboratorijskog pribora sa njegovom namenom.",
+                    "frontField": "name",
+                    "backField": "purpose",
+                    "itemSet": "items",
+                    "imageOn": "front",
+                    "icon": "▣"
+                },
+                {
+                    "id": "pogodi-pribor",
+                    "type": "text-quiz",
+                    "title": "Pogodi pribor po nameni",
+                    "description": "Pročitaj čemu pribor služi i upiši njegov naziv.",
+                    "promptField": "purpose",
+                    "answerField": "name",
+                    "itemSet": "items",
+                    "questionCount": 10,
+                    "answerLabel": "naziv pribora",
+                    "icon": "?"
+                },
+                {
+                    "id": "igra-brzi-izbor",
+                    "type": "choice-quiz",
+                    "title": "Igra: laboratorijski izazov",
+                    "description": "Brzo izaberi tačan odgovor o priboru, bezbednosti i promenama.",
+                    "itemSet": "questions",
+                    "questionCount": 10,
+                    "kindLabel": "Igra znanja",
+                    "icon": "⚡"
+                },
+                {
+                    "id": "kontrolni",
+                    "type": "choice-quiz",
+                    "title": "Probni kontrolni",
+                    "description": "Vežbaj pitanja i pojmove iz označenih zadataka.",
+                    "itemSet": "questions",
+                    "questionCount": 15,
+                    "kindLabel": "Kontrolni",
+                    "icon": "✓"
+                }
+            ]
         },
         {
-          "name": "Litijum",
-          "symbol": "Li",
-          "image": "LI.png",
-          "description": "Baterije",
-          "enabled": true
-        },
-        {
-          "name": "Berilijum",
-          "symbol": "Be",
-          "image": "BE.png",
-          "description": "Smaragdi",
-          "enabled": true
-        },
-        {
-          "name": "Bor",
-          "symbol": "B",
-          "image": "B.png",
-          "description": "Sportska oprema",
-          "enabled": true
-        },
-        {
-          "name": "Ugljenik",
-          "symbol": "C",
-          "image": "C.png",
-          "description": "Osnova molekula života",
-          "enabled": true
-        },
-        {
-          "name": "Azot",
-          "symbol": "N",
-          "image": "N.png",
-          "description": "Belančevine",
-          "enabled": true
-        },
-        {
-          "name": "Kiseonik",
-          "symbol": "O",
-          "image": "O.png",
-          "description": "Vazduh",
-          "enabled": true
-        },
-        {
-          "name": "Fluor",
-          "symbol": "F",
-          "image": "F.png",
-          "description": "Pasta za zube",
-          "enabled": true
-        },
-        {
-          "name": "Natrijum",
-          "symbol": "Na",
-          "image": "NA.png",
-          "description": "Kuhinjska so",
-          "enabled": true
-        },
-        {
-          "name": "Magnezijum",
-          "symbol": "Mg",
-          "image": "MG.png",
-          "description": "Hlorofil",
-          "enabled": true
-        },
-        {
-          "name": "Aluminijum",
-          "symbol": "Al",
-          "image": "AL.png",
-          "description": "Avioni",
-          "enabled": true
-        },
-        {
-          "name": "Silicijum",
-          "symbol": "Si",
-          "image": "SI.png",
-          "description": "Kamenje, pesak i zemlja",
-          "enabled": true
-        },
-        {
-          "name": "Fosfor",
-          "symbol": "P",
-          "image": "P.png",
-          "description": "Kosti",
-          "enabled": true
-        },
-        {
-          "name": "Sumpor",
-          "symbol": "S",
-          "image": "S.png",
-          "description": "Jaja",
-          "enabled": true
-        },
-        {
-          "name": "Hlor",
-          "symbol": "Cl",
-          "image": "CL.png",
-          "description": "Bazeni",
-          "enabled": true
-        },
-        {
-          "name": "Kalijum",
-          "symbol": "K",
-          "image": "K.png",
-          "description": "Voće i povrće",
-          "enabled": true
-        },
-        {
-          "name": "Kalcijum",
-          "symbol": "Ca",
-          "image": "CA.png",
-          "description": "Školjke i kosti",
-          "enabled": true
-        },
-        {
-          "name": "Hrom",
-          "symbol": "Cr",
-          "image": "CR.png",
-          "description": "Nerđajući čelik",
-          "enabled": true
-        },
-        {
-          "name": "Mangan",
-          "symbol": "Mn",
-          "image": "MN.png",
-          "description": "Buldožeri",
-          "enabled": true
-        },
-        {
-          "name": "Gvožđe",
-          "symbol": "Fe",
-          "image": "FE.png",
-          "description": "Mostovi",
-          "enabled": true
-        },
-        {
-          "name": "Kobalt",
-          "symbol": "Co",
-          "image": "CO.png",
-          "description": "Magneti",
-          "enabled": true
-        },
-        {
-          "name": "Nikal",
-          "symbol": "Ni",
-          "image": "NI.png",
-          "description": "Novčići",
-          "enabled": true
-        },
-        {
-          "name": "Bakar",
-          "symbol": "Cu",
-          "image": "CU.png",
-          "description": "Električne žice",
-          "enabled": true
-        },
-        {
-          "name": "Cink",
-          "symbol": "Zn",
-          "image": "ZN.png",
-          "description": "Trube",
-          "enabled": true
-        },
-        {
-          "name": "Galijum",
-          "symbol": "Ga",
-          "image": "GA.png",
-          "description": "LED lampice",
-          "enabled": true
-        },
-        {
-          "name": "Arsen",
-          "symbol": "As",
-          "image": "AS.png",
-          "description": "Otrov",
-          "enabled": true
-        },
-        {
-          "name": "Selen",
-          "symbol": "Se",
-          "image": "SE.png",
-          "description": "Kopir mašine",
-          "enabled": true
-        },
-        {
-          "name": "Brom",
-          "symbol": "Br",
-          "image": "BR.png",
-          "description": "Fotografski film",
-          "enabled": true
-        },
-        {
-          "name": "Stroncijum",
-          "symbol": "Sr",
-          "image": "SR.png",
-          "description": "Vatrometi",
-          "enabled": true
-        },
-        {
-          "name": "Srebro",
-          "symbol": "Ag",
-          "image": "AG.png",
-          "description": "Nakit",
-          "enabled": true
-        },
-        {
-          "name": "Kadmijum",
-          "symbol": "Cd",
-          "image": "CD.png",
-          "description": "Boja",
-          "enabled": true
-        },
-        {
-          "name": "Kalaj",
-          "symbol": "Sn",
-          "image": "SN.png",
-          "description": "Konzerve za hranu",
-          "enabled": true
-        },
-        {
-          "name": "Antimon",
-          "symbol": "Sb",
-          "image": "SB.png",
-          "description": "Auto akumulatori",
-          "enabled": true
-        },
-        {
-          "name": "Jod",
-          "symbol": "I",
-          "image": "I.png",
-          "description": "Sredstvo za dezinfekciju",
-          "enabled": true
-        },
-        {
-          "name": "Barijum",
-          "symbol": "Ba",
-          "image": "BA.png",
-          "description": "Rendgenski snimak",
-          "enabled": true
-        },
-        {
-          "name": "Platina",
-          "symbol": "Pt",
-          "image": "PT.png",
-          "description": "Laboratorijski pribor",
-          "enabled": true
-        },
-        {
-          "name": "Zlato",
-          "symbol": "Au",
-          "image": "AU.png",
-          "description": "Nakit",
-          "enabled": true
-        },
-        {
-          "name": "Živa",
-          "symbol": "Hg",
-          "image": "HG.png",
-          "description": "Termometri",
-          "enabled": true
-        },
-        {
-          "name": "Olovo",
-          "symbol": "Pb",
-          "image": "PB.png",
-          "description": "Tegovi",
-          "enabled": true
-        },
-        {
-          "name": "Bizmut",
-          "symbol": "Bi",
-          "image": "BI.png",
-          "description": "Protivpožarne prskalice",
-          "enabled": true
+            "id": "poglavlje-e75792fb",
+            "title": "Građa atoma",
+            "description": "Osnovni delovi atoma, njihove čestice i raspored mase.",
+            "icon": "📘",
+            "items": [],
+            "questions": [],
+            "activities": [
+                {
+                    "id": "ai-778bee48-flashcards",
+                    "type": "flashcards",
+                    "title": "Kartice",
+                    "description": "",
+                    "itemSet": "aiCards_e409f08e",
+                    "frontField": "question",
+                    "backField": "answer"
+                },
+                {
+                    "id": "ai-778bee48-choice-quiz",
+                    "type": "choice-quiz",
+                    "title": "Test sa izborom",
+                    "description": "",
+                    "itemSet": "aiQuestions_e409f08e",
+                    "promptField": "prompt",
+                    "answerField": "answer"
+                }
+            ],
+            "aiCards_e409f08e": [
+                {
+                    "id": "ai-778bee48-card-0",
+                    "question": "Šta je atom?",
+                    "answer": "Najmanja čestica hemijskog elementa koja zadržava njegova hemijska svojstva.",
+                    "description": "Atomi su građeni od jezgra i elektronskog omotača."
+                },
+                {
+                    "id": "ai-778bee48-card-1",
+                    "question": "Koja su dva osnovna dela atoma?",
+                    "answer": "Jezgro i elektronski omotač.",
+                    "description": "Jezgro je u središtu atoma, a elektronski omotač je prostor oko njega u kome se nalaze elektroni."
+                },
+                {
+                    "id": "ai-778bee48-card-2",
+                    "question": "Koje čestice se nalaze u jezgru atoma?",
+                    "answer": "Protoni i neutroni.",
+                    "description": "Jezgro čini najveći deo mase atoma."
+                },
+                {
+                    "id": "ai-778bee48-card-3",
+                    "question": "Kakav električni naboj ima proton?",
+                    "answer": "Pozitivan naboj.",
+                    "description": "Proton se označava simbolom p⁺."
+                },
+                {
+                    "id": "ai-778bee48-card-4",
+                    "question": "Kakav električni naboj ima neutron?",
+                    "answer": "Nema električni naboj; neutralan je.",
+                    "description": "Neutron se nalazi u atomskom jezgru."
+                },
+                {
+                    "id": "ai-778bee48-card-5",
+                    "question": "Kakav električni naboj ima elektron?",
+                    "answer": "Negativan naboj.",
+                    "description": "Elektron se označava simbolom e⁻ i nalazi se u elektronskom omotaču."
+                },
+                {
+                    "id": "ai-778bee48-card-6",
+                    "question": "Gde je koncentrisana najveća masa atoma?",
+                    "answer": "U atomskom jezgru.",
+                    "description": "Protoni i neutroni su mnogo masivniji od elektrona."
+                },
+                {
+                    "id": "ai-778bee48-card-7",
+                    "question": "Kako se upoređuju mase protona i neutrona?",
+                    "answer": "One su približno jednake.",
+                    "description": "Masa elektrona je mnogo manja od mase protona ili neutrona."
+                },
+                {
+                    "id": "ai-778bee48-card-8",
+                    "question": "Koliko protona i elektrona ima neutralan atom istog elementa?",
+                    "answer": "Jednak broj protona i elektrona.",
+                    "description": "Pozitivan naboj protona i negativan naboj elektrona međusobno se poništavaju."
+                }
+            ],
+            "aiQuestions_e409f08e": [
+                {
+                    "id": "ai-778bee48-question-0",
+                    "prompt": "Koja je čestica najmanja jedinica hemijskog elementa koja zadržava njegova hemijska svojstva?",
+                    "answer": "Atom",
+                    "choices": [
+                        "Atom",
+                        "Ćelija",
+                        "Molekul"
+                    ]
+                },
+                {
+                    "id": "ai-778bee48-question-1",
+                    "prompt": "Koja dva dela čine atom?",
+                    "answer": "Jezgro i elektronski omotač",
+                    "choices": [
+                        "Neutroni i elektronski omotač",
+                        "Protoni i elektroni",
+                        "Jezgro i elektronski omotač"
+                    ]
+                },
+                {
+                    "id": "ai-778bee48-question-2",
+                    "prompt": "Koje čestice se nalaze u atomskom jezgru?",
+                    "answer": "Protoni i neutroni",
+                    "choices": [
+                        "Protoni i neutroni",
+                        "Elektroni i protoni",
+                        "Samo elektroni"
+                    ]
+                },
+                {
+                    "id": "ai-778bee48-question-3",
+                    "prompt": "Koja čestica ima pozitivan električni naboj?",
+                    "answer": "Proton",
+                    "choices": [
+                        "Proton",
+                        "Elektron",
+                        "Neutron"
+                    ]
+                },
+                {
+                    "id": "ai-778bee48-question-4",
+                    "prompt": "Koja čestica je električno neutralna?",
+                    "answer": "Neutron",
+                    "choices": [
+                        "Neutron",
+                        "Elektron",
+                        "Proton"
+                    ]
+                },
+                {
+                    "id": "ai-778bee48-question-5",
+                    "prompt": "Koja čestica ima negativan električni naboj?",
+                    "answer": "Elektron",
+                    "choices": [
+                        "Elektron",
+                        "Neutron",
+                        "Proton"
+                    ]
+                },
+                {
+                    "id": "ai-778bee48-question-6",
+                    "prompt": "Gde se nalazi najveći deo mase atoma?",
+                    "answer": "U jezgru",
+                    "choices": [
+                        "U jezgru",
+                        "U elektronskom omotaču",
+                        "Podjednako u jezgru i omotaču"
+                    ]
+                },
+                {
+                    "id": "ai-778bee48-question-7",
+                    "prompt": "Kako se međusobno odnose mase protona i neutrona?",
+                    "answer": "Približno su jednake",
+                    "choices": [
+                        "Masa protona je mnogo veća",
+                        "Masa neutrona je mnogo manja",
+                        "Približno su jednake"
+                    ]
+                },
+                {
+                    "id": "ai-778bee48-question-8",
+                    "prompt": "Koji uslov važi za broj protona i elektrona u neutralnom atomu?",
+                    "answer": "Ima jednak broj protona i elektrona",
+                    "choices": [
+                        "Ima jednak broj protona i elektrona",
+                        "Ima više protona nego elektrona",
+                        "Ima više elektrona nego protona"
+                    ]
+                }
+            ]
         }
-      ],
-      "activities": [
-        {
-          "id": "learn-symbol",
-          "type": "flashcards",
-          "title": "Simbol → naziv",
-          "description": "Pogledaj simbol, pa okreni karticu da vidiš naziv i sliku.",
-          "frontField": "symbol",
-          "backField": "name",
-          "imageField": "image",
-          "imageOn": "back"
-        },
-        {
-          "id": "learn-name",
-          "type": "flashcards",
-          "title": "Naziv → simbol",
-          "description": "Pogledaj naziv i sliku, pa otkrij hemijski simbol.",
-          "frontField": "name",
-          "backField": "symbol",
-          "imageField": "image",
-          "imageOn": "front"
-        },
-        {
-          "id": "test-name",
-          "type": "text-quiz",
-          "title": "Testiraj naziv",
-          "description": "Upiši naziv elementa na osnovu hemijskog simbola.",
-          "promptField": "symbol",
-          "answerField": "name",
-          "imageField": "image",
-          "imageTiming": "after-answer",
-          "answerLabel": "naziv elementa"
-        },
-        {
-          "id": "test-symbol",
-          "type": "text-quiz",
-          "title": "Testiraj simbol",
-          "description": "Upiši simbol na osnovu naziva i slike elementa.",
-          "promptField": "name",
-          "answerField": "symbol",
-          "imageField": "image",
-          "imageTiming": "always",
-          "answerLabel": "hemijski simbol"
-        }
-      ]
-    },
-    {
-      "id": "hemijska-laboratorija",
-      "title": "Hemijska laboratorija",
-      "description": "Laboratorijski pribor, merenje i bezbedan rad, kao i fizičke i hemijske promene.",
-      "icon": "⚗",
-      "imageField": "image",
-      "items": [
-        {
-          "id": "epruveta",
-          "name": "Epruveta",
-          "purpose": "Za izvođenje manjih ogleda i zagrevanje manjih količina supstance.",
-          "material": "staklo",
-          "enabled": true
-        },
-        {
-          "id": "reagens-boce",
-          "name": "Reagens-boce",
-          "purpose": "Za čuvanje tečnih i čvrstih supstanci.",
-          "material": "staklo",
-          "enabled": true
-        },
-        {
-          "id": "laboratorijska-casa",
-          "name": "Laboratorijska čaša",
-          "purpose": "Za mešanje, zagrevanje i presipanje; zapreminu meri samo približno.",
-          "material": "staklo",
-          "enabled": true
-        },
-        {
-          "id": "levak",
-          "name": "Levak",
-          "purpose": "Za presipanje tečnosti i ceđenje pomoću filter-papira.",
-          "material": "staklo",
-          "enabled": true
-        },
-        {
-          "id": "sahatno-staklo",
-          "name": "Sahatno staklo",
-          "purpose": "Za isparavanje malih količina tečnosti ili pokrivanje čaše.",
-          "material": "staklo",
-          "enabled": true
-        },
-        {
-          "id": "erlenmajerova-tikvica",
-          "name": "Erlenmajerova tikvica",
-          "purpose": "Za mešanje i zagrevanje tečnosti; uz pažljivo kružno mućkanje.",
-          "material": "staklo",
-          "enabled": true
-        },
-        {
-          "id": "tikvica-sa-okruglim-dnom",
-          "name": "Tikvica sa okruglim dnom",
-          "purpose": "Za zagrevanje i izvođenje ogleda sa tečnostima.",
-          "material": "staklo",
-          "enabled": true
-        },
-        {
-          "id": "hladnjak",
-          "name": "Hladnjak (kondenzator)",
-          "purpose": "Za hlađenje pare i njeno pretvaranje u tečnost tokom destilacije.",
-          "material": "staklo",
-          "enabled": true
-        },
-        {
-          "id": "menzura",
-          "name": "Menzura",
-          "purpose": "Za merenje zapremine tečnosti.",
-          "material": "staklo",
-          "enabled": true
-        },
-        {
-          "id": "pipeta",
-          "name": "Pipeta",
-          "purpose": "Za precizno odmeravanje i prenošenje manjih zapremina tečnosti.",
-          "material": "staklo",
-          "enabled": true
-        },
-        {
-          "id": "bireta",
-          "name": "Bireta",
-          "purpose": "Za precizno odmeravanje i ispuštanje tečnosti, kap po kap.",
-          "material": "staklo",
-          "enabled": true
-        },
-        {
-          "id": "spric-boca",
-          "name": "Špric-boca",
-          "purpose": "Za ispiranje posuđa mlazom destilovane vode.",
-          "material": "plastika",
-          "enabled": true
-        },
-        {
-          "id": "spiritusna-lampa",
-          "name": "Špiritusna lampa",
-          "purpose": "Za zagrevanje supstanci plamenom.",
-          "material": "staklo i metal",
-          "enabled": true
-        },
-        {
-          "id": "gasna-grejna-lampa",
-          "name": "Gasna grejna lampa",
-          "purpose": "Za zagrevanje supstanci plamenom.",
-          "material": "metal",
-          "enabled": true
-        },
-        {
-          "id": "stativ",
-          "name": "Stativ",
-          "purpose": "Za pričvršćivanje pribora i držanje aparature tokom ogleda.",
-          "material": "metal",
-          "enabled": true
-        },
-        {
-          "id": "muf",
-          "name": "Muf",
-          "purpose": "Za pričvršćivanje držača i prstenova na stativ.",
-          "material": "metal",
-          "enabled": true
-        },
-        {
-          "id": "metalni-prsten",
-          "name": "Metalni prsten za stativ",
-          "purpose": "Za oslanjanje posuđa ili mrežice na stativu.",
-          "material": "metal",
-          "enabled": true
-        },
-        {
-          "id": "tronozac",
-          "name": "Tronožac",
-          "purpose": "Nosač posuđa tokom zagrevanja, obično uz metalnu mrežicu.",
-          "material": "metal",
-          "enabled": true
-        },
-        {
-          "id": "azbestna-mrezica",
-          "name": "Metalna mrežica",
-          "purpose": "Postavlja se na nosač i ravnomernije raspoređuje toplotu.",
-          "material": "metal",
-          "enabled": true
-        },
-        {
-          "id": "hvataljke",
-          "name": "Metalne hvataljke",
-          "purpose": "Za držanje i prenošenje zagrejanog posuđa.",
-          "material": "metal",
-          "enabled": true
-        },
-        {
-          "id": "mehanicka-vaga",
-          "name": "Mehanička vaga",
-          "purpose": "Za merenje mase supstance pomoću tegova.",
-          "material": "metal i drugi materijali",
-          "enabled": true
-        },
-        {
-          "id": "elektronska-vaga",
-          "name": "Elektronska vaga",
-          "purpose": "Za precizno merenje mase supstance.",
-          "material": "metal i drugi materijali",
-          "enabled": true
-        },
-        {
-          "id": "porcelanska-skoljka",
-          "name": "Porcelanska šolja",
-          "purpose": "Za držanje ili zagrevanje manjih količina čvrste supstance.",
-          "material": "porcelan",
-          "enabled": true
-        },
-        {
-          "id": "porcelanski-loncic",
-          "name": "Porcelanski lončić",
-          "purpose": "Za snažno zagrevanje malih količina čvrste supstance.",
-          "material": "porcelan",
-          "enabled": true
-        },
-        {
-          "id": "avan-sa-tuckom",
-          "name": "Avan sa tučkom",
-          "purpose": "Za usitnjavanje čvrstih supstanci.",
-          "material": "porcelan",
-          "enabled": true
-        },
-        {
-          "id": "stalak-za-epruvete",
-          "name": "Stalak za epruvete",
-          "purpose": "Za uspravno držanje epruveta.",
-          "material": "drvo",
-          "enabled": true
-        },
-        {
-          "id": "drvena-stipaljka",
-          "name": "Drvena štipaljka",
-          "purpose": "Za držanje epruvete tokom zagrevanja na otvorenom plamenu.",
-          "material": "drvo",
-          "enabled": true
-        },
-        {
-          "id": "kasicica",
-          "name": "Kašičica",
-          "purpose": "Za uzimanje i prenošenje malih količina čvrste supstance.",
-          "material": "metal",
-          "enabled": true
-        },
-        {
-          "id": "stakleni-stapic",
-          "name": "Stakleni štapić",
-          "purpose": "Za mešanje tečnosti.",
-          "material": "staklo",
-          "enabled": true
-        }
-      ],
-      "questions": [
-        {
-          "id": "q1-menzura",
-          "prompt": "Menzura je namenjena zagrevanju supstanci.",
-          "choices": [
-            "Tačno",
-            "Netačno"
-          ],
-          "answer": "Netačno",
-          "sourceTask": "1",
-          "enabled": true
-        },
-        {
-          "id": "q1-levak",
-          "prompt": "Levak može da se koristi za ceđenje uz odgovarajući filter.",
-          "choices": [
-            "Tačno",
-            "Netačno"
-          ],
-          "answer": "Tačno",
-          "sourceTask": "1",
-          "enabled": true
-        },
-        {
-          "id": "q1-kasicica",
-          "prompt": "Kašičicu možemo koristiti za drugu supstancu bez prethodnog pranja.",
-          "choices": [
-            "Tačno",
-            "Netačno"
-          ],
-          "answer": "Netačno",
-          "sourceTask": "1",
-          "enabled": true
-        },
-        {
-          "id": "q1-avan",
-          "prompt": "Čvrste supstance usitnjavamo u avanu pomoću tučka.",
-          "choices": [
-            "Tačno",
-            "Netačno"
-          ],
-          "answer": "Tačno",
-          "sourceTask": "1",
-          "enabled": true
-        },
-        {
-          "id": "q1-pipeta",
-          "prompt": "Pipeta služi za odmeravanje zapremine tečnosti.",
-          "choices": [
-            "Tačno",
-            "Netačno"
-          ],
-          "answer": "Tačno",
-          "sourceTask": "1",
-          "enabled": true
-        },
-        {
-          "id": "q4-masa",
-          "prompt": "Čime merimo masu supstance?",
-          "choices": [
-            "Vagom",
-            "Menzurom",
-            "Levakom"
-          ],
-          "answer": "Vagom",
-          "sourceTask": "4",
-          "enabled": true
-        },
-        {
-          "id": "q4-zapremina",
-          "prompt": "Koji pribor je namenjen merenju zapremine tečnosti?",
-          "choices": [
-            "Menzura",
-            "Avan",
-            "Stalak za epruvete"
-          ],
-          "answer": "Menzura",
-          "sourceTask": "4",
-          "enabled": true
-        },
-        {
-          "id": "q4-zagrevanje",
-          "prompt": "Koji izvor toplote možemo koristiti za zagrevanje u školskom ogledu?",
-          "choices": [
-            "Špiritusna lampa",
-            "Menzura",
-            "Pipeta"
-          ],
-          "answer": "Špiritusna lampa",
-          "sourceTask": "4",
-          "enabled": true
-        },
-        {
-          "id": "q5-temperatura",
-          "prompt": "Koji pribor koristimo za merenje temperature?",
-          "choices": [
-            "Termometar",
-            "Kašičica",
-            "Levak"
-          ],
-          "answer": "Termometar",
-          "sourceTask": "5",
-          "enabled": true
-        },
-        {
-          "id": "q5-cuvanje",
-          "prompt": "Koji pribor služi za čuvanje praškastih supstanci?",
-          "choices": [
-            "Reagens-boca",
-            "Tronožac",
-            "Pipeta"
-          ],
-          "answer": "Reagens-boca",
-          "sourceTask": "5",
-          "enabled": true
-        },
-        {
-          "id": "q6-zagrevanje",
-          "prompt": "Šta može biti deo pribora za zagrevanje supstance?",
-          "choices": [
-            "Špiritusna lampa i metalna mrežica",
-            "Menzura i levak",
-            "Pipeta i reagens-boca"
-          ],
-          "answer": "Špiritusna lampa i metalna mrežica",
-          "sourceTask": "6",
-          "enabled": true
-        },
-        {
-          "id": "q7-zapremina",
-          "prompt": "Izaberi pribor kojim možemo meriti zapreminu tečnosti.",
-          "choices": [
-            "Menzura i pipeta",
-            "Avan i tučak",
-            "Metalna mrežica i tronožac"
-          ],
-          "answer": "Menzura i pipeta",
-          "sourceTask": "7",
-          "enabled": true
-        },
-        {
-          "id": "q8-materijal",
-          "prompt": "Od kog materijala je napravljen avan sa tučkom?",
-          "choices": [
-            "Porcelana",
-            "Stakla",
-            "Drveta"
-          ],
-          "answer": "Porcelana",
-          "sourceTask": "8",
-          "enabled": true
-        },
-        {
-          "id": "q9-funkcija",
-          "prompt": "Koji pribor koristimo za usitnjavanje čvrste supstance?",
-          "choices": [
-            "Avan sa tučkom",
-            "Menzura",
-            "Stalak za epruvete"
-          ],
-          "answer": "Avan sa tučkom",
-          "sourceTask": "9",
-          "enabled": true
-        },
-        {
-          "id": "q10-fizicka",
-          "prompt": "Koji primer predstavlja fizičku promenu?",
-          "choices": [
-            "Savijanje aluminijumske folije",
-            "Pečenje kolača",
-            "Rđanje gvožđa"
-          ],
-          "answer": "Savijanje aluminijumske folije",
-          "sourceTask": "2",
-          "enabled": true
-        },
-        {
-          "id": "q10-hemijska",
-          "prompt": "Koji primer predstavlja hemijsku promenu?",
-          "choices": [
-            "Pečenje kolača",
-            "Sečenje papira",
-            "Topljenje leda"
-          ],
-          "answer": "Pečenje kolača",
-          "sourceTask": "2",
-          "enabled": true
-        },
-        {
-          "id": "promena-kuvanje",
-          "prompt": "Kuvanje jajeta je:",
-          "choices": [
-            "Hemijska promena",
-            "Fizička promena"
-          ],
-          "answer": "Hemijska promena",
-          "sourceTask": "2",
-          "enabled": true
-        },
-        {
-          "id": "promena-savijanje",
-          "prompt": "Savijanje aluminijumske folije je:",
-          "choices": [
-            "Fizička promena",
-            "Hemijska promena"
-          ],
-          "answer": "Fizička promena",
-          "sourceTask": "2",
-          "enabled": true
-        },
-        {
-          "id": "promena-mlevenje",
-          "prompt": "Mlevenjem zrna kafe nastaje drugačija veličina čestica, ali ne i nova supstanca. To je:",
-          "choices": [
-            "Fizička promena",
-            "Hemijska promena"
-          ],
-          "answer": "Fizička promena",
-          "sourceTask": "2",
-          "enabled": true
-        },
-        {
-          "id": "promena-gorenje",
-          "prompt": "Gorenje sveće pri kome nastaju nove supstance je:",
-          "choices": [
-            "Hemijska promena",
-            "Fizička promena"
-          ],
-          "answer": "Hemijska promena",
-          "sourceTask": "2",
-          "enabled": true
-        },
-        {
-          "id": "promena-mlevenje-zrna",
-          "prompt": "Mlevenje zrna u brašno je fizička ili hemijska promena?",
-          "choices": [
-            "Fizička promena",
-            "Hemijska promena"
-          ],
-          "answer": "Fizička promena",
-          "sourceTask": "3",
-          "enabled": true
-        },
-        {
-          "id": "promena-razbijanje-jajeta",
-          "prompt": "Razbijanje jajeta je fizička ili hemijska promena?",
-          "choices": [
-            "Fizička promena",
-            "Hemijska promena"
-          ],
-          "answer": "Fizička promena",
-          "sourceTask": "3",
-          "enabled": true
-        },
-        {
-          "id": "promena-mesenje",
-          "prompt": "Mešanje sastojaka pre pečenja stvara novu supstancu?",
-          "choices": [
-            "Ne, to je fizička promena",
-            "Da, to je hemijska promena"
-          ],
-          "answer": "Ne, to je fizička promena",
-          "sourceTask": "3",
-          "enabled": true
-        },
-        {
-          "id": "promena-pecenje-hleba",
-          "prompt": "Pečenje testa u hleb je fizička ili hemijska promena?",
-          "choices": [
-            "Hemijska promena",
-            "Fizička promena"
-          ],
-          "answer": "Hemijska promena",
-          "sourceTask": "3",
-          "enabled": true
-        },
-        {
-          "id": "promena-secenje-hleba",
-          "prompt": "Sečenje ispečenog hleba je fizička ili hemijska promena?",
-          "choices": [
-            "Fizička promena",
-            "Hemijska promena"
-          ],
-          "answer": "Fizička promena",
-          "sourceTask": "3",
-          "enabled": true
-        },
-        {
-          "id": "stanje-isparavanje",
-          "prompt": "Kako se zove prelazak tečnosti u gasovito agregatno stanje?",
-          "choices": [
-            "Isparavanje",
-            "Kondenzacija",
-            "Mržnjenje"
-          ],
-          "answer": "Isparavanje",
-          "sourceTask": "9",
-          "enabled": true
-        },
-        {
-          "id": "stanje-kondenzacija",
-          "prompt": "Kako se zove prelazak gasa u tečno agregatno stanje?",
-          "choices": [
-            "Kondenzacija",
-            "Sublimacija",
-            "Topljenje"
-          ],
-          "answer": "Kondenzacija",
-          "sourceTask": "9",
-          "enabled": true
-        },
-        {
-          "id": "rdjanje-gvozdja",
-          "prompt": "Rđanje gvožđa i pojava zelenog sloja na bakru su:",
-          "choices": [
-            "Hemijske promene jer nastaju nove supstance",
-            "Fizičke promene jer se menja samo oblik"
-          ],
-          "answer": "Hemijske promene jer nastaju nove supstance",
-          "sourceTask": "6",
-          "enabled": true
-        },
-        {
-          "id": "razlikovanje-supstanci",
-          "prompt": "Supstance možemo razlikovati po boji, mirisu, obliku i agregatnom stanju.",
-          "choices": [
-            "Tačno",
-            "Netačno"
-          ],
-          "answer": "Tačno",
-          "sourceTask": "7",
-          "enabled": true
-        },
-        {
-          "id": "promena-velicina-zrna",
-          "prompt": "Ako se zrna razlikuju samo po veličini, nastala je nova supstanca.",
-          "choices": [
-            "Netačno",
-            "Tačno"
-          ],
-          "answer": "Netačno",
-          "sourceTask": "8",
-          "enabled": true
-        },
-        {
-          "id": "secer-usitnjavanje",
-          "prompt": "Usitnjavanje šećera u avanu je:",
-          "choices": [
-            "Fizička promena",
-            "Hemijska promena"
-          ],
-          "answer": "Fizička promena",
-          "sourceTask": "10",
-          "enabled": true
-        },
-        {
-          "id": "secer-rastvaranje",
-          "prompt": "Rastvaranje šećera u vodi je:",
-          "choices": [
-            "Fizička promena",
-            "Hemijska promena"
-          ],
-          "answer": "Fizička promena",
-          "sourceTask": "10",
-          "enabled": true
-        }
-      ],
-      "activities": [
-        {
-          "id": "pribor-kartice",
-          "type": "flashcards",
-          "title": "Kartice: pribor i namena",
-          "description": "Poveži naziv laboratorijskog pribora sa njegovom namenom.",
-          "frontField": "name",
-          "backField": "purpose",
-          "itemSet": "items",
-          "imageOn": "front",
-          "icon": "▣"
-        },
-        {
-          "id": "pogodi-pribor",
-          "type": "text-quiz",
-          "title": "Pogodi pribor po nameni",
-          "description": "Pročitaj čemu pribor služi i upiši njegov naziv.",
-          "promptField": "purpose",
-          "answerField": "name",
-          "itemSet": "items",
-          "questionCount": 10,
-          "answerLabel": "naziv pribora",
-          "icon": "?"
-        },
-        {
-          "id": "igra-brzi-izbor",
-          "type": "choice-quiz",
-          "title": "Igra: laboratorijski izazov",
-          "description": "Brzo izaberi tačan odgovor o priboru, bezbednosti i promenama.",
-          "itemSet": "questions",
-          "questionCount": 10,
-          "kindLabel": "Igra znanja",
-          "icon": "⚡"
-        },
-        {
-          "id": "kontrolni",
-          "type": "choice-quiz",
-          "title": "Probni kontrolni",
-          "description": "Vežbaj pitanja i pojmove iz označenih zadataka.",
-          "itemSet": "questions",
-          "questionCount": 15,
-          "kindLabel": "Kontrolni",
-          "icon": "✓"
-        }
-      ]
-    }
-  ]
+    ]
 }

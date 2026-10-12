@@ -3,11 +3,16 @@ services:
     build: .
     ports:
       - "127.0.0.1:8080:80"
+    environment:
+      KVIZUP_PRIVATE_DIR: /var/lib/kvizup
     volumes:
       - ./index.html:/var/www/html/index.html:ro
       - ./app.js:/var/www/html/app.js:ro
-      - ./data:/var/www/html/data:ro
+      - ./data:/var/www/html/data
       - ./assets:/var/www/html/assets:ro
+      - ./admin:/var/www/html/admin:ro
+      - ./.env:/var/www/html/.env:ro
+      - admin_private:/var/lib/kvizup
   styles:
     image: node:22-alpine
     profiles: ["dev"]
@@ -19,3 +24,4 @@ services:
 
 volumes:
   styles_node_modules:
+  admin_private:

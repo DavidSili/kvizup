@@ -4,3 +4,6 @@
 /temp_files/
 /node_modules/
 /scrapers/
+/.env
+/.env.*
+!/.env.example

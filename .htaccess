@@ -1,0 +1,5 @@
+Options -Indexes
+<FilesMatch "^(\.env.*|package.*\.json|compose\.yaml|Dockerfile)$">
+    Require all denied
+</FilesMatch>
+RedirectMatch 403 /(?:\.git|node_modules|source-materials|temp_files|tools)(?:/|$)
