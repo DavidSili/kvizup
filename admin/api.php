@@ -76,7 +76,9 @@ try {
             $raw = json_encode($body['subject'], JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES | JSON_THROW_ON_ERROR) . "\n";
             $temporary = tempnam(dirname($file), '.save-');
             try {
-                if (!$temporary || file_put_contents($temporary, $raw) === false || !rename($temporary, $file)) throw new RuntimeException('Čuvanje nije uspelo. Proveri dozvole data/subjects foldera.');
+                // tempnam creates mode 0600. Shared hosting may run PHP and
+                // Apache as different users; public lesson JSON must be readable.
+                if (!$temporary || file_put_contents($temporary, $raw) === false || !chmod($temporary, 0644) || !rename($temporary, $file)) throw new RuntimeException('Čuvanje nije uspelo. Proveri dozvole data/subjects foldera.');
             } finally { if ($temporary && is_file($temporary)) unlink($temporary); }
             return ['revision' => hash('sha256', $raw)];
         });

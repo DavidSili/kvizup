@@ -588,6 +588,9 @@ h3 {
 }
 
 .button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   min-height: 46px;
   padding: 12px 18px;
   border: 0;
@@ -610,6 +613,18 @@ h3 {
 .button:disabled {
   cursor: not-allowed;
   opacity: 0.55;
+}
+
+.error-panel {
+  display: grid;
+  gap: 18px;
+  overflow-wrap: anywhere;
+}
+.error-panel .lead {
+  margin: 0;
+}
+.error-panel .button {
+  justify-self: start;
 }
 
 main[data-mode=test-symbol] .image-placeholder {

@@ -213,7 +213,7 @@ async function render() {
     }
   } catch (error) {
     if (version !== renderVersion) return;
-    app.innerHTML = `<section class="panel"><h2>Ne mogu da otvorim sadržaj</h2><p class="lead">${escapeHtml(error.message)}</p><a class="button secondary" href="#home">Nazad na predmete</a></section>`;
+    app.innerHTML = `<section class="panel error-panel"><h2>Ne mogu da otvorim sadržaj</h2><p class="lead">${escapeHtml(error.message)}</p><a class="button secondary" href="#home">Nazad na predmete</a></section>`;
   }
   document.querySelectorAll('[data-nav]').forEach(link => link.classList.toggle('active', link.dataset.nav === route || (['subject', 'chapter', 'activity'].includes(route) && link.dataset.nav === 'home')));
 }
@@ -296,7 +296,7 @@ async function init() {
     subjects = await response.json();
     if (!Array.isArray(subjects)) throw new Error('Spisak predmeta nije ispravan.');
   } catch (error) {
-    app.innerHTML = `<section class="panel"><h2>Predmeti nisu učitani</h2><p class="lead">${escapeHtml(error.message)} Proveri da li je PHP omogućen na serveru.</p></section>`;
+    app.innerHTML = `<section class="panel error-panel"><h2>Predmeti nisu učitani</h2><p class="lead">${escapeHtml(error.message)} Proveri da li je PHP omogućen na serveru.</p></section>`;
     return;
   }
   render();
