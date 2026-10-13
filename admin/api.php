@@ -41,7 +41,7 @@ function respond(array $data): never
 
 function user_hash(string $user): string
 {
-    return in_array($user, ['sara', 'david'], true) ? env_value('ADMIN_' . strtoupper($user) . '_PASSWORD_HASH') : '';
+    return in_array($user, admin_users(), true) ? env_value('ADMIN_' . strtoupper($user) . '_PASSWORD_HASH') : '';
 }
 
 try {

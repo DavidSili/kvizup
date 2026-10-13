@@ -1,4 +1,4 @@
-# kvizup
+# KvizUp 1.0.0
 An interactive learning app that helps students practice school subjects through quizzes, flashcards, educational games, and personalized tests.
 
 ## KvizUp
@@ -45,7 +45,8 @@ and requires internet access. WAMP can stay running because Docker uses 8080.
 
 Application code and assets are mounted read-only from your working folder;
 subject data is writable so the admin panel can save changes. Edit files
-normally in VS Code, then refresh the browser (Ctrl+F5 for cached assets).
+normally in VS Code, then refresh the browser. JS/CSS content fingerprints
+automatically invalidate cached assets, including on mobile devices.
 After changing the Dockerfile, run `docker compose up --build -d` again.
 
 If Windows/Docker serves an old or truncated HTML/JavaScript file after an
@@ -142,15 +143,35 @@ above and refresh manually. For a one-time compilation, use
 `npm.cmd run styles:build`. Run one watcher at a time (Docker or local Node).
 If SCSS has a syntax error, check the watcher logs, fix it, and save again.
 
-### Admin panel: Sara and David
+### Admin panel
 
 Open **http://localhost:8080/admin/** (Docker) or
-**http://localhost/MySite/kvizup/admin/** (WAMP). Both accounts have the same
+**http://localhost/MySite/kvizup/admin/** (WAMP). Configured accounts have the same
 editing permissions. Public study pages remain available without login.
 
 #### First setup
 
-Create account passwords in your local `.env` with the interactive helper:
+Copy `.env.example` to `.env` for a new installation. Configure the admin list:
+
+```dotenv
+ADMIN_USERNAMES=editor,parent
+ADMIN_EDITOR_PASSWORD_HASH=
+ADMIN_PARENT_PASSWORD_HASH=
+```
+
+Usernames are case-insensitive, use 1-40 ASCII letters, digits or underscores,
+and start with a letter. Every listed user needs a matching
+`ADMIN_<UPPERCASE_USERNAME>_PASSWORD_HASH`. Accounts omitted from the list cannot
+sign in even if an old hash remains; removal invalidates their session on the
+next request. No usernames are hardcoded or displayed on the login page.
+An empty or missing list disables login. All accounts have equal permissions.
+
+Enclose password hashes in single quotes in `.env`, for example
+`ADMIN_EDITOR_PASSWORD_HASH='your-password-hash'`. This prevents Docker Compose
+from treating dollar signs in a hash as environment variable references. The
+setup helper writes this format automatically; PHP reads the original hash.
+
+Create passwords for all listed accounts with the interactive helper:
 
 ```powershell
 cd C:\wamp\www\MySite\kvizup
@@ -160,7 +181,7 @@ C:\wamp\bin\php\php8.3.17\php.exe tools/setup-admin.php
 If PHP is on PATH, use `php tools/setup-admin.php`. Choose separate passwords
 of at least 12 characters. The helper's terminal input is visible; run it in
 a private terminal. Only password hashes are stored. It preserves an existing
-OpenAI key. Run the helper again to change both passwords; existing sessions
+OpenAI key. Run the helper again to change configured passwords; existing sessions
 are invalidated after password changes.
 
 The project includes `.env.example`; `.env` is ignored by Git and Docker builds.
@@ -172,8 +193,15 @@ For AI generation, edit `.env` locally:
 
 ```dotenv
 OPENAI_API_KEY=your-private-api-key
-OPENAI_MODEL=gpt-4.1-mini
+OPENAI_MODEL=gpt-6-luna
 ```
+
+The current deployment uses `gpt-6-luna`, configured through `OPENAI_MODEL`.
+Set it explicitly: the code and `.env.example` currently default to `gpt-4.1-mini`.
+No separate agent configuration is needed; PHP sends the instructions, images,
+and strict JSON schema directly to the Responses API. For a restricted API key,
+allow **Model capabilities > Responses: Write**; image generation and Files
+permissions are not needed for this workflow.
 
 Use an OpenAI API project with billing/credit configured; a ChatGPT subscription
 does not configure this app's API access. The model is configurable and must
@@ -186,7 +214,7 @@ Rebuild/start the updated web service and watcher:
 docker compose --profile dev up --build -d
 ```
 
-Sign in as `sara` or `david` using the password you chose. Without configured
+Sign in with a configured account and its chosen password. Without configured
 hashes, login stays disabled; no default password is installed.
 
 #### Editing and AI workflow
@@ -201,7 +229,11 @@ hashes, login stays disabled; no default password is installed.
    the app does not store book/notebook scans or commit them. The API request
    uses `store: false`; this is not a guarantee of zero provider retention.
    See [OpenAI data controls](https://developers.openai.com/api/docs/guides/your-data).
-5. Review warnings, correct answers, and edit/delete any generated tasks.
+5. Review activity titles and task counts, warnings, and factual corrections.
+   AI may correct obvious errors in years, numbers, units, or names when confident;
+   each correction reports the original value, corrected value, and reason.
+   Uncertain facts are flagged rather than silently changed. Edit/delete any
+   generated tasks before accepting the proposal.
    **Dodaj u poglavlje** appends the proposal to the local draft in separate banks
    and adds corresponding activities. Existing tasks and special mappings stay
    intact. This works for both empty and existing chapters.
@@ -239,11 +271,33 @@ publishing, verify `/.env` returns **403** and use **HTTPS** for login. Keep
 private storage outside the public web root. The Compose port remains local-only;
 this change does not publish a site to the internet.
 
+#### Uploading to shared hosting
+
+Upload `index.php`, `assets.php`, `VERSION`, `.htaccess`, `app.js`, and the
+`admin/`, `assets/`, and `data/` directories. The entry page is **`index.php`**;
+missing it causes a directory-level 403 when listing is disabled. Old
+`index.html` links redirect to the application root. Configure `.env` privately
+on the server and do not upload development dependencies or private backups.
+
+Enable Apache `mod_rewrite` and `mod_headers`, and allow the supplied `.htaccess`
+rules. For a project in `/kvizup/`, the public URL is `/kvizup/` and the admin URL
+is `/kvizup/admin/`.
+
+Public lesson JSON files need permission **644**. Admin saving sets this mode
+before and after atomic replacement, then checks public read permissions on
+Linux. If a previously saved subject returns 403, set its existing JSON file to
+644 in the hosting File Manager and upload the latest `admin/api.php` to prevent
+recurrence. FTP upload permissions are controlled separately by the FTP client
+and hosting configuration. Directories normally use 755; PHP must have write
+access to `data/subjects/` through the correct owner or group.
+
 #### Validation
 
 ```powershell
 python tests/admin_integration.py --php C:\wamp\bin\php\php8.3.17\php.exe
 node --check admin/admin.js
+node tests/admin_submit.cjs
+node tests/typed_answers.cjs
 npm.cmd run styles:build
 docker compose --profile dev config --quiet
 ```
@@ -256,9 +310,9 @@ in the panel, review it, then save only if you want it published.
 
 ### Add a subject
 
-Copy `data/subjects/matematika.json`, give it a unique `id`, update its title and description, then define its `chapters`. Each chapter can contain `items`, `questions`, images, and an `activities` array. Available activity types are `flashcards`, `text-quiz`, and `choice-quiz`; use `itemSet` to point an activity at a chapter array such as `items` or `questions`.
+Copy an existing file such as `data/subjects/geografija.json`, give it a unique `id`, update its title and description, then define its `chapters`. Each chapter can contain `items`, `questions`, images, and an `activities` array. Available activity types are `flashcards`, `text-quiz`, and `choice-quiz`; use `itemSet` to point an activity at a chapter array such as `items` or `questions`.
 
-See [data/README.md](data/README.md) for the full JSON schema and authoring checklist. Subject examples are [hemija.json](data/subjects/hemija.json), [matematika.json](data/subjects/matematika.json), [istorija.json](data/subjects/istorija.json), and [geografija.json](data/subjects/geografija.json).
+See [data/README.md](data/README.md) for the full JSON schema and authoring checklist. Subject examples are [hemija.json](data/subjects/hemija.json), [istorija.json](data/subjects/istorija.json), and [geografija.json](data/subjects/geografija.json).
 
 ### Verify
 
@@ -268,16 +322,25 @@ php -l data/catalog.php
 ```
 
 Also validate the subject JSON with `JSON.parse`, open each subject/chapter/activity in a browser, complete a test, and confirm its result appears in the daily report.
-# Tematske aktivnosti i unos odgovora
+### Thematic activities and typed answers
 
-AI može da podeli novo gradivo na više podtema, svaku sa svojim karticama i testovima. Pre prihvatanja predloga vidiš nazive aktivnosti i broj zadataka. Postojeće aktivnosti ostaju kakve jesu.
+AI assigns cards and questions to meaningful subtopics. Each subtopic can have
+its own flashcards and multiple-choice test; short lessons can remain a single
+theme. Activities reference their question bank through `itemSet` and select
+specific records through `itemIds`, so thematic activities do not reuse the
+entire chapter indiscriminately. Existing activities are not automatically split.
 
-Test sa unosom je opcionalan: pravi se samo za temu sa najmanje tri jednoznačna odgovora do tri reči i 32 znaka. Cele rečenice ostaju u karticama ili testu sa izborom. Ako nema dovoljno pogodnih odgovora, predlog prikazuje upozorenje.
+Typed-answer tests are optional, even when selected. A theme needs at least
+three unambiguous suitable answers, each at most three words and 32 characters.
+Full sentences are excluded. If no theme qualifies, the proposal explains why
+no typed-answer test was created.
 
-Unos toleriše jednu grešku u kucanju (uključujući zamenu susednih slova) u odgovorima od najmanje pet slova. Godine, brojevi, simboli i kratke reči proveravaju se strogo. Kada prihvati grešku, aplikacija prikazuje pravilan odgovor. Ovo je lokalna provera, bez dodatnog AI poziva.
-
-Provere: `node tests/typed_answers.cjs` i `node tests/admin_submit.cjs`.
-
+Answer comparison ignores letter case, spaces, and Serbian Latin diacritics.
+For alphabetic answers of at least five normalized letters, one insertion,
+deletion, substitution, or adjacent-letter transposition is accepted. Numbers,
+years, chemical symbols, and short words remain exact after normalization.
+Accepted typos show the proper answer. This is a local spelling check, not
+semantic grading, and makes no additional AI calls.
 
 ## Asset cache and app version
 

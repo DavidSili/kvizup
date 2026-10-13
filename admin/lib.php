@@ -18,6 +18,12 @@ function env_value(string $name, string $default = ''): string
     return $value !== false ? $value : ($file[$name] ?? $default);
 }
 
+function admin_users(): array
+{
+    $users = array_map(fn($user) => strtolower(trim($user)), explode(',', env_value('ADMIN_USERNAMES')));
+    return array_values(array_unique(array_filter($users, fn($user) => preg_match('/^[a-z][a-z0-9_]{0,39}$/D', $user) === 1)));
+}
+
 function private_dir(): string
 {
     $path = env_value('KVIZUP_PRIVATE_DIR', sys_get_temp_dir() . '/kvizup-' . substr(hash('sha256', __DIR__), 0, 12));

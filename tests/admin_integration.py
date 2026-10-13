@@ -31,12 +31,12 @@ with tempfile.TemporaryDirectory(prefix='kvizup-admin-test-') as folder:
     hashing.write_text('<?php echo password_hash(trim(stream_get_contents(STDIN)), PASSWORD_DEFAULT);')
     password = 'integration-only-password'
     hashed = subprocess.check_output([args.php, str(hashing)], input=password, text=True).strip()
-    (folder / '.env').write_text(f'ADMIN_SARA_PASSWORD_HASH={hashed}\nADMIN_DAVID_PASSWORD_HASH={hashed}\nOPENAI_API_KEY=\nKVIZUP_PRIVATE_DIR={folder.as_posix()}/private\n')
+    (folder / '.env').write_text(f'ADMIN_USERNAMES=editor,parent\nADMIN_EDITOR_PASSWORD_HASH={hashed}\nADMIN_PARENT_PASSWORD_HASH={hashed}\nOPENAI_API_KEY=\nKVIZUP_PRIVATE_DIR={folder.as_posix()}/private\n')
     with socket.socket() as sock:
         sock.bind(('127.0.0.1', 0))
         port = sock.getsockname()[1]
     environment = os.environ.copy()
-    for key in ['ADMIN_SARA_PASSWORD_HASH', 'ADMIN_DAVID_PASSWORD_HASH', 'KVIZUP_PRIVATE_DIR', 'OPENAI_API_KEY']:
+    for key in ['ADMIN_USERNAMES', 'ADMIN_EDITOR_PASSWORD_HASH', 'ADMIN_PARENT_PASSWORD_HASH', 'KVIZUP_PRIVATE_DIR', 'OPENAI_API_KEY']:
         environment.pop(key, None)
     server = subprocess.Popen([args.php, '-S', f'127.0.0.1:{port}', '-t', str(folder)],
                               env=environment, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
@@ -63,10 +63,10 @@ with tempfile.TemporaryDirectory(prefix='kvizup-admin-test-') as folder:
         assert not session['user']
         csrf = session['csrf']
         assert request('subjects')[0] == 401
-        assert request('login', {'username': 'sara', 'password': password}, token='wrong')[0] == 403
+        assert request('login', {'username': 'editor', 'password': password}, token='wrong')[0] == 403
         assert request('login', {'username': 'unknown', 'password': password})[0] == 401
-        status, session = request('login', {'username': 'sara', 'password': password})
-        assert status == 200 and session['user'] == 'sara'
+        status, session = request('login', {'username': 'editor', 'password': password})
+        assert status == 200 and session['user'] == 'editor'
         csrf = session['csrf']
         status, data = request('subjects')
         revision = data['subjects'][0]['revision']
@@ -97,8 +97,8 @@ with tempfile.TemporaryDirectory(prefix='kvizup-admin-test-') as folder:
         assert request('subjects')[0] == 401
         _, session = request('session')
         csrf = session['csrf']
-        status, session = request('login', {'username': 'david', 'password': password})
-        assert status == 200 and session['user'] == 'david'
+        status, session = request('login', {'username': 'parent', 'password': password})
+        assert status == 200 and session['user'] == 'parent'
         # Validate all existing production lessons without changing them.
         validation = folder / 'validate.php'
         validation.write_text('<?php require ' + json.dumps(str(project / 'admin/lib.php').replace('\\', '/')) +
@@ -155,6 +155,13 @@ echo "AI proposal conversion valid";
         try: response=opener.open(req)
         except urllib.error.HTTPError as error: response=error
         assert response.status == 400, response.read()
+        # Removing a username revokes its session, even with its hash retained.
+        env.write_text(env.read_text().replace('ADMIN_USERNAMES=editor,parent', 'ADMIN_USERNAMES=editor'))
+        assert request('subjects')[0] == 401
+        _, session = request('session')
+        csrf = session['csrf']
+        assert request('login', {'username': 'parent', 'password': password})[0] == 401
+        assert request('login', {'username': 'EDITOR', 'password': password})[0] == 200
         print('\nPASS: auth, CSRF, both accounts, validation, CRUD, conflicts, backups, AI conversion and invalid upload rejection.')
     finally:
         server.terminate()
