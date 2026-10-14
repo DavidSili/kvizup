@@ -13,12 +13,16 @@ foreach (glob(__DIR__ . DIRECTORY_SEPARATOR . 'subjects' . DIRECTORY_SEPARATOR .
     $chapters = isset($subject['chapters']) && is_array($subject['chapters']) ? $subject['chapters'] : [];
     $itemCount = 0;
     foreach ($chapters as $chapter) {
-        if (!isset($chapter['items']) || !is_array($chapter['items'])) {
-            continue;
-        }
-        foreach ($chapter['items'] as $item) {
-            if (!isset($item['enabled']) || $item['enabled'] !== false) {
-                $itemCount++;
+        foreach ($chapter as $set => $records) {
+            if ($set === 'activities' || !is_array($records)) {
+                continue;
+            }
+            foreach ($records as $item) {
+                if (is_array($item) && ($item['enabled'] ?? true) !== false
+                    && !isset($item['choices'])
+                    && (!empty($item['question']) || !empty($item['name']) || !empty($item['symbol']))) {
+                    $itemCount++;
+                }
             }
         }
     }

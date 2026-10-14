@@ -141,7 +141,7 @@ function validate_subject(array $subject): void
             }
             $pool = $chapter[$activity['itemSet'] ?? 'items'] ?? null;
             if (!is_array($pool)) {
-                throw new InvalidArgumentException('Aktivnost koristi nepostojeći skup pitanja.');
+                throw new InvalidArgumentException('Poglavlje „' . $chapter['title'] . '“, aktivnost „' . $activity['title'] . '“ koristi nepostojeći skup pitanja „' . ($activity['itemSet'] ?? 'items') . '“.');
             }
             if (isset($activity['itemIds'])) {
                 $ids = $activity['itemIds'];

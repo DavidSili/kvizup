@@ -101,6 +101,20 @@ Each selected record must contain `prompt`, a non-empty `choices` array, and `an
 
 A missing activity `questionCount` uses the global preference (default 20). An activity-specific `questionCount` overrides the global preference. If a question pool is smaller than the test, questions may repeat.
 
+## AI imports
+
+The admin AI form can generate cards, short text tests, mixed choice tests, classification,
+matching, number, timeline, and true/false challenges. Specialized challenges use the shared
+`choice-quiz` renderer and separate question banks; they are not drag-and-drop games.
+The AI question schema uses `kind` to select the bank. Only selected challenges with at
+least three questions become activities; insufficient material produces a review warning.
+True/false questions use `Tačno` and `Netačno`; other generated questions have 3–4 choices.
+Limits are 40 cards and 80 questions in total per proposal.
+
+Imported banks remain isolated so existing field mappings are preserved. Admin labels are
+derived from question kinds and activities, while concept counts include all card banks.
+Existing lessons are not regenerated automatically; add material through the AI form.
+
 ## Images and source material
 
 - Place image files under the KvizUp root at the path in `imageDirectory`.

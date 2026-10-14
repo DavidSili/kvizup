@@ -970,177 +970,258 @@
             ]
         },
         {
-            "id": "poglavlje-e75792fb",
-            "title": "Građa atoma",
-            "description": "Osnovni delovi atoma, njihove čestice i raspored mase.",
+            "id": "poglavlje-1a78ad86",
+            "title": "Građa Atome",
+            "description": "Upoznaj osnovne delove atoma i osobine protona, neutrona i elektrona.",
             "icon": "📘",
             "items": [],
             "questions": [],
             "activities": [
                 {
-                    "id": "ai-778bee48-flashcards",
+                    "id": "ai-71f97aec-flashcards-0",
                     "type": "flashcards",
-                    "title": "Kartice",
+                    "title": "Kartice · Atom i njegova građa",
                     "description": "",
-                    "itemSet": "aiCards_e409f08e",
+                    "itemSet": "aiCards_87f57c86",
+                    "itemIds": [
+                        "ai-71f97aec-card-0",
+                        "ai-71f97aec-card-1",
+                        "ai-71f97aec-card-2",
+                        "ai-71f97aec-card-3"
+                    ],
                     "frontField": "question",
                     "backField": "answer"
                 },
                 {
-                    "id": "ai-778bee48-choice-quiz",
-                    "type": "choice-quiz",
-                    "title": "Test sa izborom",
+                    "id": "ai-71f97aec-flashcards-1",
+                    "type": "flashcards",
+                    "title": "Kartice · Subatomske čestice",
                     "description": "",
-                    "itemSet": "aiQuestions_e409f08e",
+                    "itemSet": "aiCards_87f57c86",
+                    "itemIds": [
+                        "ai-71f97aec-card-4",
+                        "ai-71f97aec-card-5",
+                        "ai-71f97aec-card-6",
+                        "ai-71f97aec-card-7",
+                        "ai-71f97aec-card-8"
+                    ],
+                    "frontField": "question",
+                    "backField": "answer"
+                },
+                {
+                    "id": "ai-71f97aec-choice-quiz-0",
+                    "type": "choice-quiz",
+                    "title": "Test sa izborom · Atom i njegova građa",
+                    "description": "",
+                    "itemSet": "aiQuestions_87f57c86",
+                    "itemIds": [
+                        "ai-71f97aec-question-0",
+                        "ai-71f97aec-question-1",
+                        "ai-71f97aec-question-2"
+                    ],
                     "promptField": "prompt",
+                    "answerField": "answer"
+                },
+                {
+                    "id": "ai-71f97aec-choice-quiz-1",
+                    "type": "choice-quiz",
+                    "title": "Test sa izborom · Subatomske čestice",
+                    "description": "",
+                    "itemSet": "aiQuestions_87f57c86",
+                    "itemIds": [
+                        "ai-71f97aec-question-3",
+                        "ai-71f97aec-question-4",
+                        "ai-71f97aec-question-5",
+                        "ai-71f97aec-question-6",
+                        "ai-71f97aec-question-7"
+                    ],
+                    "promptField": "prompt",
+                    "answerField": "answer"
+                },
+                {
+                    "id": "ai-71f97aec-text-quiz-0",
+                    "type": "text-quiz",
+                    "title": "Test sa unosom · Subatomske čestice",
+                    "description": "",
+                    "itemSet": "aiCards_87f57c86",
+                    "itemIds": [
+                        "ai-71f97aec-card-4",
+                        "ai-71f97aec-card-5",
+                        "ai-71f97aec-card-6"
+                    ],
+                    "promptField": "question",
                     "answerField": "answer"
                 }
             ],
-            "aiCards_e409f08e": [
+            "aiCards_87f57c86": [
                 {
-                    "id": "ai-778bee48-card-0",
-                    "question": "Šta je atom?",
-                    "answer": "Najmanja čestica hemijskog elementa koja zadržava njegova hemijska svojstva.",
-                    "description": "Atomi su građeni od jezgra i elektronskog omotača."
-                },
-                {
-                    "id": "ai-778bee48-card-1",
-                    "question": "Koja su dva osnovna dela atoma?",
+                    "id": "ai-71f97aec-card-0",
+                    "topic": "Atom i njegova građa",
+                    "textSuitable": false,
+                    "question": "Koje su dve osnovne celine atoma?",
                     "answer": "Jezgro i elektronski omotač.",
-                    "description": "Jezgro je u središtu atoma, a elektronski omotač je prostor oko njega u kome se nalaze elektroni."
+                    "description": "Jezgro se nalazi u središtu atoma, a elektronski omotač je prostor oko njega."
                 },
                 {
-                    "id": "ai-778bee48-card-2",
-                    "question": "Koje čestice se nalaze u jezgru atoma?",
+                    "id": "ai-71f97aec-card-1",
+                    "topic": "Atom i njegova građa",
+                    "textSuitable": true,
+                    "question": "Kako se zove središnji deo atoma?",
+                    "answer": "Jezgro",
+                    "description": "Jezgro je centralni deo atoma i u njemu se nalaze protoni i neutroni."
+                },
+                {
+                    "id": "ai-71f97aec-card-2",
+                    "topic": "Atom i njegova građa",
+                    "textSuitable": true,
+                    "question": "Kako se zove prostor oko jezgra u kojem se kreću elektroni?",
+                    "answer": "Elektronski omotač",
+                    "description": "Elektronski omotač obuhvata prostor oko jezgra u kojem se nalaze elektroni."
+                },
+                {
+                    "id": "ai-71f97aec-card-3",
+                    "topic": "Atom i njegova građa",
+                    "textSuitable": false,
+                    "question": "Gde je skoncentrisana gotovo sva masa atoma?",
+                    "answer": "U jezgru atoma.",
+                    "description": "U jezgru su protoni i neutroni, koji imaju mnogo veću masu od elektrona."
+                },
+                {
+                    "id": "ai-71f97aec-card-4",
+                    "topic": "Subatomske čestice",
+                    "textSuitable": true,
+                    "question": "Koje naelektrisanje ima proton?",
+                    "answer": "Pozitivno",
+                    "description": "Proton je pozitivno naelektrisana čestica u jezgru; označava se p⁺."
+                },
+                {
+                    "id": "ai-71f97aec-card-5",
+                    "topic": "Subatomske čestice",
+                    "textSuitable": true,
+                    "question": "Koje naelektrisanje ima elektron?",
+                    "answer": "Negativno",
+                    "description": "Elektron je negativno naelektrisana čestica; označava se e⁻."
+                },
+                {
+                    "id": "ai-71f97aec-card-6",
+                    "topic": "Subatomske čestice",
+                    "textSuitable": true,
+                    "question": "Kakvo je naelektrisanje neutrona?",
+                    "answer": "Neutralno",
+                    "description": "Neutron nema električno naelektrisanje i nalazi se u jezgru."
+                },
+                {
+                    "id": "ai-71f97aec-card-7",
+                    "topic": "Subatomske čestice",
+                    "textSuitable": false,
+                    "question": "Koje se čestice nalaze u atomskom jezgru?",
                     "answer": "Protoni i neutroni.",
-                    "description": "Jezgro čini najveći deo mase atoma."
+                    "description": "Protoni i neutroni čine jezgro atoma."
                 },
                 {
-                    "id": "ai-778bee48-card-3",
-                    "question": "Kakav električni naboj ima proton?",
-                    "answer": "Pozitivan naboj.",
-                    "description": "Proton se označava simbolom p⁺."
-                },
-                {
-                    "id": "ai-778bee48-card-4",
-                    "question": "Kakav električni naboj ima neutron?",
-                    "answer": "Nema električni naboj; neutralan je.",
-                    "description": "Neutron se nalazi u atomskom jezgru."
-                },
-                {
-                    "id": "ai-778bee48-card-5",
-                    "question": "Kakav električni naboj ima elektron?",
-                    "answer": "Negativan naboj.",
-                    "description": "Elektron se označava simbolom e⁻ i nalazi se u elektronskom omotaču."
-                },
-                {
-                    "id": "ai-778bee48-card-6",
-                    "question": "Gde je koncentrisana najveća masa atoma?",
-                    "answer": "U atomskom jezgru.",
-                    "description": "Protoni i neutroni su mnogo masivniji od elektrona."
-                },
-                {
-                    "id": "ai-778bee48-card-7",
-                    "question": "Kako se upoređuju mase protona i neutrona?",
-                    "answer": "One su približno jednake.",
-                    "description": "Masa elektrona je mnogo manja od mase protona ili neutrona."
-                },
-                {
-                    "id": "ai-778bee48-card-8",
-                    "question": "Koliko protona i elektrona ima neutralan atom istog elementa?",
-                    "answer": "Jednak broj protona i elektrona.",
-                    "description": "Pozitivan naboj protona i negativan naboj elektrona međusobno se poništavaju."
+                    "id": "ai-71f97aec-card-8",
+                    "topic": "Subatomske čestice",
+                    "textSuitable": false,
+                    "question": "Kako se porede mase protona i neutrona prema beleškama?",
+                    "answer": "Približno su jednake.",
+                    "description": "Beleške navode da su mase protona i neutrona približno jednake, dok je masa elektrona mnogo manja."
                 }
             ],
-            "aiQuestions_e409f08e": [
+            "aiQuestions_87f57c86": [
                 {
-                    "id": "ai-778bee48-question-0",
-                    "prompt": "Koja je čestica najmanja jedinica hemijskog elementa koja zadržava njegova hemijska svojstva?",
-                    "answer": "Atom",
-                    "choices": [
-                        "Atom",
-                        "Ćelija",
-                        "Molekul"
-                    ]
-                },
-                {
-                    "id": "ai-778bee48-question-1",
-                    "prompt": "Koja dva dela čine atom?",
+                    "id": "ai-71f97aec-question-0",
+                    "topic": "Atom i njegova građa",
+                    "prompt": "Koje su dve osnovne celine atoma?",
                     "answer": "Jezgro i elektronski omotač",
                     "choices": [
-                        "Neutroni i elektronski omotač",
+                        "Jezgro i elektronski omotač",
                         "Protoni i elektroni",
-                        "Jezgro i elektronski omotač"
+                        "Jezgro i protoni",
+                        "Neutroni i elektronski omotač"
                     ]
                 },
                 {
-                    "id": "ai-778bee48-question-2",
-                    "prompt": "Koje čestice se nalaze u atomskom jezgru?",
+                    "id": "ai-71f97aec-question-1",
+                    "topic": "Atom i njegova građa",
+                    "prompt": "Gde se nalazi jezgro atoma?",
+                    "answer": "U središtu atoma",
+                    "choices": [
+                        "Na spoljašnjoj granici elektronskog omotača",
+                        "U elektronu",
+                        "Izvan atoma",
+                        "U središtu atoma"
+                    ]
+                },
+                {
+                    "id": "ai-71f97aec-question-2",
+                    "topic": "Atom i njegova građa",
+                    "prompt": "Gde je skoncentrisana gotovo sva masa atoma?",
+                    "answer": "U jezgru",
+                    "choices": [
+                        "Podjednako u celom atomu",
+                        "U elektronskom omotaču",
+                        "U jezgru",
+                        "Samo u elektronima"
+                    ]
+                },
+                {
+                    "id": "ai-71f97aec-question-3",
+                    "topic": "Subatomske čestice",
+                    "prompt": "Koja čestica ima pozitivno električno naelektrisanje?",
+                    "answer": "Proton",
+                    "choices": [
+                        "Neutron",
+                        "Elektronski omotač",
+                        "Elektron",
+                        "Proton"
+                    ]
+                },
+                {
+                    "id": "ai-71f97aec-question-4",
+                    "topic": "Subatomske čestice",
+                    "prompt": "Koja čestica ima negativno električno naelektrisanje?",
+                    "answer": "Elektron",
+                    "choices": [
+                        "Neutron",
+                        "Proton",
+                        "Elektron",
+                        "Jezgro"
+                    ]
+                },
+                {
+                    "id": "ai-71f97aec-question-5",
+                    "topic": "Subatomske čestice",
+                    "prompt": "Koja čestica je električno neutralna?",
+                    "answer": "Neutron",
+                    "choices": [
+                        "Elektron",
+                        "Jezgro",
+                        "Neutron",
+                        "Proton"
+                    ]
+                },
+                {
+                    "id": "ai-71f97aec-question-6",
+                    "topic": "Subatomske čestice",
+                    "prompt": "Koje čestice se nalaze u jezgru atoma?",
                     "answer": "Protoni i neutroni",
                     "choices": [
-                        "Protoni i neutroni",
+                        "Elektroni i neutroni",
                         "Elektroni i protoni",
+                        "Protoni i neutroni",
                         "Samo elektroni"
                     ]
                 },
                 {
-                    "id": "ai-778bee48-question-3",
-                    "prompt": "Koja čestica ima pozitivan električni naboj?",
-                    "answer": "Proton",
-                    "choices": [
-                        "Proton",
-                        "Elektron",
-                        "Neutron"
-                    ]
-                },
-                {
-                    "id": "ai-778bee48-question-4",
-                    "prompt": "Koja čestica je električno neutralna?",
-                    "answer": "Neutron",
-                    "choices": [
-                        "Neutron",
-                        "Elektron",
-                        "Proton"
-                    ]
-                },
-                {
-                    "id": "ai-778bee48-question-5",
-                    "prompt": "Koja čestica ima negativan električni naboj?",
-                    "answer": "Elektron",
-                    "choices": [
-                        "Elektron",
-                        "Neutron",
-                        "Proton"
-                    ]
-                },
-                {
-                    "id": "ai-778bee48-question-6",
-                    "prompt": "Gde se nalazi najveći deo mase atoma?",
-                    "answer": "U jezgru",
-                    "choices": [
-                        "U jezgru",
-                        "U elektronskom omotaču",
-                        "Podjednako u jezgru i omotaču"
-                    ]
-                },
-                {
-                    "id": "ai-778bee48-question-7",
-                    "prompt": "Kako se međusobno odnose mase protona i neutrona?",
+                    "id": "ai-71f97aec-question-7",
+                    "topic": "Subatomske čestice",
+                    "prompt": "Kako se, prema beleškama, porede mase protona i neutrona?",
                     "answer": "Približno su jednake",
                     "choices": [
+                        "Obe su zanemarljive u odnosu na masu elektrona",
+                        "Masa neutrona je mnogo veća",
                         "Masa protona je mnogo veća",
-                        "Masa neutrona je mnogo manja",
                         "Približno su jednake"
-                    ]
-                },
-                {
-                    "id": "ai-778bee48-question-8",
-                    "prompt": "Koji uslov važi za broj protona i elektrona u neutralnom atomu?",
-                    "answer": "Ima jednak broj protona i elektrona",
-                    "choices": [
-                        "Ima jednak broj protona i elektrona",
-                        "Ima više protona nego elektrona",
-                        "Ima više elektrona nego protona"
                     ]
                 }
             ]

@@ -24,7 +24,7 @@ header('X-Content-Type-Options: nosniff');
       <h2 id="ai-title">Napravi gradivo uz AI</h2>
       <p>Izaberi fotografije i napiši šta želiš da vežbaš. Predlog ćeš pregledati pre čuvanja.</p>
       <label>Naziv poglavlja<input name="title" required maxlength="200"></label>
-      <label>ID poglavlja<input name="id" required pattern="[a-z0-9][a-z0-9_-]{0,79}"></label>
+      <label>ID poglavlja<input name="id" required pattern="[a-z0-9][a-z0-9_\-]{0,79}"></label>
       <label>Slike gradiva<input name="images[]" type="file" accept="image/jpeg,image/png,image/webp" multiple></label>
       <div id="image-previews"></div>
       <small>Do 8 slika, svaka do 5 MB, ukupno do 20 MB. Slike se šalju OpenAI-ju i ne čuvaju u aplikaciji.</small>
@@ -33,6 +33,12 @@ header('X-Content-Type-Options: nosniff');
         <label class="inline"><input type="checkbox" name="type" value="flashcards" checked> Kartice</label>
         <label class="inline"><input type="checkbox" name="type" value="choice-quiz" checked> Test sa izborom</label>
         <label class="inline"><input type="checkbox" name="type" value="text-quiz"> Test sa unosom</label>
+        <p>Posebni izazovi — AI ih pravi kada u gradivu ima dovoljno odgovarajućih zadataka:</p>
+        <label class="inline"><input type="checkbox" name="type" value="classification" checked> Razvrstavanje</label>
+        <label class="inline"><input type="checkbox" name="type" value="matching" checked> Povezivanje pojmova</label>
+        <label class="inline"><input type="checkbox" name="type" value="number" checked> Brojčani izazov</label>
+        <label class="inline"><input type="checkbox" name="type" value="timeline" checked> Datumi i događaji</label>
+        <label class="inline"><input type="checkbox" name="type" value="true-false" checked> Tačno / netačno</label>
       </fieldset>
       <div class="admin-actions"><button id="generate" type="submit">Napravi predlog</button><button type="button" id="close-ai">Zatvori</button></div>
     </form>

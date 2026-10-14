@@ -1451,229 +1451,455 @@
             ]
         },
         {
-            "id": "poglavlje-97bb596b",
+            "id": "poglavlje-1fdb1145",
             "title": "Istočno pitanje",
-            "description": "Slabljenje Osmanskog carstva i nadmetanje velikih sila oko njegovih teritorija, kao i nacionalni pokreti na Balkanu.",
+            "description": "Slabljenje Osmanskog carstva, interesi velikih sila i promene na Balkanu do Berlinskog kongresa 1878. godine.",
             "icon": "📘",
             "items": [],
             "questions": [],
             "activities": [
                 {
-                    "id": "ai-66cf4b34-flashcards",
+                    "id": "ai-e34d25e7-flashcards-0",
                     "type": "flashcards",
-                    "title": "Kartice",
+                    "title": "Kartice · Pojam i uzroci",
                     "description": "",
-                    "itemSet": "aiCards_76d46054",
+                    "itemSet": "aiCards_3ee5d488",
+                    "itemIds": [
+                        "ai-e34d25e7-card-0",
+                        "ai-e34d25e7-card-1",
+                        "ai-e34d25e7-card-2",
+                        "ai-e34d25e7-card-3",
+                        "ai-e34d25e7-card-4",
+                        "ai-e34d25e7-card-5"
+                    ],
                     "frontField": "question",
                     "backField": "answer"
                 },
                 {
-                    "id": "ai-66cf4b34-choice-quiz",
-                    "type": "choice-quiz",
-                    "title": "Test sa izborom",
+                    "id": "ai-e34d25e7-flashcards-1",
+                    "type": "flashcards",
+                    "title": "Kartice · Nacionalni pokreti na Balkanu",
                     "description": "",
-                    "itemSet": "aiQuestions_76d46054",
+                    "itemSet": "aiCards_3ee5d488",
+                    "itemIds": [
+                        "ai-e34d25e7-card-6",
+                        "ai-e34d25e7-card-7",
+                        "ai-e34d25e7-card-8",
+                        "ai-e34d25e7-card-9",
+                        "ai-e34d25e7-card-10",
+                        "ai-e34d25e7-card-11",
+                        "ai-e34d25e7-card-12"
+                    ],
+                    "frontField": "question",
+                    "backField": "answer"
+                },
+                {
+                    "id": "ai-e34d25e7-flashcards-2",
+                    "type": "flashcards",
+                    "title": "Kartice · Berlinski kongres i posledice",
+                    "description": "",
+                    "itemSet": "aiCards_3ee5d488",
+                    "itemIds": [
+                        "ai-e34d25e7-card-13",
+                        "ai-e34d25e7-card-14",
+                        "ai-e34d25e7-card-15",
+                        "ai-e34d25e7-card-16",
+                        "ai-e34d25e7-card-17",
+                        "ai-e34d25e7-card-18"
+                    ],
+                    "frontField": "question",
+                    "backField": "answer"
+                },
+                {
+                    "id": "ai-e34d25e7-choice-quiz-0",
+                    "type": "choice-quiz",
+                    "title": "Test sa izborom · Pojam i uzroci",
+                    "description": "",
+                    "itemSet": "aiQuestions_3ee5d488",
+                    "itemIds": [
+                        "ai-e34d25e7-question-0",
+                        "ai-e34d25e7-question-1",
+                        "ai-e34d25e7-question-2",
+                        "ai-e34d25e7-question-3"
+                    ],
+                    "promptField": "prompt",
+                    "answerField": "answer"
+                },
+                {
+                    "id": "ai-e34d25e7-choice-quiz-1",
+                    "type": "choice-quiz",
+                    "title": "Test sa izborom · Nacionalni pokreti na Balkanu",
+                    "description": "",
+                    "itemSet": "aiQuestions_3ee5d488",
+                    "itemIds": [
+                        "ai-e34d25e7-question-4",
+                        "ai-e34d25e7-question-5",
+                        "ai-e34d25e7-question-6",
+                        "ai-e34d25e7-question-7",
+                        "ai-e34d25e7-question-8",
+                        "ai-e34d25e7-question-9"
+                    ],
+                    "promptField": "prompt",
+                    "answerField": "answer"
+                },
+                {
+                    "id": "ai-e34d25e7-choice-quiz-2",
+                    "type": "choice-quiz",
+                    "title": "Test sa izborom · Berlinski kongres i posledice",
+                    "description": "",
+                    "itemSet": "aiQuestions_3ee5d488",
+                    "itemIds": [
+                        "ai-e34d25e7-question-10",
+                        "ai-e34d25e7-question-11",
+                        "ai-e34d25e7-question-12",
+                        "ai-e34d25e7-question-13",
+                        "ai-e34d25e7-question-14",
+                        "ai-e34d25e7-question-15"
+                    ],
                     "promptField": "prompt",
                     "answerField": "answer"
                 }
             ],
-            "aiCards_76d46054": [
+            "aiCards_3ee5d488": [
                 {
-                    "id": "ai-66cf4b34-card-0",
-                    "question": "Šta je bilo Istočno pitanje?",
-                    "answer": "Pitanje sudbine i podele teritorija Osmanskog carstva među velikim silama.",
-                    "description": "U njemu su učestvovale velike sile poput Britanije, Francuske, Rusije, Habzburške monarhije i Nemačke."
+                    "id": "ai-e34d25e7-card-0",
+                    "topic": "Pojam i uzroci",
+                    "textSuitable": false,
+                    "question": "Šta se podrazumeva pod Istočnim pitanjem?",
+                    "answer": "Proces rešavanja sudbine i podele teritorija Osmanskog carstva među velikim silama.",
+                    "description": "Velike sile su se nadmetale oko uticaja i teritorija dok je Osmansko carstvo slabilo."
                 },
                 {
-                    "id": "ai-66cf4b34-card-1",
-                    "question": "Koji je bio glavni uzrok otvaranja Istočnog pitanja?",
-                    "answer": "Slabljenje Osmanskog carstva.",
-                    "description": "Carstvo je zapadalo u krizu zbog prestanka osvajanja, slabljenja vojne moći i neuspešnih reformi."
-                },
-                {
-                    "id": "ai-66cf4b34-card-2",
+                    "id": "ai-e34d25e7-card-1",
+                    "topic": "Pojam i uzroci",
+                    "textSuitable": true,
                     "question": "Kako su velike sile nazivale oslabljeno Osmansko carstvo?",
-                    "answer": "„Bolesnik na Bosforu“.",
-                    "description": "Taj naziv je ukazivao na slabljenje carstva i pitanje njegove budućnosti."
+                    "answer": "Bolesnik na Bosforu",
+                    "description": "Taj naziv je ukazivao na slabost Osmanskog carstva i njegovu sve težu krizu."
                 },
                 {
-                    "id": "ai-66cf4b34-card-3",
-                    "question": "Zašto velike sile nisu odmah podelile teritorije Osmanskog carstva?",
-                    "answer": "Sukobljavale su se oko toga ko će dobiti teritorije i uticaj.",
-                    "description": "Svaka sila je nastojala da spreči širenje uticaja svojih suparnica."
+                    "id": "ai-e34d25e7-card-2",
+                    "topic": "Pojam i uzroci",
+                    "textSuitable": false,
+                    "question": "Koji je glavni uzrok otvaranja Istočnog pitanja?",
+                    "answer": "Slabljenje Osmanskog carstva.",
+                    "description": "Carstvo je prolazilo kroz krize, gubilo vojnu moć i nije uspevalo da sprovede potrebne reforme."
                 },
                 {
-                    "id": "ai-66cf4b34-card-4",
-                    "question": "Na koja dva načina su velike sile rešavale Istočno pitanje?",
-                    "answer": "Diplomatskim putem i ratovima.",
-                    "description": "Njihovi sukobi interesa odlagali su konačno rešavanje pitanja."
+                    "id": "ai-e34d25e7-card-3",
+                    "topic": "Pojam i uzroci",
+                    "textSuitable": true,
+                    "question": "Koje su sile bile među glavnim učesnicama Istočnog pitanja?",
+                    "answer": "Velike sile",
+                    "description": "Među njima su bile Rusija, Britanija, Francuska, Austrija odnosno Austro-Ugarska i Nemačka."
                 },
                 {
-                    "id": "ai-66cf4b34-card-5",
-                    "question": "Zašto su hrišćanski narodi na Balkanu učestvovali u ratovima protiv Osmanlija?",
-                    "answer": "Velike sile su ih koristile u borbi protiv Osmanskog carstva.",
-                    "description": "Narodi Balkana videli su u toj borbi priliku da se oslobode osmanske vlasti."
+                    "id": "ai-e34d25e7-card-4",
+                    "topic": "Pojam i uzroci",
+                    "textSuitable": false,
+                    "question": "Zašto su velike sile odlagale konačno rešavanje Istočnog pitanja?",
+                    "answer": "Zbog sukoba interesa i straha da bi jačanje jedne sile ugrozilo interese drugih.",
+                    "description": "Nisu mogle da se dogovore o podeli osmanskih teritorija, pa su često nastojale da sačuvaju postojeće stanje."
                 },
                 {
-                    "id": "ai-66cf4b34-card-6",
-                    "question": "Koje su važne faze srpskog oslobodilačkog pokreta navedene u tekstu?",
-                    "answer": "Srpska revolucija, autonomija 1830. i međunarodno priznata nezavisnost 1878. godine.",
-                    "description": "Tekst navodi Srpsku revoluciju od 1804. do 1835. i sticanje autonomije 1830. godine."
+                    "id": "ai-e34d25e7-card-5",
+                    "topic": "Pojam i uzroci",
+                    "textSuitable": true,
+                    "question": "Kojim su se sredstvima velike sile služile u rešavanju Istočnog pitanja?",
+                    "answer": "Diplomatijom i ratovima",
+                    "description": "Diplomatski pregovori i ratovi bili su načini na koje su velike sile nastojale da ostvare svoje ciljeve."
                 },
                 {
-                    "id": "ai-66cf4b34-card-7",
-                    "question": "Šta je postignuto grčkim ustankom prema tekstu?",
-                    "answer": "Stvorena je nezavisna Grčka.",
-                    "description": "Tekst ne navodi godinu sticanja grčke nezavisnosti."
+                    "id": "ai-e34d25e7-card-6",
+                    "topic": "Nacionalni pokreti na Balkanu",
+                    "textSuitable": true,
+                    "question": "Kada je počeo Prvi srpski ustanak?",
+                    "answer": "1804.",
+                    "description": "Srpski ustanak 1804. godine označio je početak Srpske revolucije."
                 },
                 {
-                    "id": "ai-66cf4b34-card-8",
-                    "question": "Kako su se Vlaška i Moldavija ujedinile?",
-                    "answer": "Ujedinile su se u državu Rumuniju.",
-                    "description": "Tekst ovaj događaj smešta u sredinu XIX veka."
+                    "id": "ai-e34d25e7-card-7",
+                    "topic": "Nacionalni pokreti na Balkanu",
+                    "textSuitable": true,
+                    "question": "Kada je Srbija dobila autonomiju u okviru Osmanskog carstva?",
+                    "answer": "1830.",
+                    "description": "Autonomija je prethodila međunarodnom priznanju nezavisnosti Srbije 1878. godine."
                 },
                 {
-                    "id": "ai-66cf4b34-card-9",
-                    "question": "Šta je pokrenulo Veliku istočnu krizu?",
-                    "answer": "Ustanak u Hercegovini 1875. godine, koji se proširio na Bosnu.",
-                    "description": "Taj ustanak bio je deo šireg otpora osmanskoj vlasti."
+                    "id": "ai-e34d25e7-card-8",
+                    "topic": "Nacionalni pokreti na Balkanu",
+                    "textSuitable": true,
+                    "question": "Kada je međunarodno priznata nezavisnost Srbije?",
+                    "answer": "1878.",
+                    "description": "Nezavisnost Srbije međunarodno je priznata na Berlinskom kongresu."
                 },
                 {
-                    "id": "ai-66cf4b34-card-10",
-                    "question": "Kakav je bio značaj ustanka u Bugarskoj 1876. godine prema tekstu?",
-                    "answer": "Iako je ugušen, bio je polazna osnova za stvaranje autonomne Bugarske.",
-                    "description": "Bugarska kneževina i Istočna Rumelija ujedinile su se 1885. godine."
+                    "id": "ai-e34d25e7-card-9",
+                    "topic": "Nacionalni pokreti na Balkanu",
+                    "textSuitable": true,
+                    "question": "Koja je država stekla nezavisnost tokom grčkog ustanka?",
+                    "answer": "Grčka",
+                    "description": "Grčka je izborila nezavisnost od Osmanskog carstva."
                 },
                 {
-                    "id": "ai-66cf4b34-card-11",
-                    "question": "Gde je održan kongres kojim je završena Velika istočna kriza?",
-                    "answer": "U Berlinu, 1878. godine.",
-                    "description": "Berlinski kongres doneo je odluke o teritorijama i statusu balkanskih država."
+                    "id": "ai-e34d25e7-card-10",
+                    "topic": "Nacionalni pokreti na Balkanu",
+                    "textSuitable": true,
+                    "question": "Koje su se kneževine ujedinile u Rumuniju?",
+                    "answer": "Vlaška i Moldavija",
+                    "description": "Ujedinjenje Vlaške i Moldavije bilo je važan korak u stvaranju Rumunije."
                 },
                 {
-                    "id": "ai-66cf4b34-card-12",
-                    "question": "Šta je Austrougarska dobila odlukama Berlinskog kongresa?",
-                    "answer": "Pravo da okupira Bosnu i Hercegovinu.",
-                    "description": "Bosna i Hercegovina je do tada bila pokrajina Osmanskog carstva."
+                    "id": "ai-e34d25e7-card-11",
+                    "topic": "Nacionalni pokreti na Balkanu",
+                    "textSuitable": true,
+                    "question": "U kojoj godini je počeo ustanak u Hercegovini?",
+                    "answer": "1875.",
+                    "description": "Ustanak se proširio i na Bosnu, čime je počela Velika istočna kriza."
                 },
                 {
-                    "id": "ai-66cf4b34-card-13",
-                    "question": "Koje države su na Berlinskom kongresu stekle međunarodno priznatu nezavisnost?",
-                    "answer": "Srbija, Crna Gora i Rumunija.",
-                    "description": "Tekst ove države navodi kao međunarodno priznate na Berlinskom kongresu."
+                    "id": "ai-e34d25e7-card-12",
+                    "topic": "Nacionalni pokreti na Balkanu",
+                    "textSuitable": true,
+                    "question": "Kada je podignut ustanak u Bugarskoj?",
+                    "answer": "1876.",
+                    "description": "Iako neuspešan, bugarski ustanak doprineo je stvaranju osnove za buduću autonomiju Bugarske."
                 },
                 {
-                    "id": "ai-66cf4b34-card-14",
-                    "question": "Kakav status je dobila Bugarska odlukama Berlinskog kongresa?",
-                    "answer": "Stekla je autonomiju.",
-                    "description": "Autonomija nije isto što i međunarodno priznata nezavisnost."
+                    "id": "ai-e34d25e7-card-13",
+                    "topic": "Berlinski kongres i posledice",
+                    "textSuitable": true,
+                    "question": "Koje godine je održan Berlinski kongres?",
+                    "answer": "1878.",
+                    "description": "Odluke kongresa preuredile su odnose na Balkanu i okončale Veliku istočnu krizu."
                 },
                 {
-                    "id": "ai-66cf4b34-card-15",
-                    "question": "Kakav je status imala Istočna Rumelija nakon Berlinskog kongresa?",
-                    "answer": "Bila je izdvojena pokrajina Osmanskog carstva.",
-                    "description": "Kasnije se ujedinila sa Bugarskom, 1885. godine prema tekstu."
+                    "id": "ai-e34d25e7-card-14",
+                    "topic": "Berlinski kongres i posledice",
+                    "textSuitable": true,
+                    "question": "Koja je sila dobila pravo da okupira Bosnu i Hercegovinu 1878. godine?",
+                    "answer": "Austro-Ugarska",
+                    "description": "Bosna i Hercegovina je i dalje formalno pripadala Osmanskom carstvu, ali je njome upravljala Austro-Ugarska."
+                },
+                {
+                    "id": "ai-e34d25e7-card-15",
+                    "topic": "Berlinski kongres i posledice",
+                    "textSuitable": true,
+                    "question": "Koje tri države su na Berlinskom kongresu dobile međunarodno priznanje nezavisnosti?",
+                    "answer": "Srbija, Crna Gora i Rumunija",
+                    "description": "Nezavisnost ovih balkanskih država međunarodno je priznata 1878. godine."
+                },
+                {
+                    "id": "ai-e34d25e7-card-16",
+                    "topic": "Berlinski kongres i posledice",
+                    "textSuitable": true,
+                    "question": "Kakav status je Bugarska dobila odlukama Berlinskog kongresa?",
+                    "answer": "Autonomija",
+                    "description": "Bugarska kneževina postala je autonomna, ali nije tada dobila punu nezavisnost."
+                },
+                {
+                    "id": "ai-e34d25e7-card-17",
+                    "topic": "Berlinski kongres i posledice",
+                    "textSuitable": true,
+                    "question": "Kakav status je dobila Istočna Rumelija nakon Berlinskog kongresa?",
+                    "answer": "Autonomna provincija",
+                    "description": "Istočna Rumelija je ostala u okviru Osmanskog carstva kao izdvojena autonomna provincija."
+                },
+                {
+                    "id": "ai-e34d25e7-card-18",
+                    "topic": "Berlinski kongres i posledice",
+                    "textSuitable": false,
+                    "question": "Kakav je bio jedan od glavnih teritorijalnih ishoda Berlinskog kongresa za Osmansko carstvo?",
+                    "answer": "Osmansko carstvo je izgubilo znatan deo teritorija u Evropi.",
+                    "description": "Nezavisnost balkanskih država i promene njihovog statusa umanjile su osmansku vlast u Evropi."
                 }
             ],
-            "aiQuestions_76d46054": [
+            "aiQuestions_3ee5d488": [
                 {
-                    "id": "ai-66cf4b34-question-0",
-                    "prompt": "Koji opis najbolje definiše Istočno pitanje?",
-                    "answer": "Pitanje sudbine i podele teritorija Osmanskog carstva među velikim silama.",
+                    "id": "ai-e34d25e7-question-0",
+                    "topic": "Pojam i uzroci",
+                    "prompt": "Šta je Istočno pitanje?",
+                    "answer": "Proces rešavanja sudbine i podele teritorija Osmanskog carstva među velikim silama.",
                     "choices": [
-                        "Pitanje ujedinjenja svih balkanskih naroda u jednu državu.",
-                        "Pitanje sudbine i podele teritorija Osmanskog carstva među velikim silama.",
-                        "Spor o granicama između Srbije i Grčke."
+                        "Sukob oko nasledstva Habsburške monarhije.",
+                        "Dogovor o ujedinjenju svih balkanskih država.",
+                        "Proces rešavanja sudbine i podele teritorija Osmanskog carstva među velikim silama."
                     ]
                 },
                 {
-                    "id": "ai-66cf4b34-question-1",
-                    "prompt": "Šta je bio glavni uzrok otvaranja Istočnog pitanja?",
+                    "id": "ai-e34d25e7-question-1",
+                    "topic": "Pojam i uzroci",
+                    "prompt": "Koji je glavni uzrok otvaranja Istočnog pitanja?",
                     "answer": "Slabljenje Osmanskog carstva.",
                     "choices": [
-                        "Jačanje Osmanskog carstva i širenje njegovih osvajanja.",
+                        "Ujedinjenje Nemačke i Italije.",
                         "Slabljenje Osmanskog carstva.",
-                        "Ujedinjenje Srbije i Crne Gore."
+                        "Raspad Austro-Ugarske."
                     ]
                 },
                 {
-                    "id": "ai-66cf4b34-question-2",
-                    "prompt": "Zašto velike sile nisu odmah podelile teritorije Osmanskog carstva?",
-                    "answer": "Sukobljavale su se oko podele teritorija i širenja sopstvenog uticaja.",
+                    "id": "ai-e34d25e7-question-2",
+                    "topic": "Pojam i uzroci",
+                    "prompt": "Zašto su velike sile odlagale konačno rešavanje Istočnog pitanja?",
+                    "answer": "Zbog sukoba interesa i straha da bi jačanje jedne sile ugrozilo interese drugih.",
                     "choices": [
-                        "Nisu znale gde se nalazi Osmansko carstvo.",
-                        "Sukobljavale su se oko podele teritorija i širenja sopstvenog uticaja.",
-                        "Sve velike sile su želele da očuvaju carstvo bez ikakvih promena."
+                        "Zato što su se dogovorile da Osmansko carstvo ne sme izgubiti teritorije.",
+                        "Zbog sukoba interesa i straha da bi jačanje jedne sile ugrozilo interese drugih.",
+                        "Zato što nijedna velika sila nije bila zainteresovana za Balkan."
                     ]
                 },
                 {
-                    "id": "ai-66cf4b34-question-3",
-                    "prompt": "Koji su načini rešavanja Istočnog pitanja navedeni u tekstu?",
-                    "answer": "Diplomatija i ratovi.",
+                    "id": "ai-e34d25e7-question-3",
+                    "topic": "Pojam i uzroci",
+                    "prompt": "Kojim su se sredstvima velike sile služile u rešavanju Istočnog pitanja?",
+                    "answer": "Diplomatijom i ratovima",
                     "choices": [
-                        "Diplomatija i ratovi.",
-                        "Verske reforme i izbori.",
-                        "Trgovina i kolonizacija."
+                        "Isključivo trgovinskim sporazumima",
+                        "Diplomatijom i ratovima",
+                        "Samo naseljavanjem novih teritorija"
                     ]
                 },
                 {
-                    "id": "ai-66cf4b34-question-4",
-                    "prompt": "Koji događaj je pokrenuo Veliku istočnu krizu?",
-                    "answer": "Ustanak u Hercegovini 1875. godine, koji se proširio na Bosnu.",
+                    "id": "ai-e34d25e7-question-4",
+                    "topic": "Nacionalni pokreti na Balkanu",
+                    "prompt": "Kada je počeo Prvi srpski ustanak?",
+                    "answer": "1804.",
                     "choices": [
-                        "Ustanak u Hercegovini 1875. godine, koji se proširio na Bosnu.",
-                        "Berlinski kongres 1878. godine.",
-                        "Ustanak u Bugarskoj 1876. godine."
+                        "1830.",
+                        "1878.",
+                        "1804.",
+                        "1875."
                     ]
                 },
                 {
-                    "id": "ai-66cf4b34-question-5",
-                    "prompt": "Koja odluka je doneta na Berlinskom kongresu 1878. godine?",
-                    "answer": "Austrougarska je dobila pravo da okupira Bosnu i Hercegovinu.",
+                    "id": "ai-e34d25e7-question-5",
+                    "topic": "Nacionalni pokreti na Balkanu",
+                    "prompt": "Kada je Srbija dobila autonomiju u okviru Osmanskog carstva?",
+                    "answer": "1830.",
                     "choices": [
-                        "Austrougarska je dobila pravo da okupira Bosnu i Hercegovinu.",
-                        "Bosna i Hercegovina postala je nezavisna država.",
-                        "Bugarska je dobila Bosnu i Hercegovinu."
+                        "1830.",
+                        "1804.",
+                        "1878.",
+                        "1876."
                     ]
                 },
                 {
-                    "id": "ai-66cf4b34-question-6",
-                    "prompt": "Koje države su prema tekstu stekle međunarodno priznatu nezavisnost na Berlinskom kongresu?",
-                    "answer": "Srbija, Crna Gora i Rumunija.",
+                    "id": "ai-e34d25e7-question-6",
+                    "topic": "Nacionalni pokreti na Balkanu",
+                    "prompt": "Koja država je stekla nezavisnost tokom grčkog ustanka?",
+                    "answer": "Grčka",
                     "choices": [
-                        "Srbija, Grčka i Bugarska.",
-                        "Srbija, Crna Gora i Rumunija.",
-                        "Rumunija, Bugarska i Istočna Rumelija."
+                        "Bugarska",
+                        "Crna Gora",
+                        "Grčka",
+                        "Rumunija"
                     ]
                 },
                 {
-                    "id": "ai-66cf4b34-question-7",
+                    "id": "ai-e34d25e7-question-7",
+                    "topic": "Nacionalni pokreti na Balkanu",
+                    "prompt": "Koje su se kneževine ujedinile u Rumuniju?",
+                    "answer": "Vlaška i Moldavija",
+                    "choices": [
+                        "Vlaška i Moldavija",
+                        "Bugarska i Istočna Rumelija",
+                        "Bosna i Hercegovina",
+                        "Srbija i Crna Gora"
+                    ]
+                },
+                {
+                    "id": "ai-e34d25e7-question-8",
+                    "topic": "Nacionalni pokreti na Balkanu",
+                    "prompt": "Koji događaj iz 1875. godine započeo je Veliku istočnu krizu?",
+                    "answer": "Ustanak u Hercegovini koji se proširio na Bosnu.",
+                    "choices": [
+                        "Ustanak u Hercegovini koji se proširio na Bosnu.",
+                        "Ustanak u Bugarskoj.",
+                        "Priznanje nezavisnosti Srbije.",
+                        "Ujedinjenje Vlaške i Moldavije."
+                    ]
+                },
+                {
+                    "id": "ai-e34d25e7-question-9",
+                    "topic": "Nacionalni pokreti na Balkanu",
+                    "prompt": "Kada je podignut ustanak u Bugarskoj?",
+                    "answer": "1876.",
+                    "choices": [
+                        "1876.",
+                        "1875.",
+                        "1830.",
+                        "1878."
+                    ]
+                },
+                {
+                    "id": "ai-e34d25e7-question-10",
+                    "topic": "Berlinski kongres i posledice",
+                    "prompt": "Koje godine je održan Berlinski kongres?",
+                    "answer": "1878.",
+                    "choices": [
+                        "1885.",
+                        "1878.",
+                        "1875.",
+                        "1876."
+                    ]
+                },
+                {
+                    "id": "ai-e34d25e7-question-11",
+                    "topic": "Berlinski kongres i posledice",
+                    "prompt": "Koja sila je dobila pravo da okupira Bosnu i Hercegovinu?",
+                    "answer": "Austro-Ugarska",
+                    "choices": [
+                        "Rusija",
+                        "Britanija",
+                        "Nemačka",
+                        "Austro-Ugarska"
+                    ]
+                },
+                {
+                    "id": "ai-e34d25e7-question-12",
+                    "topic": "Berlinski kongres i posledice",
+                    "prompt": "Koje države su na Berlinskom kongresu dobile međunarodno priznanje nezavisnosti?",
+                    "answer": "Srbija, Crna Gora i Rumunija",
+                    "choices": [
+                        "Srbija, Bosna i Hercegovina i Bugarska",
+                        "Srbija, Crna Gora i Rumunija",
+                        "Bugarska, Rumunija i Istočna Rumelija",
+                        "Srbija, Bugarska i Grčka"
+                    ]
+                },
+                {
+                    "id": "ai-e34d25e7-question-13",
+                    "topic": "Berlinski kongres i posledice",
                     "prompt": "Kakav status je dobila Bugarska odlukama Berlinskog kongresa?",
-                    "answer": "Autonomiju.",
+                    "answer": "Autonomija",
                     "choices": [
-                        "Pravo Austrougarske da je okupira.",
-                        "Međunarodno priznatu nezavisnost.",
-                        "Autonomiju."
+                        "Pripojena Austro-Ugarskoj",
+                        "Autonomija",
+                        "Međunarodno priznata nezavisnost",
+                        "Postala deo Srbije"
                     ]
                 },
                 {
-                    "id": "ai-66cf4b34-question-8",
-                    "prompt": "Koja teritorija je nakon Berlinskog kongresa ostala izdvojena pokrajina Osmanskog carstva?",
-                    "answer": "Istočna Rumelija.",
+                    "id": "ai-e34d25e7-question-14",
+                    "topic": "Berlinski kongres i posledice",
+                    "prompt": "Kakav status je dobila Istočna Rumelija nakon Berlinskog kongresa?",
+                    "answer": "Autonomna provincija",
                     "choices": [
-                        "Bosna i Hercegovina.",
-                        "Istočna Rumelija.",
-                        "Vlaška."
+                        "Autonomna provincija",
+                        "Deo Rumunije",
+                        "Pokrajina Austro-Ugarske",
+                        "Međunarodno priznata nezavisna država"
                     ]
                 },
                 {
-                    "id": "ai-66cf4b34-question-9",
-                    "prompt": "Šta se prema tekstu dogodilo sa Vlaškom i Moldavijom sredinom XIX veka?",
-                    "answer": "Ujedinile su se u državu Rumuniju.",
+                    "id": "ai-e34d25e7-question-15",
+                    "topic": "Berlinski kongres i posledice",
+                    "prompt": "Koji je bio jedan od glavnih teritorijalnih ishoda Berlinskog kongresa za Osmansko carstvo?",
+                    "answer": "Osmansko carstvo je izgubilo znatan deo teritorija u Evropi.",
                     "choices": [
-                        "Ujedinile su se u državu Rumuniju.",
-                        "Pripojene su Bugarskoj.",
-                        "Postale su pokrajine Austrougarske."
+                        "Osmansko carstvo je proširilo vlast na srednju Evropu.",
+                        "Osmansko carstvo je postalo sastavni deo Austro-Ugarske.",
+                        "Osmansko carstvo je izgubilo znatan deo teritorija u Evropi."
                     ]
                 }
             ]

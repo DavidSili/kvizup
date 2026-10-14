@@ -88,7 +88,11 @@ function referenceMarkup(item) {
   if (!item.referenceImage) return '';
   return `<a class="reference-link" href="${escapeHtml(currentChapter.imageDirectory || 'images')}/${encodeURIComponent(item.referenceImage)}" target="_blank" rel="noopener">Pogledaj sliku iz lekcije</a>`;
 }
-function itemCount(subject) { return (subject.chapters || []).reduce((count, chapter) => count + (chapter.items || []).length, 0); }
+function chapterCardCount(chapter) {
+  return Object.entries(chapter).reduce((count, [set, records]) => count + (set !== 'activities' && Array.isArray(records)
+    ? records.filter(r => r.enabled !== false && !Array.isArray(r.choices) && (r.question || r.name || r.symbol)).length : 0), 0);
+}
+function itemCount(subject) { return (subject.chapters || []).reduce((count, chapter) => count + chapterCardCount(chapter), 0); }
 function breadcrumb(parts) { return `<div class="breadcrumb">${parts.map((part, index) => `${index ? '<span>›</span>' : ''}${part.href ? `<a href="${part.href}">${escapeHtml(part.label)}</a>` : `<span>${escapeHtml(part.label)}</span>`}`).join('')}</div>`; }
 function tile(href, icon, title, description, meta = '') {
   return `<a class="tile" href="${href}"><span class="tile-icon">${escapeHtml(icon || '✦')}</span><h3>${escapeHtml(title)}</h3><p>${escapeHtml(description || '')}</p>${meta ? `<p class="tile-meta">${escapeHtml(meta)}</p>` : ''}</a>`;
@@ -99,12 +103,12 @@ function homeView() {
 }
 function itemCountForAll() { return subjects.reduce((total, subject) => total + (subject.itemCount || 0), 0); }
 function subjectView(subject) {
-  const cards = (subject.chapters || []).map(chapter => tile(`#chapter/${encodeURIComponent(subject.id)}/${encodeURIComponent(chapter.id)}`, chapter.icon || subject.icon, chapter.title, chapter.description, `${(chapter.items || []).filter(item => item.enabled !== false).length} pojmova · ${(chapter.activities || []).length} aktivnosti`)).join('');
+  const cards = (subject.chapters || []).map(chapter => tile(`#chapter/${encodeURIComponent(subject.id)}/${encodeURIComponent(chapter.id)}`, chapter.icon || subject.icon, chapter.title, chapter.description, `${chapterCardCount(chapter)} pojmova · ${(chapter.activities || []).length} aktivnosti`)).join('');
   return `${breadcrumb([{ label: 'Predmeti', href: '#home' }, { label: subject.title }])}<section class="hero"><span class="eyebrow">Predmet</span><h1>${escapeHtml(subject.title)}</h1><p class="lead">${escapeHtml(subject.description || '')}</p></section><div class="section-heading"><h2>Poglavlja</h2><p>${subject.chapterCount || subject.chapters.length} ukupno</p></div><section class="tile-grid">${cards || '<div class="empty">Još nema poglavlja u ovom predmetu.</div>'}</section>`;
 }
 function chapterView(subject, chapter) {
   const cards = (chapter.activities || []).map(activity => tile(`#activity/${encodeURIComponent(subject.id)}/${encodeURIComponent(chapter.id)}/${encodeURIComponent(activity.id)}`, activity.icon || '✦', activity.title, activity.description, activity.type === 'flashcards' ? 'Kartice' : activity.kindLabel || 'Vežba')).join('');
-  return `${breadcrumb([{ label: 'Predmeti', href: '#home' }, { label: subject.title, href: `#subject/${encodeURIComponent(subject.id)}` }, { label: chapter.title }])}<section class="hero"><span class="eyebrow">Poglavlje</span><h1>${escapeHtml(chapter.title)}</h1><p class="lead">${escapeHtml(chapter.description || '')}</p></section><div class="section-heading"><h2>Izaberi vežbu</h2><p>${(chapter.items || []).filter(item => item.enabled !== false).length} pojmova</p></div><section class="tile-grid">${cards || '<div class="empty">Nema aktivnosti u ovom poglavlju.</div>'}</section>`;
+  return `${breadcrumb([{ label: 'Predmeti', href: '#home' }, { label: subject.title, href: `#subject/${encodeURIComponent(subject.id)}` }, { label: chapter.title }])}<section class="hero"><span class="eyebrow">Poglavlje</span><h1>${escapeHtml(chapter.title)}</h1><p class="lead">${escapeHtml(chapter.description || '')}</p></section><div class="section-heading"><h2>Izaberi vežbu</h2><p>${chapterCardCount(chapter)} pojmova</p></div><section class="tile-grid">${cards || '<div class="empty">Nema aktivnosti u ovom poglavlju.</div>'}</section>`;
 }
 function flashcardsView(activity) {
   if (!practice || practice.activityId !== activity.id) practice = { activityId: activity.id, item: pickItem(), index: 0, flipped: false };

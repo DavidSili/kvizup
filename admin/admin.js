@@ -26,6 +26,39 @@ function textField(label, value, target, field, multiline = false, disabled = fa
   return `<label>${esc(label)}${multiline ? `<textarea ${attrs} rows="3">${esc(value)}</textarea>` : `<input ${attrs} value="${esc(value)}">`}</label>`;
 }
 function poolNames(c) { return Object.keys(c).filter(key => Array.isArray(c[key]) && key !== 'activities'); }
+function poolLabel(c, set) {
+  const labels = {items:'Kartice / pojmovi',questions:'Pitanja sa izborom',classificationQuestions:'Razvrstavanje',matchingQuestions:'Povezivanje pojmova',numberQuestions:'Brojčani izazov',timelineQuestions:'Datumi i događaji',trueFalseQuestions:'Tačno / netačno'};
+  if (labels[set]) return labels[set];
+  const activities = c.activities.filter(a => (a.itemSet || 'items') === set);
+  const kinds = [...new Set((c[set] || []).map(r => r.kind).filter(Boolean))];
+  const kindSets = {classification:'classificationQuestions',matching:'matchingQuestions',number:'numberQuestions',timeline:'timelineQuestions','true-false':'trueFalseQuestions'};
+  const label = kinds.length === 1 && labels[kindSets[kinds[0]]];
+  return label || (activities.some(a => a.type === 'flashcards' || a.type === 'text-quiz') ? 'Kartice / pojmovi (AI)' : activities.length ? 'Pitanja sa izborom (AI)' : set);
+}
+function questionTotal(c) { return poolNames(c).reduce((sum, set) => sum + (c[set].some(r => Array.isArray(r.choices)) ? c[set].length : 0), 0); }
+function isCardPool(c, set) { return set === 'items' || c.activities.some(a => (a.itemSet || 'items') === set && a.type === 'flashcards') || /^aiCards_/.test(set) || c[set].some(r => 'question' in r && !('choices' in r)); }
+function visiblePools(c) {
+  const pools = poolNames(c);
+  return pools.filter(set => {
+    if (c[set].length) return true;
+    if (/^ai(?:Pool|Cards|Questions)_/.test(set)) return false;
+    return !pools.some(other => other !== set && c[other].length && (
+      (set === 'items' && isCardPool(c, other)) ||
+      (set === 'questions' && c[other].some(r => Array.isArray(r.choices)))
+    ));
+  });
+}
+function appendProposal(c, incoming, suffix) {
+  const mapping = Object.fromEntries(poolNames(incoming).map((set, index) => [set, `aiPool_${suffix}_${index}`]));
+  const activities = incoming.activities.map(a => {
+    const set = a.itemSet || 'items';
+    if (!mapping[set]) throw new Error(`Aktivnost „${a.title}“ koristi nepostojeći skup „${set}“.`);
+    return {...clone(a), itemSet: mapping[set]};
+  });
+  c.activities=c.activities.filter(a=>!(['kartice','test'].includes(a.id) && (c[a.itemSet || 'items'] || []).length===0));
+  for (const [set, destination] of Object.entries(mapping)) c[destination]=clone(incoming[set]);
+  c.activities.push(...activities);
+}
 function correctionMarkup(corrections) {
   return corrections.length ? `<div class="admin-warning"><strong>AI je ispravio ${corrections.length} činjeničnih navoda — pregledaj ispravke</strong><ul>${corrections.map(c=>`<li><strong>${esc(c.original)} → ${esc(c.corrected)}</strong><br>${esc(c.reason)}</li>`).join('')}</ul></div>` : '<p>AI nije prijavio činjenične ispravke.</p>';
 }
@@ -33,7 +66,7 @@ function importMarkup() {
   return (selected.importReports || []).map(report=>`<section class="admin-panel"><h3>Rezultat AI unosa</h3><p>Dodato u ${esc(report.title)}: ${report.cards} kartica, ${report.questions} pitanja sa izborom i ${report.activities} aktivnosti.</p>${correctionMarkup(report.corrections)}</section>`).join('');
 }
 function recordsMarkup(c, scope = 'chapter') {
-  return poolNames(c).map(set => `<section class="admin-panel"><div class="admin-actions"><h3>${esc(set === 'items' ? 'Kartice / pojmovi' : set === 'questions' ? 'Pitanja sa izborom' : set)} (${c[set].length})</h3><button data-add-record="${esc(set)}" data-scope="${scope}">Dodaj zadatak</button></div>${c[set].map((record, index) => {
+  return visiblePools(c).map(set => `<section class="admin-panel"><div class="admin-actions"><h3>${esc(poolLabel(c, set))} (${c[set].length})</h3><button data-add-record="${esc(set)}" data-scope="${scope}">Dodaj zadatak</button></div>${c[set].map((record, index) => {
     const fields = Object.keys(record).filter(key => typeof record[key] === 'string');
     return `<details class="record"><summary>${index + 1}. ${esc(record.question || record.prompt || record.name || record.title || record.id)}</summary><div class="record-fields">${fields.map(key => textField(({question:'Pitanje',prompt:'Pitanje',answer:'Tačan odgovor',description:'Objašnjenje',name:'Naziv',symbol:'Simbol',id:'ID',image:'Slika'})[key] || key, record[key], `${scope}/${set}/${index}`, key, key !== 'id' && key !== 'image')).join('')}${Array.isArray(record.choices) ? textField('Ponuđeni odgovori (jedan po redu)',record.choices.join('\n'),`${scope}/${set}/${index}`,'choices',true) : ''}<label class="inline"><input type="checkbox" data-target="${scope}/${set}/${index}" data-field="enabled" ${record.enabled !== false ? 'checked' : ''}> Uključeno</label><button class="danger" data-delete-record="${esc(set)}/${index}" data-scope="${scope}">Obriši zadatak</button></div></details>`;
   }).join('')}</section>`).join('');
@@ -88,7 +121,7 @@ document.addEventListener('submit',async event=>{
 });
 function renderProposal() {
   const section=document.querySelector('#proposal');section.hidden=false;
-  section.innerHTML=`<h2>Pregledaj AI predlog</h2><p>Pripremljeno: ${proposal.chapter.items.length} kartica, ${proposal.chapter.questions.length} pitanja sa izborom i ${proposal.chapter.activities.length} aktivnosti. Izmeni pitanja i odgovore. Ništa još nije sačuvano.</p>${correctionMarkup(proposal.corrections || [])}${proposal.warnings.length?`<div class="admin-warning"><strong>Proveri pre čuvanja</strong><ul>${proposal.warnings.map(w=>`<li>${esc(w)}</li>`).join('')}</ul></div>`:''}<ul>${proposal.chapter.activities.map(a=>`<li>${esc(a.title)} (${a.itemIds?.length || 0} zadataka)</li>`).join('')}</ul>${recordsMarkup(proposal.chapter,'proposal')}<div class="admin-actions"><button data-action="accept-ai">Dodaj u poglavlje</button><button data-action="discard-ai">Odbaci predlog</button></div>`;
+  section.innerHTML=`<h2>Pregledaj AI predlog</h2><p>Pripremljeno: ${proposal.chapter.items.length} kartica, ${questionTotal(proposal.chapter)} pitanja sa izborom i ${proposal.chapter.activities.length} aktivnosti. Izmeni pitanja i odgovore. Ništa još nije sačuvano.</p>${correctionMarkup(proposal.corrections || [])}${proposal.warnings.length?`<div class="admin-warning"><strong>Proveri pre čuvanja</strong><ul>${proposal.warnings.map(w=>`<li>${esc(w)}</li>`).join('')}</ul></div>`:''}<ul>${proposal.chapter.activities.map(a=>`<li>${esc(a.title)} (${a.itemIds?.length || 0} zadataka)</li>`).join('')}</ul>${recordsMarkup(proposal.chapter,'proposal')}<div class="admin-actions"><button data-action="accept-ai">Dodaj u poglavlje</button><button data-action="discard-ai">Odbaci predlog</button></div>`;
 }
 document.addEventListener('click',async event=>{
   const button=event.target.closest('button'); if(!button || button.disabled) return;
@@ -97,7 +130,7 @@ document.addEventListener('click',async event=>{
     if(button.id==='close-ai'){dialog.close();return;}
     if(button.dataset.subject!==undefined){if(!canLeave())return;selected=clone(subjects[Number(button.dataset.subject)]);chapterIndex=selected.subject.chapters.length?0:-1;dirty=false;render();return;}
     if(button.dataset.chapter!==undefined){chapterIndex=Number(button.dataset.chapter);render();return;}
-    if(button.dataset.addRecord){const c=button.dataset.scope==='proposal'?proposal.chapter:chapter(),set=button.dataset.addRecord;c[set].push(set==='items'?{id:id('card'),question:'Novo pitanje',answer:'Odgovor',description:''}:{id:id('question'),prompt:'Novo pitanje',answer:'Tačan odgovor',choices:['Tačan odgovor','Drugi odgovor','Treći odgovor']});if(button.dataset.scope==='proposal')renderProposal();else{markDirty();render();}return;}
+    if(button.dataset.addRecord){const c=button.dataset.scope==='proposal'?proposal.chapter:chapter(),set=button.dataset.addRecord;c[set].push(isCardPool(c,set)?{id:id('card'),question:'Novo pitanje',answer:'Odgovor',description:''}:{id:id('question'),prompt:'Novo pitanje',answer:'Tačan odgovor',choices:['Tačan odgovor','Drugi odgovor','Treći odgovor']});if(button.dataset.scope==='proposal')renderProposal();else{markDirty();render();}return;}
     if(button.dataset.deleteRecord){if(!confirm('Obriši ovaj zadatak iz nacrta?'))return;const [set,index]=button.dataset.deleteRecord.split('/');const c=button.dataset.scope==='proposal'?proposal.chapter:chapter();const removed=c[set].splice(Number(index),1)[0];c.activities=c.activities.filter(a=>{if(a.itemSet===set && a.itemIds){a.itemIds=a.itemIds.filter(id=>id!==removed.id);return a.itemIds.length>0;}return true;});if(button.dataset.scope==='proposal')renderProposal();else{markDirty();render();}return;}
     if(button.dataset.deleteActivity!==undefined){if(!confirm('Obriši ovu aktivnost iz nacrta?'))return;chapter().activities.splice(Number(button.dataset.deleteActivity),1);markDirty();render();return;}
     const action=button.dataset.action;
@@ -122,14 +155,11 @@ document.addEventListener('click',async event=>{
     if(action==='discard-ai'){proposal=null;dialog.close();}
     if(action==='accept-ai'){
       const c=chapter(), incoming=proposal.chapter;
-      if(!incoming.items.length && !incoming.questions.length)throw new Error('Predlog nema zadataka. Dopuni materijal i pokušaj ponovo.');
+      if(!poolNames(incoming).some(set => incoming[set].length))throw new Error('Predlog nema zadataka. Dopuni materijal i pokušaj ponovo.');
       // Separate AI pools preserve existing field mappings (e.g. chemistry symbols).
-      const suffix=crypto.randomUUID().slice(0,8),cardSet='aiCards_'+suffix,questionSet='aiQuestions_'+suffix;
-      c.activities=c.activities.filter(a=>!(['kartice','test'].includes(a.id) && (c[a.itemSet || 'items'] || []).length===0));
-      c[cardSet]=clone(incoming.items);c[questionSet]=clone(incoming.questions);
-      c.activities.push(...incoming.activities.map(a=>({...a,itemSet:a.itemSet==='items'?cardSet:questionSet})));
+      appendProposal(c, incoming, crypto.randomUUID().slice(0,8));
       if(!c.description)c.description=incoming.description;
-      const report={title:c.title,cards:incoming.items.length,questions:incoming.questions.length,activities:incoming.activities.length,corrections:clone(proposal.corrections || [])};
+      const report={title:c.title,cards:incoming.items.length,questions:questionTotal(incoming),activities:incoming.activities.length,corrections:clone(proposal.corrections || [])};
       (selected.importReports ||= []).push(report);
       dirty=true;proposal=null;dialog.close();render();message(`Dodato u nacrt: ${report.cards} kartica, ${report.questions} pitanja i ${report.activities} aktivnosti. AI je prijavio ${report.corrections.length} ispravki; detalji su ispod. Klikni „Sačuvaj predmet“ za objavljivanje.`);
     }
